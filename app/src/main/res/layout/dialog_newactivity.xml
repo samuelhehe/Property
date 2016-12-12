@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="@dimen/dialog_main_width"
+              android:layout_height="133dp"
+              android:background="@drawable/rect_whitebg2"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:lineSpacingExtra="4dp"
+            android:textColor="@color/textblack"
+            android:padding="14dp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="请确认发布内容不包含色情、暴力、反动、迷信、赌博等违法内容。"
+            android:textSize="@dimen/dialog_textcontent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#bababa"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_cancle"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="#4caf50"
+                android:textSize="@dimen/dialog_texbutton"/>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="1dp"
+                android:background="#bababa"/>
+
+            <TextView
+                android:id="@+id/tv_relogin"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="确认"
+                android:textColor="#4caf50"
+                android:textSize="@dimen/dialog_texbutton"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

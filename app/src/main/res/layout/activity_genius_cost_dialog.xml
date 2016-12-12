@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#80000000">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical"
+        android:background="@drawable/white_button_selector_shape1">
+        
+        <TextView
+            android:id="@+id/tv_dialog_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16dp"
+            android:textColor="#6a6a6a"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:text="你填写的信息会被其它牛人看到，你确定要发布预览信息吗？"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_marginTop="7dp"
+            android:layout_height="2dp"
+            android:background="#F0F0F0"/>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:layout_height="40dp">
+        
+            <TextView
+                android:id="@+id/tv_out"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:text="取消"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:textColor="#2FCC71"/>
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="#F0F0F0"
+                />
+
+            <TextView
+                android:id="@+id/tv_submit"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:text="确认"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="#2FCC71"/>
+           
+        </LinearLayout>
+    </LinearLayout>
+    
+
+
+
+</LinearLayout>

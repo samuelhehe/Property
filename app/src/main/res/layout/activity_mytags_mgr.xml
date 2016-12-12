@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/headtop_title"
+        layout="@layout/common_tags_headtop" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <xj.property.widget.FilterFlowLayout
+                android:id="@+id/mytags_fflay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                app:horizontalGap="12dp"
+                app:maxWidthRatio="0.5"
+                app:verticalGap="10dp">
+
+            </xj.property.widget.FilterFlowLayout>
+
+            <Button
+                android:id="@+id/mytags_addtags_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/label_manage_add"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="添加标签"
+                android:textColor="#FFB5A2" />
+
+            <include
+                layout="@layout/net_error"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/headtop_title" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

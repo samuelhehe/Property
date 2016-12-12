@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ededed"
+    android:orientation="vertical"
+
+    >
+
+
+    <include layout="@layout/headtop_notify" />
+
+    <ScrollView
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp">
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl"
+                android:layout_width="fill_parent"
+                android:paddingRight="12dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:id="@+id/ll_iv_isread"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="#ededed"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_notify_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_toRightOf="@id/ll_iv_isread"
+                    android:paddingLeft="12dp"
+                    android:text="停电通知"
+                    android:textColor="#333333"
+                    android:textSize="15sp" />
+
+
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_notify_title"
+                    android:layout_marginBottom="21dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/ll_iv_isread"
+                    android:lineSpacingExtra="5dp"
+                    android:paddingBottom="52dp"
+                    android:paddingLeft="12dp"
+                    android:text="本文版权归作者和博客园共有，欢迎转载，但未经作者同意必须保留此段声明，且在文章页面明显位置给出原文连接，否则保留追究法律责任的权利。"
+                    android:textColor="#333333"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+
+                    android:paddingBottom="24dp"
+                    android:layout_alignParentRight="true"
+
+                    android:text="2015-01-01 8:00"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl"
+                android:layout_marginTop="-3dp"
+                android:background="@drawable/list_side"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

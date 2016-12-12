@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+<!--    <CheckBox
+        android:focusable="false"
+        android:id="@+id/cb_group_status"
+        style="@style/CustomCheckboxTheme_cat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:checked="true" />-->
+    <TextView
+        android:visibility="visible"
+        android:id="@+id/tv_head"
+        android:background="#ededed"
+        android:layout_width="fill_parent"
+        android:layout_height="12dp"/>
+    <RelativeLayout
+        android:layout_below="@+id/tv_head"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp">
+
+
+    <TextView
+
+        android:gravity="center_vertical"
+        android:layout_marginLeft="43dp"
+        android:id="@+id/tv_shop_name"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_centerVertical="true"
+        android:ellipsize="end"
+        android:text="小间物业坚果食品"
+        android:textColor="#383838"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tv_d"
+        android:gravity="center_vertical"
+        android:layout_toLeftOf="@+id/tv_shop_price_num"
+        android:layout_marginRight="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_centerVertical="true"
+        android:singleLine="true"
+        android:text="小计"
+        android:textColor="#666666"
+        android:textSize="15sp" />
+
+
+
+    <TextView
+        android:layout_marginRight="20dp"
+        android:id="@+id/tv_shop_price_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:singleLine="true"
+        android:text="￥0"
+        android:textColor="@color/item_fix_doing"
+        android:textSize="15sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

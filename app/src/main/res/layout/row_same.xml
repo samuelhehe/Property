@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/list_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:id="@+id/avatar_container"
+        android:layout_width="66dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_avatar" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/avatar_container"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/avatar_container"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="1231231231213"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <xj.property.widget.FilterFlowLayout
+            android:id="@+id/mytags_mgr_system_defaulttags_fflay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/avatar_container"
+            app:maxLines="1"
+            app:horizontalGap="10dp"
+            app:maxWidthRatio="0.5"
+            app:verticalGap="5dp">
+
+            <View
+                android:layout_width="0.1dp"
+                android:layout_height="30dp"
+                android:background="@android:color/transparent" />
+        </xj.property.widget.FilterFlowLayout>
+    </LinearLayout>
+
+</LinearLayout>

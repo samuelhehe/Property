@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/community_category_rlay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--android:background="@drawable/myc_category_rounded_rectangle_diabg">-->
+    <!--android:layout_width="360dp"-->
+    <!--android:layout_height="620dp"-->
+    <ImageView
+        android:id="@+id/myc_category_close_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/home_dialog_close_icon"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginTop="61dp"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+
+        <TextView
+            android:id="@+id/myc_cname_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@drawable/home_dialog_house_icon"
+            android:drawablePadding="10dp"
+            android:gravity="bottom"
+            android:text="天华小区"
+            android:textColor="@android:color/background_light"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="83.5dp"
+            android:text="您的邻居里有:"
+            android:textColor="@android:color/background_light"
+            android:textSize="25sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="63dp">
+            <!--android:background="@drawable/home_dialog_center_pic"-->
+            <TextView
+                android:id="@+id/myc_cnames_show_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="23dp"
+                android:lineSpacingExtra="17dp"
+                android:text=""
+                android:textColor="@android:color/background_light"
+                android:textSize="25sp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_txt_2"
+        android:layout_marginTop="123dp"
+        android:gravity="center_horizontal"
+        android:text="认识小区牛人,扩展生活圈层"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/bottom_txt_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_iv"
+        android:layout_marginBottom="61.5dp"
+        android:layout_marginTop="3.5dp"
+        android:gravity="center_horizontal"
+        android:text="你的“麻烦”也许只是邻居的“举手之劳”"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/bottom_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/home_dialog_bottom_pic"
+        android:scaleType="fitXY" />
+
+
+</RelativeLayout>

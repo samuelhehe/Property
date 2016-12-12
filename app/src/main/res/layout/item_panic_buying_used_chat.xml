@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="5dp" >
+
+    <TextView
+        android:id="@+id/timestamp"
+        style="@style/chat_text_date_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:text="周一14:30"
+        android:layout_gravity="center" />
+       <LinearLayout
+           android:layout_gravity="center"
+           android:layout_width="234dp"
+           android:layout_height="wrap_content"
+           android:background="@color/white"
+           android:orientation="vertical">
+           <TextView
+               android:id="@+id/tv_title"
+               android:layout_marginRight="13dp"
+               android:layout_marginLeft="13dp"
+               android:layout_marginTop="13dp"
+               android:layout_marginBottom="13dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="您的抢购码：123456789000已消费成功"
+               android:textColor="#464646"
+               android:textSize="16sp"/>
+
+           </LinearLayout>
+</LinearLayout>

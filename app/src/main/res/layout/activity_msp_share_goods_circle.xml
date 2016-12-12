@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f5f7"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/heaptop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tophigh"
+        android:background="#fafafa">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:src="@drawable/common_new_iv_back" />
+
+        <!--android:src="@drawable/campaign_for_bangzhu_after_back" -->
+        <TextView
+            android:id="@+id/tv_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#32383d"
+            android:textSize="17sp" />
+
+
+        <View android:layout_width="1dp" android:layout_height="match_parent"
+            android:background="@color/bg_color"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/tv_right_text"
+            />
+
+        <TextView
+            android:id="@+id/tv_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:text="分享"
+            android:textColor="@color/readed_effective_fonts_title"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:visibility="visible" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.7dp"
+            android:layout_alignParentBottom="true"
+            android:background="#d7d7d7" />
+
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:paddingBottom="92dp">
+
+        <GridView
+            android:id="@+id/gv_goods_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="44dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="18dp"
+            android:horizontalSpacing="7dp"
+            android:numColumns="4"
+            android:verticalSpacing="7dp" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="22dp"
+            android:background="#e2e2e2" />
+        <EditText
+            android:id="@+id/tv_share_content"
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="22dp"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="商品怎么样？"
+            android:textColor="#6f6f6f"
+            android:textColorHint="#b0afaf"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

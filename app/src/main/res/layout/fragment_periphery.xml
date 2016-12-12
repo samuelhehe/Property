@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_empty"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="#4caf50"
+        android:gravity="center"
+        android:text="小区周边专属优惠"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3dp">
+
+        <xj.property.widget.pullrefreshview.library.PullToRefreshListView
+            android:id="@+id/ptrf_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="0dp"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:scrollbars="vertical"/>
+
+
+        <!--<ListView-->
+        <!--android:id="@+id/lv_list_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:dividerHeight="0dp" >-->
+        <!--</ListView>-->
+
+        <include layout="@layout/net_error"/>
+        <!--<include layout="@layout/panic_buying_empty"/>-->
+        <LinearLayout
+            android:id="@+id/ll_no_messages"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="117dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/no_messages"/>
+
+            <TextView
+                android:id="@+id/tv_nomessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="27dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:gravity="left"
+                android:text="现在还没有抢购活动，再等等吧！"
+                android:textColor="#ababab"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

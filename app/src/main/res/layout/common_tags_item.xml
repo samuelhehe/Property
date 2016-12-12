@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="22dp"
+    android:background="@drawable/tag_show_label_bg"
+    android:layout_margin="1dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+   >
+
+    <TextView
+        android:id="@+id/common_tags_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text=""
+        android:textColor="#646464"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/common_tags_nums_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/common_tags_name_tv"
+        android:background="@drawable/tags_me_circle"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:text="1"
+        android:layout_marginLeft="2dp"
+        android:textColor="@android:color/background_light"
+        android:textSize="11sp" />
+
+</RelativeLayout>

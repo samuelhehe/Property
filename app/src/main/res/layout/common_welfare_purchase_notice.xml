@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff6eb"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="match_parent">
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:visibility="visible" />
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:background="#bcbbbb"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_leave_application_circle1"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/dobleorange_circle"
+                android:gravity="center"
+                android:textColor="@color/white" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_leave_application_trace_node_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:drawablePadding="3dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:drawableRight="@drawable/lifecircle_likeicon"
+                    android:gravity="left|center"
+                    android:text="福利人品值要求:"
+                    android:textColor="#7f7f7f"
+                    android:maxWidth="250dp"
+                    android:textSize="13sp"/>
+
+                <TextView android:id="@+id/welfare_goods_grab_nedd_rpz_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_leave_application_trace_node_content"
+                    android:text="5"
+                    android:textColor="#7f7f7f" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginRight="15dp"
+                android:background="#d0c3b5" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="match_parent">
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:background="#bcbbbb"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_leave_application_circle2"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/dobleorange_circle"
+                android:gravity="center"
+                android:textColor="@color/white" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical">
+
+                <TextView android:id="@+id/welfare_grab_least_numman_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:gravity="left|center"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="此福利需要至少50抢购人才可生效"
+                    android:textColor="#7f7f7f"
+                    android:textSize="13sp"></TextView>
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginRight="15dp"
+                android:background="#d0c3b5" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="match_parent">
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:background="#bcbbbb"
+                    android:visibility="visible" />
+                <View
+                    android:layout_width="1dip"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_leave_application_circle3"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/dobleorange_circle"
+                android:gravity="center"
+                android:textColor="@color/white" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/welfare_provide_instruction_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:gravity="left|center"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="10月24日由狮子城物业处统一发放领取"
+                    android:textColor="#7f7f7f"
+                    android:singleLine="false"
+                    android:textSize="13sp"/>
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:background="#dbdada" />
+</LinearLayout>

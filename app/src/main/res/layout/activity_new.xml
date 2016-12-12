@@ -1,0 +1,423 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/headtop" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+        android:background="#fef4f2"
+        android:gravity="center"
+        android:text="在此发起的活动/话题，所有业主都能看到"
+        android:textColor="#ffa54b"
+        android:textSize="15sp" />
+
+    <ScrollView
+        android:id="@+id/scroll_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="@dimen/new_activity_loginline_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/et_activity_name"
+                    android:layout_width="@dimen/new_activity_loginline_width"
+                    android:layout_height="47dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/login_line"
+                    android:gravity="center|left"
+                    android:hint="活动/话题 名称"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="#999999"
+                    android:textColorHint="#b3b3b3"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/new_activity_loginline_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/et_activity_time"
+                    android:layout_width="@dimen/new_activity_loginline_width"
+                    android:layout_height="47dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/login_line"
+                    android:gravity="center|left"
+                    android:hint="活动/话题 时间"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="#999999"
+                    android:textColorHint="#b3b3b3"
+                    android:textSize="16sp" />
+
+                <FrameLayout
+                    android:id="@+id/fl1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="47dp"
+                    android:layout_alignParentRight="true">
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center|left"
+                        android:text="选填"
+                        android:textColor="#ccc9c9"
+                        android:textSize="16sp" />
+                </FrameLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/new_activity_loginline_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/et_activity_location"
+                    android:layout_width="@dimen/new_activity_loginline_width"
+                    android:layout_height="47dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/login_line"
+                    android:gravity="center|left"
+                    android:hint="活动/话题 地点"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="#999999"
+                    android:textColorHint="#b3b3b3"
+                    android:textSize="16sp" />
+
+                <FrameLayout
+                    android:id="@+id/fl2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="47dp"
+                    android:layout_alignParentRight="true">
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center|left"
+                        android:text="选填"
+                        android:textColor="#ccc9c9"
+                        android:textSize="16sp" />
+                </FrameLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/new_activity_joingroup_rlay"
+                android:layout_width="@dimen/new_activity_loginline_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="@dimen/new_activity_loginline_width"
+                    android:layout_height="47dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center|left"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:text="进群需要申请"
+                    android:textColor="#999999"
+                    android:textColorHint="#b3b3b3"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iv_switch_on_notify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/open_icon"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/iv_switch_off_notify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/close_icon"
+                    android:visibility="invisible" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/bg_color_forsearch_line" />
+
+
+            </RelativeLayout>
+
+
+            <!--<EditText-->
+            <!--android:id="@+id/et_activity_time"-->
+            <!--android:layout_below="@+id/et_activity_name"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="活动时间"/>-->
+            <!--  <TextView
+                  android:textColor="#999999"
+                  android:id="@+id/tv_activity_time"
+                  android:padding="10dp"
+                  android:layout_below="@+id/et_activity_name"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="活动时间"/>-->
+
+            <!--<EditText
+                android:id="@+id/et_activity_location"
+                android:layout_below="@+id/tv_activity_time"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="活动地点"/>-->
+
+            <xj.property.widget.MyGridView
+                android:id="@+id/gv_activity"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+
+                android:layout_below="@id/et_activity_location"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="16dp"
+                android:horizontalSpacing="3dp"
+                android:numColumns="4"
+                android:scrollbars="none"
+                android:verticalSpacing="5dp"></xj.property.widget.MyGridView>
+
+
+            <RelativeLayout
+
+                android:layout_width="@dimen/new_activity_loginline_width"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gv_activity"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="16dp">
+
+                <EditText
+
+                    android:id="@+id/et_activity_detail"
+                    android:layout_width="@dimen/new_activity_loginline_width"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/activity_content_line"
+                    android:gravity="left"
+                    android:hint="活动/话题 内容"
+                    android:minHeight="124dp"
+                    android:minLines="5"
+                    android:padding="5dp"
+                    android:textColor="#999999"
+                    android:textColorHint="#b3b3b3"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/btn_apply_activity"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/launch_new_activity_llay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/common_bottom_green_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:src="@drawable/activity_add" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="发起  活动/话题"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bar_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_color"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_color"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="7dp">
+
+
+                <CheckBox
+                    android:id="@+id/send_img_checkbox"
+                    android:layout_width="24dip"
+                    android:layout_height="24dip"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_marginLeft="10dp"
+                    android:button="@drawable/bottom_input_showimg_selector"
+                    android:checked="false"
+                    android:scaleType="fitCenter"
+                    android:visibility="visible" />
+
+                <!--<View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="#"/>-->
+                <RelativeLayout
+                    android:id="@+id/edittext_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/chat_input_bg"
+                    android:gravity="bottom"
+                    android:visibility="invisible">
+
+                    <xj.property.widget.PasteEditText
+                        android:id="@+id/et_sendmessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:background="@null"
+                        android:maxLines="3"
+                        android:minHeight="40dp"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="1dp"
+                        android:paddingTop="3dp"
+                        android:textColor="#191919"
+                        android:textColorHint="#e2e3e3"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btn_send"
+                    android:layout_width="40dip"
+                    android:layout_height="32dip"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/green_selector_bg"
+                    android:padding="3dp"
+                    android:text="@string/button_send"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/btn_charter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dip"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/pink_selector_bg"
+                    android:drawableLeft="@drawable/reply_heart"
+                    android:padding="3dp"
+                    android:text="赞人品"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_face_container"
+                android:layout_width="match_parent"
+                android:layout_height="186dp"
+                android:background="@android:color/background_light"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="173dp" />
+
+                <xj.property.widget.com.viewpagerindicator.CirclePageIndicator
+                    android:id="@+id/vpager_indicator"
+                    style="@style/CustomCirclePageIndicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="3dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

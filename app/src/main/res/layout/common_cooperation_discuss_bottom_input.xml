@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bar_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <CheckBox
+            android:id="@+id/send_img_checkbox"
+            android:layout_width="24dip"
+            android:layout_height="24dip"
+            android:layout_gravity="center_vertical|left"
+            android:layout_marginLeft="10dp"
+            android:button="@drawable/bottom_input_showimg_selector"
+            android:checked="false"
+            android:scaleType="fitCenter"
+            android:visibility="visible" />
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#"/>-->
+        <RelativeLayout
+            android:id="@+id/edittext_layout"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="9dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <xj.property.widget.PasteEditText
+                android:id="@+id/et_sendmessage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/help_detail_input"
+                android:hint="点击输入评价"
+                android:maxLines="3"
+                android:minHeight="40dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="3dp"
+                android:textColor="@color/sys_gray_theme_text_color"
+                android:textColorHint="@color/sys_gray_theme_text_color"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="45dip"
+            android:layout_height="31dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/help_detail_input"
+            android:text="发布"
+            android:textColor="#A8A8AA"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_charter"
+            android:layout_width="wrap_content"
+            android:layout_height="32dip"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/pink_selector_bg"
+            android:drawableLeft="@drawable/reply_heart"
+            android:padding="3dp"
+            android:text="赞人品"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_face_container"
+        android:layout_width="match_parent"
+        android:layout_height="186dp"
+        android:background="@android:color/background_light"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vPager"
+            android:layout_width="match_parent"
+            android:layout_height="173dp" />
+
+        <xj.property.widget.com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/vpager_indicator"
+            style="@style/CustomCirclePageIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="3dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

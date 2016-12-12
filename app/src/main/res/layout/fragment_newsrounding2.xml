@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_empty"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/privilege_titlte_lay"
+        layout="@layout/common_srrounding_headtop" />
+
+    <xj.property.widget.pullrefreshview.library.PullToRefreshScrollView
+
+        android:id="@+id/frg_srrounding_ptrf_srcollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/background_light"
+            android:orientation="vertical">
+
+            <!--<xj.property.widget.pullrefreshview.library.PullToRefreshHorizontalScrollView-->
+            <xj.property.widget.pullrefreshview.library.PullToRefreshMyHorizontalScrollView
+                android:id="@+id/ptrf_scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:fadingEdge="none"
+                android:scrollbars="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ptrf_sv_llay"
+                    android:layout_width="match_parent"
+                    android:layout_height="215dp"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+            </xj.property.widget.pullrefreshview.library.PullToRefreshMyHorizontalScrollView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/bg_color" />
+
+            <include layout="@layout/net_error" />
+
+            <GridView
+                android:id="@+id/frg_jssearch_gv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginTop="26dp"
+                android:layout_weight="1"
+                android:background="@android:color/background_light"
+                android:horizontalSpacing="@dimen/horizontalSpacing_index"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:verticalSpacing="@dimen/verticalSpacing_index"
+                android:visibility="visible">
+
+            </GridView>
+
+        </LinearLayout>
+
+
+    </xj.property.widget.pullrefreshview.library.PullToRefreshScrollView>
+
+
+</LinearLayout>

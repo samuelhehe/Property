@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/headtop"/>
+    <FrameLayout
+        android:id="@+id/fl_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <xj.property.widget.pullrefreshview.library.PullToRefreshListView
+        android:id="@+id/lv_facilitieslist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/bg_color"
+        android:dividerHeight="0dp"
+        android:listSelector="@android:color/transparent"
+        android:paddingTop="1dp"
+        android:paddingLeft="1dp"
+        android:fadingEdge="none"
+        android:scrollbars="vertical"
+        />
+        <include layout="@layout/net_error"/>
+    </FrameLayout>
+</LinearLayout>

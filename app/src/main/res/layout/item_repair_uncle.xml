@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="71dp"
+    android:background="@drawable/master_work_list_bg">
+
+    <ImageView
+        android:id="@+id/master_logo"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/home_item_servicer" />
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/master_logo"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="13dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/fixer_name"
+                android:layout_width="74dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:singleLine="true"
+                android:text="李师傅李"
+                android:layout_gravity="center_vertical"
+                android:textColor="#383838"
+                android:textSize="18sp" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_eva"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_star1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/master_history_star_light" />
+
+                <ImageView
+                    android:id="@+id/iv_star2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/master_history_star_light" />
+
+                <ImageView
+                    android:id="@+id/iv_star3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/master_history_star_light" />
+
+                <ImageView
+                    android:id="@+id/iv_star4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/master_history_star_light" />
+
+                <ImageView
+                    android:id="@+id/iv_star5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/master_history_star_light" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/master_list_servicc" />
+
+            <TextView
+                android:id="@+id/tv_states"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:text="正在服务"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/item_fix_doing"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/go_get"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="40dp"
+        android:text="去预约"
+        android:textColor="#83da3e"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/clean_order_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="13dp"
+        android:background="@drawable/clean_order_arrow" />
+
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    android:background="@drawable/show_label_forlifecircle"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <TextView
+        android:id="@+id/common_tags_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="你好"
+        android:textColor="@color/sys_darker_6a_theme_text_color"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/common_tags_nums_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@+id/common_tags_name_tv"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/sys_darker_6a_theme_text_color"
+        android:textSize="10sp" />
+
+</RelativeLayout>

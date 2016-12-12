@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="330dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/tag_a2b_label_box_bg">
+
+
+    <TextView
+        android:id="@+id/group_join_notice_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="28dp"
+        android:text="此群组需要身份验证, 请输入验证信息"
+        android:textColor="@color/sys_darker_66_theme_text_color"
+        android:textSize="13dp" />
+
+    <EditText
+        android:id="@+id/group_join_reason_et"
+        android:layout_width="282dp"
+        android:layout_height="68dp"
+        android:layout_below="@+id/group_join_notice_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/common_search_box_shape_bg"
+        android:gravity="top|left"
+        android:hint="我是..."
+        android:maxLength="40"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="4dp"
+        android:singleLine="false"
+        android:textColor="@color/sys_darker_69_theme_text_color"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/mytags_del_confirm_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/group_join_reason_et"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="25.5dp"
+        android:text="先看看加入群组条件哦,说说你加入的理由吧 "
+        android:textColor="@color/sys_darker_66_theme_text_color"
+        android:textSize="13sp" />
+
+
+    <View
+        android:id="@+id/mytags_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/mytags_del_confirm_tv"
+        android:layout_marginTop="12dp"
+        android:background="@color/bg_color" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/mytags_line"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="取消"
+            android:textColor="#7EDFA7"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/bg_color" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="确定"
+            android:textColor="#7EDFA7"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

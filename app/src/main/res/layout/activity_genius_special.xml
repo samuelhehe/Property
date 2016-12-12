@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#fffffd">
+
+    <include
+        layout="@layout/common_bangzhu_headtop">
+        </include>
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="14dp"
+        android:textColor="#AAAAAA"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:text=""/>
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="#eeeeee"/>
+
+    <com.repo.xw.library.views.PullToRefreshLayout
+        android:id="@+id/pullToRefreshLayout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.repo.xw.library.views.PullListView
+            android:id="@+id/pullListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:overScrollMode="never"
+            android:scrollingCache="false">
+
+        </com.repo.xw.library.views.PullListView>
+    </com.repo.xw.library.views.PullToRefreshLayout>
+
+</LinearLayout>

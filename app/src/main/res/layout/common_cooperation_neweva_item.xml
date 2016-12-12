@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#f1f5f7" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/newmessage_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <xj.property.widget.CircleImageView
+            android:id="@+id/neweva_head"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/iv_back"
+            android:src="@drawable/me_face_nologin" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:lineSpacingMultiplier="1.3"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textmenubar" />
+
+    </LinearLayout>
+
+</LinearLayout>

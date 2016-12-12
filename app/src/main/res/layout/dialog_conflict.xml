@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="@dimen/dialog_main_width"
+              android:layout_height="183dp"
+              android:background="@drawable/offline_notifications_bg"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_horizontal"
+            android:paddingTop="20dp"
+            android:text="下线通知"
+            android:id="@+id/tv_title"
+            android:textColor="#000000"
+            android:textSize="@dimen/dialog_texttitle"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingLeft="@dimen/dialog_padding"
+            android:paddingRight="@dimen/dialog_padding"
+            android:id="@+id/tv_content"
+            android:text="您的账号已在其他地方登录，若非本人操作，"
+            android:textSize="@dimen/dialog_textcontent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:orientation="horizontal"
+            android:id="@+id/ll_notify"
+            android:paddingLeft="@dimen/dialog_padding"
+            android:paddingRight="@dimen/dialog_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请前往"
+                android:textSize="@dimen/dialog_textcontent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="“我的-密码”"
+                android:textColor="#4caf50"
+                android:textSize="@dimen/dialog_textcontent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="修改登录密码。"
+                android:textSize="@dimen/dialog_textcontent"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#bababa"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_cancle"
+                android:gravity="center"
+                android:textColor="#4caf50"
+                android:text="知道啦"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:textSize="@dimen/dialog_texbutton"
+                android:layout_height="fill_parent"/>
+            <View
+                android:layout_marginBottom="1dp"
+                android:background="#bababa"
+                android:layout_width="0.5dp"
+                android:layout_height="fill_parent"/>
+            <TextView
+                android:id="@+id/tv_relogin"
+                android:gravity="center"
+                android:textColor="#4caf50"
+                android:text="重新登录"
+                android:textSize="@dimen/dialog_texbutton"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

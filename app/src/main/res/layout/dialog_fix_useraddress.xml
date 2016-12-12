@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="310dp"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:background="@drawable/change_adress_bg">
+
+    <TextView
+        android:id="@+id/mytags_del_confirm_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="18dp"
+        android:layout_marginLeft="15dp"
+        android:paddingLeft="8dp"
+        android:layout_marginTop="15dp"
+        android:text="请输入您的地址"
+        android:textColor="#6a6a6a" />
+
+
+    <EditText
+        android:id="@+id/fix_user_floor_et"
+        android:layout_width="253dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:hint="输入楼号"
+        android:background="@drawable/change_address_input"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="5dp"
+        android:textColorHint="#d6d6d6"
+        android:textSize="14sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/mytags_del_confirm_tv" />
+    <EditText
+        android:id="@+id/fix_user_unit_et"
+        android:layout_width="253dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:hint="输入单元号"
+        android:background="@drawable/change_address_input"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="5dp"
+        android:textColorHint="#d6d6d6"
+        android:textSize="14sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/fix_user_floor_et" />
+    <EditText
+        android:id="@+id/fix_user_room_et"
+        android:layout_width="253dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:hint="输入房间号"
+        android:background="@drawable/change_address_input"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="5dp"
+        android:textColorHint="#d6d6d6"
+        android:textSize="14sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/fix_user_unit_et" />
+
+
+    <View
+        android:id="@+id/mytags_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/fix_user_room_et"
+        android:layout_marginTop="12dp"
+        android:background="@color/bg_color" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/mytags_line"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="取消"
+            android:textColor="#7EDFA7"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/bg_color" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="确定"
+            android:textColor="#7EDFA7"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

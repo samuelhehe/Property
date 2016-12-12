@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/nearby_detail"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:layout_marginTop="13dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/maplist_keyname_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="1.中国工商银行"
+            android:textColor="#555555"
+            android:textSize="17sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/maplist_address_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/maplist_distance_tv"
+                android:lineSpacingExtra="3dp"
+                android:text="北京市体育馆西路"
+                android:textColor="#7e7e7e"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/maplist_distance_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="9dp"
+                android:lineSpacingExtra="3dp"
+                android:text=""
+                android:textColor="@color/sys_green_theme_text_color"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:background="@color/bg_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="37dp">
+
+        <Button
+            android:id="@+id/maplist_phonenum_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/nearby_phone"
+            android:drawablePadding="15dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:text="010-8663871786638717"
+            android:textColor="@color/sys_gray_theme_text_color"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+        <View
+            android:layout_width="0.8dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/bg_color" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/nearby_item_detail" />
+
+            <Button
+                android:id="@+id/maplist_seedetail_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="查看详情   "
+                android:textColor="@color/sys_gray_theme_text_color"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

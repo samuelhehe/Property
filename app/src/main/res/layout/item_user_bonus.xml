@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="118dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp">
+
+        <TextView
+            android:textColor="#472a02"
+            android:id="@+id/tv1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥"
+            android:textSize="30sp"
+            />
+
+        <TextView
+            android:textColor="#472a02"
+            android:id="@+id/tv_bonusPar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv1"
+            android:layout_alignBottom="@id/tv1"
+            android:text="50"
+            android:textSize="58sp"
+            />
+        <ImageView
+            android:id="@+id/iv_bonusStatus_used"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ticket_used_logo"
+            android:visibility="visible"
+
+            />
+        <TextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_bonusName"
+            android:layout_width="150dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="1dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/ticket_type_bg"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:text="通用券"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            />
+
+
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ticket_bottom_border"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="使用期限 2014-12-11 至2015-02-28"
+            android:textColor="#5d5f62"
+            android:textSize="14dp"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

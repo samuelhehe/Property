@@ -1,0 +1,964 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    <!--android:background="#80000000">-->
+
+    <RelativeLayout
+        android:id="@+id/heaptop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tophigh"
+        android:layout_alignParentTop="true"
+        android:visibility="visible"
+        android:background="#fffffd">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/common_new_iv_back" />
+        <!--android:src="@drawable/campaign_for_bangzhu_after_back" />-->
+
+        <TextView
+            android:id="@+id/tv_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="邻居帮"
+            android:textColor="@color/sys_green_theme_text_color"
+            android:textSize="@dimen/titlefonts" />
+
+        <TextView
+            android:id="@+id/tv_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:text="说明"
+            android:visibility="invisible"
+            android:textColor="@color/sys_green_theme_text_color"
+            android:textSize="@dimen/titlefonts" />
+
+        <ImageView
+            android:id="@+id/iv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/tv_right_text"
+            android:src="@drawable/life_circle_search_icon"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lv_activities"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heaptop"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="14dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:id="@+id/provider_details_info_llay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="7dp"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:id="@+id/r1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <xj.property.widget.CircleImageView
+                                android:id="@+id/provider_details_iv_avtar"
+                                android:layout_width="58dp"
+                                android:layout_height="58dp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5dp"
+                                android:src="@drawable/opt_notice_headicon_1" />
+
+                            <ImageView
+                                android:id="@+id/provider_iv_user_type"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/provider_details_iv_avtar"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="-5dp"
+                                android:src="@drawable/life_circle_bangzhu_icon"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/provider_details_name_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="叶子"
+                            android:textColor="#494c53"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/provider_details_go_rlay1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/provider_details_info_llay">
+
+                        <TextView
+                            android:id="@+id/provider_details_title_tv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="牙科医生"
+                            android:textColor="#494C53"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/provider_details_title_tv1"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="9dp"
+                            android:maxLines="3"
+                            android:ellipsize="end"
+                            android:text="牙科,颗颗关爱。"
+                            android:textColor="#C0C0C1"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/provider_details_go_rlay1"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/mytags_mgr_label_select"
+                        android:text="找TA"
+                        android:visibility="visible"
+                        android:textColor="@color/sys_green_theme_text_color"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/bg_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:drawablePadding="5dp"
+                    android:text="找过ta的邻居"
+                    android:textColor="#C0C0C1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:orientation="horizontal">
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <xj.property.widget.CircleImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="9dp"
+                                android:layout_marginRight="9dp"
+                                android:src="@drawable/opt_notice_headicon_3"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="6dp"
+                                android:gravity="center_horizontal"
+                                android:singleLine="true"
+                                android:text="四叶草"
+                                android:textColor="#a8a8aa"
+                                android:textSize="8sp"
+                                android:visibility="visible" />
+
+                        </LinearLayout>
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <xj.property.widget.CircleImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="9dp"
+                                android:layout_marginRight="9dp"
+                                android:src="@drawable/opt_notice_headicon_4"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="6dp"
+                                android:gravity="center_horizontal"
+                                android:singleLine="true"
+                                android:text="张阿姨"
+                                android:textColor="#a8a8aa"
+                                android:textSize="8sp"
+                                android:visibility="visible" />
+
+                        </LinearLayout>
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <xj.property.widget.CircleImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="9dp"
+                                android:layout_marginRight="9dp"
+                                android:src="@drawable/opt_notice_headicon_5"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="6dp"
+                                android:gravity="center_horizontal"
+                                android:singleLine="true"
+                                android:text="王老师"
+                                android:textColor="#a8a8aa"
+                                android:textSize="8sp"
+                                android:visibility="visible" />
+
+                        </LinearLayout>
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <xj.property.widget.CircleImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="9dp"
+                                android:layout_marginRight="9dp"
+                                android:src="@drawable/opt_notice_headicon_6"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="6dp"
+                                android:gravity="center_horizontal"
+                                android:singleLine="true"
+                                android:text="王阿姨"
+                                android:textColor="#a8a8aa"
+                                android:textSize="8sp"
+                                android:visibility="visible" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0.3dp"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:background="@color/bg_color" />-->
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="14dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:id="@+id/provider_details_info_llay2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="7dp"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <xj.property.widget.CircleImageView
+                                android:id="@+id/provider_details_iv_avtar8"
+                                android:layout_width="58dp"
+                                android:layout_height="58dp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5dp"
+                                android:src="@drawable/opt_notice_headicon_5" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/provider_details_iv_avtar8"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="-5dp"
+                                android:src="@drawable/life_circle_bangzhu_icon"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="四叶草"
+                            android:textColor="#494c53"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/provider_details_go_rlay2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/provider_details_info_llay2">
+
+                        <TextView
+                            android:id="@+id/provider_details_title_tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="专业理发"
+                            android:textColor="#494C53"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/provider_details_title_tv2"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="9dp"
+                            android:maxLines="3"
+                            android:ellipsize="end"
+                            android:text="四叶草理发师，人帅技术好，体贴口才棒，剪发过程行云流水，剪发完毕惊呆地球。四叶草理发师，美发界的战斗机"
+                            android:textColor="#C0C0C1"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/provider_details_findhe_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/provider_details_go_rlay2"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/mytags_mgr_label_select"
+                        android:text="找TA"
+                        android:visibility="visible"
+                        android:textColor="@color/sys_green_theme_text_color"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/panic_has_purchase_llay3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/bg_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:drawablePadding="5dp"
+                    android:text="找过ta的邻居"
+                    android:textColor="#C0C0C1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/welfare_purchase_hasgoturs_lv3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:orientation="horizontal">
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <xj.property.widget.CircleImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="9dp"
+                                android:layout_marginRight="9dp"
+                                android:src="@drawable/opt_notice_headicon_1"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="6dp"
+                                android:gravity="center_horizontal"
+                                android:singleLine="true"
+                                android:text="叶子"
+                                android:textColor="#a8a8aa"
+                                android:textSize="8sp"
+                                android:visibility="visible" />
+
+                        </LinearLayout>
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <xj.property.widget.CircleImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="9dp"
+                                android:layout_marginRight="9dp"
+                                android:src="@drawable/opt_notice_headicon_3"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="6dp"
+                                android:gravity="center_horizontal"
+                                android:singleLine="true"
+                                android:text="张阿姨"
+                                android:textColor="#a8a8aa"
+                                android:textSize="8sp"
+                                android:visibility="visible" />
+
+                        </LinearLayout>
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <xj.property.widget.CircleImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="9dp"
+                                android:layout_marginRight="9dp"
+                                android:src="@drawable/opt_notice_headicon_5"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="6dp"
+                                android:gravity="center_horizontal"
+                                android:singleLine="true"
+                                android:text="刘老师"
+                                android:textColor="#a8a8aa"
+                                android:textSize="8sp"
+                                android:visibility="visible" />
+
+                        </LinearLayout>
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <xj.property.widget.CircleImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="9dp"
+                                android:layout_marginRight="9dp"
+                                android:src="@drawable/opt_notice_headicon_4"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="6dp"
+                                android:gravity="center_horizontal"
+                                android:singleLine="true"
+                                android:text="刘老师"
+                                android:textColor="#a8a8aa"
+                                android:textSize="8sp"
+                                android:visibility="visible" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0.3dp"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:background="@color/bg_color" />-->
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="14dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:id="@+id/provider_details_info_llay4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="7dp"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <xj.property.widget.CircleImageView
+                                android:id="@+id/provider_details_iv_avtar4"
+                                android:layout_width="58dp"
+                                android:layout_height="58dp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5dp"
+                                android:src="@drawable/opt_notice_headicon_2" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/provider_details_iv_avtar4"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="-5dp"
+                                android:src="@drawable/life_circle_bangzhu_icon"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="5dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="王老师"
+                            android:textColor="#494c53"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/provider_details_go_rlay4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/provider_details_info_llay4">
+
+                        <TextView
+                            android:id="@+id/provider_details_title_tv4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="小学生家教"
+                            android:textColor="#494C53"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/provider_details_title_tv4"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="9dp"
+                            android:maxLines="3"
+                            android:ellipsize="end"
+                            android:text="可以对小学三年级至五年级的小学生提供英语培训,能够对短期内提高学生学习成绩,学习态度.本人做事认真负责,提供专业的一对一教学,让您的孩子从此爱上学习."
+                            android:textColor="#C0C0C1"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/provider_details_findhe_btn4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/provider_details_go_rlay4"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/mytags_mgr_label_select"
+                        android:text="找TA"
+                        android:visibility="visible"
+                        android:textColor="@color/sys_green_theme_text_color"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/bg_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:drawablePadding="5dp"
+                    android:text="找过ta的邻居"
+                    android:textColor="#C0C0C1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:orientation="horizontal">
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <xj.property.widget.CircleImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="9dp"
+                                android:layout_marginRight="9dp"
+                                android:src="@drawable/opt_notice_headicon_5"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="6dp"
+                                android:gravity="center_horizontal"
+                                android:singleLine="true"
+                                android:text="叶子"
+                                android:textColor="#a8a8aa"
+                                android:textSize="8sp"
+                                android:visibility="visible" />
+
+                        </LinearLayout>
+
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <xj.property.widget.CircleImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="9dp"
+                                android:layout_marginRight="9dp"
+                                android:src="@drawable/opt_notice_headicon_3"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="6dp"
+                                android:gravity="center_horizontal"
+                                android:singleLine="true"
+                                android:text="张阿姨"
+                                android:textColor="#a8a8aa"
+                                android:textSize="8sp"
+                                android:visibility="visible" />
+
+                        </LinearLayout>
+                        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <xj.property.widget.CircleImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="9dp"
+                                android:layout_marginRight="9dp"
+                                android:src="@drawable/opt_notice_headicon_4"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="6dp"
+                                android:gravity="center_horizontal"
+                                android:singleLine="true"
+                                android:text="刘老师"
+                                android:textColor="#a8a8aa"
+                                android:textSize="8sp"
+                                android:visibility="visible" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0.3dp"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:background="@color/bg_color" />-->
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/activity_green_bg"
+        android:clickable="true"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:visibility="gone"
+                android:src="@drawable/activity_edit" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="发起邻居帮"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/act_opt_notice_iv"
+        android:layout_width="match_parent"
+        android:paddingTop="80dp"
+        android:visibility="visible"
+        android:src="@drawable/neighbor_opt_notice_txtimg"
+        android:background="@drawable/activities_optnotices_bg"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_marginTop="0dp"
+    android:background="@android:color/holo_red_light">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/benefits_purchase_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="福利价:￥"
+            android:layout_marginTop="7dp"
+            android:textColor="@android:color/background_light"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/purshing_price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/benefits_purchase_tv"
+            android:text="9.9元"
+            android:layout_alignParentTop="true"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/purchasing_status_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/benefits_purchase_tv"
+            android:layout_below="@+id/benefits_purchase_tv"
+            android:layout_marginTop="2dp"
+            android:text="抢购中..."
+            android:textColor="@android:color/background_light"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/welfare_stop_time_rlay"
+        android:layout_width="166dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/yello_lable"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/stop_timer_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center"
+                android:text="截止倒计时"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#dd2726"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/stop_timer_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/stop_timer_title_tv"
+                android:text="03天04小时45分"
+                android:textColor="#464646"
+                android:layout_marginTop="2dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/headtop_title"
+        layout="@layout/headtop" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/tags_list_left_llay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+
+                <xj.property.widget.FilterFlowLayout
+                    android:id="@+id/mytags_fflay_lefttop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    app:horizontalGap="5dp"
+                    app:maxWidthRatio="1"
+                    app:verticalGap="10dp">
+
+
+
+                </xj.property.widget.FilterFlowLayout>
+
+
+                <xj.property.widget.FilterFlowLayout
+                    android:id="@+id/mytags_fflay_leftmoddle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    app:horizontalGap="5dp"
+                    app:maxWidthRatio="1"
+                    app:verticalGap="10dp">
+
+
+                </xj.property.widget.FilterFlowLayout>
+
+                <xj.property.widget.FilterFlowLayout
+                    android:id="@+id/mytags_fflay_leftbottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    app:horizontalGap="5dp"
+                    app:maxWidthRatio="1"
+                    app:verticalGap="10dp">
+
+
+                </xj.property.widget.FilterFlowLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tags_list_right_llay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <xj.property.widget.FilterFlowLayout
+                    android:id="@+id/mytags_fflay_righttop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    app:horizontalGap="5dp"
+                    app:maxWidthRatio="1"
+                    app:verticalGap="10dp">
+
+
+
+                </xj.property.widget.FilterFlowLayout>
+
+
+                <xj.property.widget.FilterFlowLayout
+                    android:id="@+id/mytags_fflay_rightmoddle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    app:horizontalGap="5dp"
+                    app:maxWidthRatio="1"
+                    app:verticalGap="10dp">
+
+
+                </xj.property.widget.FilterFlowLayout>
+
+                <xj.property.widget.FilterFlowLayout
+                    android:id="@+id/mytags_fflay_rightbottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    app:horizontalGap="5dp"
+                    app:maxWidthRatio="1"
+                    app:verticalGap="10dp">
+
+                </xj.property.widget.FilterFlowLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/mytags_addtags_btn"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/common_bottom_green_bg"
+        android:text="完成"
+        android:textColor="#fff"
+        android:textSize="17sp" />
+
+
+</LinearLayout>

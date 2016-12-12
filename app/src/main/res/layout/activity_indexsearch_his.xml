@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:singleLine="true"
+        android:layout_marginLeft="15dp"
+        android:textSize="13sp"
+        android:textColor="#a0a0a0"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:text="历史记录"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"/>
+    <View
+        android:background="#ededed"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+        <ListView
+            android:id="@+id/lv_index_search_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/bg_color"
+            android:dividerHeight="1dp"
+            android:listSelector="@android:color/transparent"
+            android:padding="5dp" />
+    <TextView
+        android:id="@+id/tv_clear_search_his"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/search_bt"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="清空搜索历史"
+        android:textColor="#4caf50"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"/>
+
+
+
+
+</LinearLayout>

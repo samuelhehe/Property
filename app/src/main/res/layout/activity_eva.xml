@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ededed"
+              android:orientation="vertical">
+
+    <include layout="@layout/headtop"/>
+
+    <FrameLayout
+        android:id="@+id/fl_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_top"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_shoplogo"
+                    android:layout_width="@dimen/eva_mehead"
+                    android:layout_height="@dimen/eva_mehead"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/eva_mehead_margin_left"
+                    android:src="@drawable/default_picture"/>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="12dp">
+
+                    <TextView
+                        android:id="@+id/tv_shop_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="@dimen/eva_mehead_margin_top"
+                        android:textSize="@dimen/eva_text_mehead"/>
+
+                    <TextView
+                        android:id="@+id/tv_temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/tv_shop_name"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center_vertical"
+                        android:text="总体评价"
+                        android:textColor="#ff8500"
+                        android:textSize="17sp"/>
+
+                    <ImageView
+                        android:id="@+id/iv_evastar"
+                        android:layout_width="135dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/tv_shop_name"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/tv_temp"
+                        android:src="@drawable/star0"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <xj.property.widget.pullrefreshview.library.PullToRefreshListView
+                android:id="@+id/lv_eva"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:divider="@color/bg_color"
+                android:dividerHeight="1dp"
+                android:fadingEdge="none">
+            </xj.property.widget.pullrefreshview.library.PullToRefreshListView>
+        </LinearLayout>
+
+        <include layout="@layout/net_error"/>
+    </FrameLayout>
+</LinearLayout>

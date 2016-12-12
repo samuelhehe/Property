@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_title_new_layout" />
+
+    <!--    <include layout="@layout/search_bar_activity"
+            />-->
+
+    <FrameLayout
+        android:id="@+id/fl_error"
+        android:layout_width="match_parent"
+        android:layout_height="999dp"
+        android:layout_weight="1">
+
+        <com.repo.xw.library.views.PullToRefreshLayout
+            android:id="@+id/pull_to_refreshlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/msp_list_notice_tv">
+
+            <com.repo.xw.library.views.PullListView
+                android:id="@+id/lv_activities"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@color/bg_color"
+                android:dividerHeight="0.5dp"
+                android:fadingEdge="none"
+                android:listSelector="@android:color/transparent"
+                android:overScrollMode="never"
+                android:scrollbars="vertical"
+                android:scrollingCache="false">
+
+            </com.repo.xw.library.views.PullListView>
+        </com.repo.xw.library.views.PullToRefreshLayout>
+        <include layout="@layout/net_error" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_new_activity"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/common_bottom_green_bg"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:src="@drawable/activity_edit" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="发起  活动/话题"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

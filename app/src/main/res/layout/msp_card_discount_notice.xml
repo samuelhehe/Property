@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/msp_pay_msg_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/transparent_green_bg"
+        android:gravity="center"
+        android:lineSpacingExtra="7dp"
+        android:padding="15dp"
+        android:text="询问服务员输入价格进行打折"
+        android:textColor="#fff"
+        android:visibility="visible" />
+
+</LinearLayout>

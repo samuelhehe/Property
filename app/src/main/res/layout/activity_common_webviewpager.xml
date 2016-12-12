@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/privilege_titlte_lay"
+        layout="@layout/common_bangzhu_headtop" />
+
+    <LinearLayout
+        android:id="@+id/common_x5webview_llay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/privilege_titlte_lay"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
+
+        <xj.property.widget.X5WebView
+            android:id="@+id/bangzhu_privilege_introduction_wv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <include
+            layout="@layout/net_error"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</RelativeLayout>

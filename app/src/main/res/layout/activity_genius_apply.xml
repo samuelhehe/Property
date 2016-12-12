@@ -1,0 +1,142 @@
+<xj.property.widget.KeyboardListenRelativeLayout
+    android:id="@+id/rl_Keyboard"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="#fffffd">
+
+        <include
+            layout="@layout/common_bangzhu_headtop">
+        </include>
+
+        <ScrollView
+            android:id="@+id/sv_all"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/symbol"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="15dp"/>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tv_genius_title"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="28dp"
+                            android:layout_marginLeft="7dp"
+                            android:textColor="#666666"
+                            android:textSize="15sp"
+                            android:lineSpacingExtra="3dp"
+                            android:text=""/>
+
+                        <TextView
+                            android:id="@+id/tv_genius_title1"
+                            android:layout_width="fill_parent"
+                            android:layout_marginTop="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="20dp"
+                            android:textColor="#666666"
+                            android:lineSpacingExtra="3dp"
+                            android:layout_marginBottom="13dp"
+                            android:textSize="15sp"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="#eeeeee"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="147dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <xj.property.widget.CircleImageView
+                        android:id="@+id/iv_choose_image"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:src="@drawable/head_portrait"/>
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25dp"
+                        android:textColor="#666666"
+                        android:layout_marginLeft="24dp"
+                        android:text="戴安娜"/>
+
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/et_input"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="189dp"
+                    android:background="@drawable/white_button_selector_shape1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textSize="14dp"
+                    android:hint="例:\n     某互联网公司运营主管；\n     2014年大众山地滑雪赛男子大回转项目季军;\n\n例:\n     某知名旅游网站撰稿人；\n     自驾往返中德两国；自驾往返川藏线；"
+                    android:textColorHint="#BBBBBB"
+                    android:lineSpacingExtra="6dp"
+                    android:gravity="start"
+                    android:layout_marginBottom="60dp"
+                    android:padding="10dp"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_submit_genius"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_submit_genius"
+            android:layout_width="fill_parent"
+            android:layout_marginBottom="7dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="7dp"
+            android:text="开始预览"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:background="#30cc71" />
+
+    </LinearLayout>
+</xj.property.widget.KeyboardListenRelativeLayout>
+

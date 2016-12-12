@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/headtop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_ll_high"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/MyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:text="缴费用户"
+            android:textColor="@color/textblack"
+            android:textSize="@dimen/titlefonts" />
+
+        <TextView
+            android:id="@+id/tv_mine_content"
+            style="@style/MyTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:text="5号楼\t2单元\t219"
+            android:textColor="@color/text_item_content"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/me_arrow"
+            android:paddingRight="5dp"
+            android:scaleType="matrix" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_ll_high"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/MyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:text="缴费金额"
+            android:textColor="@color/textblack"
+            android:textSize="@dimen/titlefonts" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            style="@style/MyTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:text="50元"
+            android:textColor="#ff6600"
+            android:textSize="@dimen/titlefonts" />
+
+        <TextView
+            android:id="@+id/tv_value"
+            style="@style/MyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:text="(100度)"
+            android:textColor="@color/text_item_content"
+            android:textSize="@dimen/titlefonts" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_payvalue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_ll_high"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/MyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:text="当前电价"
+            android:textColor="@color/text_item_menu"
+            android:textSize="@dimen/titlefonts" />
+
+        <TextView
+            android:id="@+id/tv_singleprice"
+            style="@style/MyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:text="0.5元/度"
+            android:textColor="@color/text_item_content"
+            android:textSize="@dimen/titlefonts" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/paybtn_shap">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="#4cb050"
+            android:gravity="center"
+            android:text="立即充值"
+            android:textColor="#fff"
+            android:textSize="@dimen/textfonts" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="39dp"
+    android:background="@drawable/white_button_selector_shape3"
+    android:paddingTop="12dp">
+
+    <TextView
+        android:id="@+id/tv_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="北京市"
+        android:textSize="16dp"
+        android:textColor="#777777"
+        android:layout_marginLeft="15dp"/>
+
+</LinearLayout>

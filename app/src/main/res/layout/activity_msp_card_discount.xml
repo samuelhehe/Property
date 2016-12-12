@@ -1,0 +1,498 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/headtop_title"
+        layout="@layout/common_membership_headtop" />
+
+
+    <ScrollView
+        android:id="@+id/scroll_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headtop_title"
+        android:background="@android:color/background_light">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headtop_title"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/msp_card_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_margin="15dp">
+
+                    <ImageView
+                        android:id="@+id/msp_card_bg_iv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:visibility="invisible" />
+                    <!--android:src="@drawable/msp_card_item_default_shape"-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/msp_card_shop_name_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="14dp"
+                            android:text="杨记牛肉拉面"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="17sp"
+                            android:visibility="invisible" />
+
+                        <LinearLayout
+                            android:id="@+id/stars_llay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="10dp"
+                            android:layout_toLeftOf="@+id/msp_card_total_tv"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/msp_card_total_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/msp_card_shop_name_tv"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="14dp"
+                            android:layout_marginTop="15dp"
+                            android:text="消费145单"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="12sp"
+                            android:visibility="invisible" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/msp_card_discount_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:text="8.8折"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="44sp"
+                        android:visibility="invisible" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center_vertical">
+
+
+                        <TextView
+                            android:id="@+id/msp_card_distance_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="14dp"
+                            android:text="200m"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="12sp"
+                            android:visibility="invisible" />
+
+
+                        <RatingBar
+                            android:id="@+id/msp_card_discount_rb"
+                            style="@style/mspsmallRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_alignTop="@+id/msp_card_ftxt_logo_tv"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_toRightOf="@+id/msp_card_ftxt_logo_tv"
+                            android:numStars="5"
+                            android:rating="5"
+                            android:layout_marginTop="3dp"
+                            android:stepSize="0.5"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/msp_card_rating_star_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/msp_card_ftxt_logo_tv"
+                            android:layout_toRightOf="@+id/msp_card_discount_rb"
+                            android:text="5分"
+                            android:textColor="#F0C900"
+                            android:visibility="invisible" />
+
+
+                        <TextView
+                            android:id="@+id/msp_card_ftxt_logo_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="14dp"
+                            android:gravity="center_horizontal"
+                            android:text="帮帮专属会员卡"
+                            android:textColor="@android:color/background_light"
+                            android:visibility="invisible" />
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/msp_input_consume_llay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="11dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="消费总额:"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="#414040"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/input_consume_rmb_et"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:background="@android:color/background_light"
+                        android:digits="0123456789."
+                        android:gravity="center_horizontal"
+                        android:hint="询问服务员后输入"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="#E3E3E3"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@android:color/darker_gray" />
+
+
+                <Button
+                    android:id="@+id/go_buy_btn"
+                    android:layout_width="150dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/msp_discount_interface_bt"
+                    android:text="去买单"
+                    android:textColor="@android:color/background_light" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="44dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/msp_shop_pic_iv"
+                        android:layout_width="119dp"
+                        android:layout_height="74dp"
+                        android:src="@drawable/welfare_loading_pic" />
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/msp_shop_name_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="21dp"
+                            android:text=""
+                            android:textColor="#47E086" />
+
+
+                        <RatingBar
+                            android:id="@+id/msp_shop_star_rb"
+                            style="@style/mspsmallRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:numStars="5"
+                            android:rating="5"
+                            android:stepSize="1"
+                            android:layout_alignLeft="@+id/msp_shop_name_tv"
+                            android:layout_below="@+id/msp_shop_name_tv"
+                            android:layout_marginTop="13dp" />
+
+                        <TextView
+                            android:id="@+id/msp_shop_score_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/msp_shop_star_rb"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/msp_shop_star_rb"
+                            android:text=""
+                            android:textColor="#FEC311"
+                            android:textSize="14sp" />
+
+
+                        <TextView
+                            android:id="@+id/msp_shop_total_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/msp_shop_score_tv"
+                            android:layout_marginLeft="14dp"
+                            android:layout_toRightOf="@+id/msp_shop_score_tv"
+                            android:text=""
+                            android:textColor="#666666"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="12.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/bg_color" />
+
+
+            /// 添加店铺信息
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:background="#d9d9d9"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/panic_has_purchase_llay"
+                    android:layout_width="match_parent"
+                    android:layout_height="88dp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:text="来过这里的邻居"
+                        android:textColor="#666666"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/welfare_purchase_hasgoturs_lv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_weight="1"
+                            android:gravity="left|center_vertical"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+
+                        <!--<ImageView-->
+                        <!--android:id="@+id/panic_buying_seemore_iv"-->
+                        <!--android:layout_width="30dp"-->
+                        <!--android:layout_height="30dp"-->
+                        <!--android:layout_gravity="center_vertical"-->
+                        <!--android:layout_marginRight="15dp"-->
+                        <!--android:src="@drawable/see_more" />-->
+                        <!---->
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#d9d9d9"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/ongoing_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/buying_details_clock"
+                        android:drawablePadding="18dp"
+                        android:text="研磨时光营业时间"
+                        android:textColor="#595959"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#d9d9d9"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/ll_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="18dp"
+                        android:src="@drawable/buying_details_tele" />
+
+                    <TextView
+                        android:id="@+id/phone"
+                        android:layout_width="0dp"
+
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="18603851516" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:src="@drawable/go_to" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:background="#d9d9d9" />
+
+                <LinearLayout
+                    android:id="@+id/ll_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="18dp"
+                        android:src="@drawable/buying_details_position" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="2dp"
+                            android:text="  " />
+
+                        <TextView
+                            android:id="@+id/tv_distance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="top"
+                            android:paddingTop="2dp"
+                            android:text="  "
+                            android:textColor="#9b9999"
+                            android:textSize="12sp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:src="@drawable/go_to" />
+                </LinearLayout>
+
+                <com.baidu.mapapi.map.MapView
+                    android:id="@+id/bmapsView"
+                    android:layout_width="match_parent"
+                    android:layout_height="306dp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <include
+        layout="@layout/net_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headtop_title" />
+
+</RelativeLayout>

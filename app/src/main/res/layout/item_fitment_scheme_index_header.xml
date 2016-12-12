@@ -1,0 +1,160 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_bangzhu_headtop"></include>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/rl_index"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:clickable="true"
+            android:focusable="true"
+
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/tl_experience1"
+                android:layout_width="351dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="10dp"
+                android:descendantFocusability="blocksDescendants">
+
+                <ImageView
+                    android:layout_width="351dp"
+                    android:layout_height="130dp"
+                    android:src="@drawable/experience1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="家装的一般施工工序"
+                    android:textColor="#ffffff"
+                    android:textSize="22dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tl_experience2"
+                android:layout_width="351dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="20dp"
+                android:descendantFocusability="blocksDescendants">
+
+                <ImageView
+                    android:layout_width="351dp"
+                    android:layout_height="130dp"
+                    android:src="@drawable/experience2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="厨房、卫生间、浴室的防水施工"
+                    android:textColor="#ffffff"
+                    android:textSize="22dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tl_experience3"
+                android:layout_width="351dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="20dp"
+                android:descendantFocusability="blocksDescendants">
+
+                <ImageView
+                    android:layout_width="351dp"
+                    android:layout_height="130dp"
+                    android:src="@drawable/experience3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="外墙仿石毛面砖铺贴施工"
+                    android:textColor="#ffffff"
+                    android:textSize="22dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tl_experience4"
+                android:layout_width="351dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="20dp"
+                android:descendantFocusability="blocksDescendants">
+
+                <ImageView
+                    android:layout_width="351dp"
+                    android:layout_height="130dp"
+                    android:src="@drawable/experience4" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="重装饰轻装修中的几个误导"
+                    android:layout_centerInParent="true"
+                    android:textColor="#ffffff"
+                    android:textSize="22dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tl_experience5"
+                android:layout_width="351dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="20dp"
+                android:descendantFocusability="blocksDescendants">
+
+                <ImageView
+                    android:layout_width="351dp"
+                    android:layout_height="130dp"
+                    android:src="@drawable/experience5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="电路安装应该注意些什么"
+                    android:layout_centerInParent="true"
+                    android:textColor="#ffffff"
+                    android:textSize="22dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tl_experience6"
+                android:layout_width="351dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="20dp"
+                android:descendantFocusability="blocksDescendants">
+
+                <ImageView
+                    android:layout_width="351dp"
+                    android:layout_height="130dp"
+                    android:src="@drawable/experience6" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="橱柜材料的选择"
+                    android:layout_centerInParent="true"
+                    android:textColor="#ffffff"
+                    android:textSize="22dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+

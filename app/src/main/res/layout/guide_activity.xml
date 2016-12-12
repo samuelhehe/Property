@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--android:background="#36D68E"-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_index"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="85dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="@dimen/size_guipop_normal"
+            android:layout_height="@dimen/size_guipop_normal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/welcome_indicator_normal" />
+
+        <ImageView
+            android:layout_width="@dimen/size_guipop_normal"
+            android:layout_height="@dimen/size_guipop_normal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/welcome_indicator_normal" />
+
+        <ImageView
+            android:layout_width="@dimen/size_guipop_normal"
+            android:layout_height="@dimen/size_guipop_normal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/welcome_indicator_normal" />
+
+        <ImageView
+            android:layout_width="@dimen/size_guipop_normal"
+            android:layout_height="@dimen/size_guipop_normal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/welcome_indicator_normal" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_start_location"
+        android:layout_width="146dp"
+        android:layout_height="46dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="23dp"
+        android:background="@drawable/splash_enter_bg"
+        android:gravity="center" />
+
+
+</FrameLayout>

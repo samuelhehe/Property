@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/item_facities_height"
+              android:background="@color/white"
+              android:orientation="horizontal"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:id="@+id/iv_circleshop"
+            android:layout_width="@dimen/iv_circleshop"
+            android:layout_height="@dimen/iv_circleshop"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_marginLeft_view"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/iv_circleshop"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_facilityName"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="#2a3622"
+                android:textSize="17sp"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="12dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4">
+
+                    <ImageView
+                        android:layout_width="@dimen/iv_distince"
+                        android:layout_height="@dimen/iv_distince"
+                        android:background="@drawable/nearby_distance"/>
+
+                    <TextView
+                        android:id="@+id/tv_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="3dp"
+                        android:gravity="center_vertical"
+                        android:textColor="#838383"
+                        android:textSize="@dimen/tv_facities"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7">
+
+                    <ImageView
+                        android:layout_width="@dimen/iv_time"
+                        android:layout_height="@dimen/iv_time"
+                        android:background="@drawable/nearby_open"/>
+
+                    <TextView
+                        android:id="@+id/tv_businessStartTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:drawablePadding="4dp"
+                        android:gravity="center_vertical"
+                        android:textColor="#838383"
+                        android:textSize="@dimen/tv_facities"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="-"
+                        android:textColor="#838383"
+                        android:textSize="@dimen/tv_facities"/>
+
+                    <TextView
+                        android:id="@+id/tv_businessEndTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:textColor="#838383"
+                        android:textSize="@dimen/tv_facities"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/layout_marginLeft_view"
+            android:layout_marginRight="@dimen/layout_marginLeft_view"
+            android:background="#e0e0e0"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

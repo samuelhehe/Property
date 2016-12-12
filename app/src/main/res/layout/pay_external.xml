@@ -1,0 +1,142 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_width="fill_parent"
+            android:layout_height="57dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="商品名称:"
+                android:textColor="#999999"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:textSize="17sp"
+                android:id="@+id/product_subject"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="帮帮商品"
+                android:textColor="#0b0b0b"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+        <View
+            android:background="#d9d9d9"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_width="fill_parent"
+            android:layout_height="57dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="商品描述:"
+                android:textColor="#999999"
+                tools:ignore="HardcodedText" />
+
+
+            <TextView
+                android:singleLine="true"
+                android:textSize="17sp"
+                android:id="@+id/product_desc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="帮帮商品"
+                android:textColor="#0b0b0b"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+        <View
+            android:background="#d9d9d9"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_width="fill_parent"
+            android:layout_height="57dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="商品价格:"
+                android:textColor="#999999"
+                tools:ignore="HardcodedText" />
+
+
+            <TextView
+                android:textSize="17sp"
+                android:id="@+id/product_price"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="0.01"
+                android:textColor="#ff6600"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:textSize="17sp"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="元"
+                android:textColor="#0b0b0b"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <Button
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="36dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/alipay_btn_bg"
+            android:id="@+id/pay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="pay"
+            android:text="支付"
+            tools:ignore="HardcodedText" />
+        
+        <Button
+            android:visibility="gone"
+            android:id="@+id/check"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:onClick="check"
+            android:text="检查账户"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+</ScrollView>

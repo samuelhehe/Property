@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/headtop_title"
+        layout="@layout/common_cooperation_headtop" />
+
+
+    <com.repo.xw.library.views.PullToRefreshLayout
+        android:id="@+id/pull_to_refreshlayout"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/headtop_title"
+        android:layout_height="match_parent">
+
+        <com.repo.xw.library.views.PullListView
+            android:id="@+id/msp_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/bg_color"
+            android:dividerHeight="0.5dp"
+            android:fadingEdge="none"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="vertical">
+
+        </com.repo.xw.library.views.PullListView>
+    </com.repo.xw.library.views.PullToRefreshLayout>
+
+
+
+
+
+
+    <include
+        layout="@layout/net_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headtop_title" />
+
+
+</RelativeLayout>

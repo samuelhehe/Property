@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_membership_headtop" />
+
+
+    <com.repo.xw.library.views.PullToRefreshLayout
+        android:id="@+id/pull_to_refreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.repo.xw.library.views.PullListView
+            android:id="@+id/buyed_usrs_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:scrollbars="none">
+
+        </com.repo.xw.library.views.PullListView>
+    </com.repo.xw.library.views.PullToRefreshLayout>
+
+    <include layout="@layout/net_error" />
+</LinearLayout>

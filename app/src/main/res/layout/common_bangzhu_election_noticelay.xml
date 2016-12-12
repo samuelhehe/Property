@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp">
+
+
+    <LinearLayout
+        android:id="@+id/bangzhu_election_notice_llay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/grab_benefits_gray_bg"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bangzhu_election_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="获取帮主头像 赞 , 享受超赞特权 超赞, 月奖励3000帮帮币" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bangzhu_election_notice_llay"
+        android:layout_alignTop="@+id/bangzhu_election_notice_llay"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-10dp"
+        android:background="@android:color/holo_red_light"
+        android:padding="3dp"
+        android:text="帮助特权"
+        android:textColor="#fff" />
+
+
+    <LinearLayout
+        android:id="@+id/bangzhu_election_ndetails_llay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bangzhu_election_notice_llay"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/base_condition_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:padding="3dp"
+            android:text="帮主基本条件"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/base_condition_content_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="帮主竞选根据人品值排行产生, 竞选资格至少邀请3名以上邻居成功注册为帮帮用户才有资格竞选帮主." />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_light"
+            android:padding="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/base_condition_content_needinvite_xn_tv"
+                android:layout_width="wrap_content"
+                android:textColor="#fff"
+                android:layout_height="wrap_content"
+                android:text="您还需要邀请X位邻居,就可以当帮主了." />
+
+            <TextView
+                android:id="@+id/base_condition_content_goinvate_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="现在就去"
+                android:textColor="@android:color/holo_red_light" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

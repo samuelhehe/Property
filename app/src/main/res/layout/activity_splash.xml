@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/splash_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent">
+    <!--android:background="#8bc34a">-->
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:background="@drawable/splash_launch_pic"/>
+
+        <!--android:src="@drawable/splash_launch_pic"></ImageView>-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/logo"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:paddingLeft="20dip"-->
+        <!--android:visibility="gone"-->
+        <!--android:paddingRight="20dip"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--android:src="@drawable/logo_uidemo"></ImageView>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:gravity="bottom"
+        android:shadowColor="#FFFFFF"
+        android:shadowDx="0"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        android:text="环信DEMO"
+        android:textColor="#444444"
+        android:textSize="35dip"
+        android:typeface="serif"
+        android:visibility="gone"></TextView>
+
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:gravity="bottom"
+        android:shadowColor="#FFFFFF"
+        android:shadowDx="0"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        android:textColor="#444444"
+        android:textSize="20dip"
+        android:typeface="serif"
+        android:visibility="gone"></TextView>
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+    <!--<include layout="@layout/headtop"/>-->
+
+    <include layout="@layout/common_cooperation_headtop" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="169dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <ImageView
+                    android:id="@+id/big_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="169dp"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:id="@+id/tv_commit_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="18dp"
+                    android:ellipsize="end"
+                    android:gravity="top|center_horizontal"
+                    android:maxLength="9"
+                    android:singleLine="true"
+                    android:text="狮子城"
+                    android:textColor="@color/white"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal">
+
+                <xj.property.widget.CircleImageView
+                    android:id="@+id/iv_avatar"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/default_avatar" />
+
+                <TextView
+                    android:id="@+id/zan_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="22dp"
+                    android:text=""
+                    android:textColor="#666666"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/top_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text=""
+                    android:textColor="#666666"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="#f1f5f7" />
+
+            <xj.property.widget.MyListView
+                android:id="@+id/lv_top_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:dividerHeight="0dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/toplist_enter_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2FCD71"
+        android:gravity="center"
+        android:text="进入帮帮"
+        android:textColor="@android:color/background_light"
+        android:visibility="gone" />
+
+</LinearLayout>

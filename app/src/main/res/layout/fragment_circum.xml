@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:orientation="vertical">
+
+    <include layout="@layout/searchbar_index" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+        android:background="#fef4f2"
+        android:gravity="center"
+        android:text="周边两公里，生活服务一网打尽"
+        android:textColor="#ffa54b"
+        android:textSize="15sp" />
+
+    <GridView
+        android:id="@+id/gv_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#e1e1e1"
+        android:horizontalSpacing="@dimen/horizontalSpacing_index"
+        android:numColumns="3"
+        android:verticalSpacing="@dimen/verticalSpacing_index"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/no_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:visibility="gone" />
+
+</LinearLayout>

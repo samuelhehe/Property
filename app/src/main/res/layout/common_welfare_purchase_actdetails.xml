@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="15dp"
+    android:background="@drawable/yello_box">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="活动细则:"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp">
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="left"-->
+            <!--android:layout_marginLeft="13dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:text="活动细则:"-->
+            <!--android:textSize="12sp"-->
+            <!--android:visibility="invisible"/>-->
+        <TextView
+            android:id="@+id/purchasing_actdetails_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="此福利至少50人才可生效10月24日由狮子城物业处统一发放领取需排队发放请妥善保管好你的福利码排队方法需注意安全"
+            android:textColor="#404040"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:lineSpacingExtra="3dp"
+            android:textSize="12sp"/>
+        </LinearLayout>
+
+
+
+</LinearLayout>

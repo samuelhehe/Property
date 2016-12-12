@@ -1,0 +1,504 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:id="@+id/heaptop"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/tophigh"-->
+    <!--android:background="#4caf50">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_back"-->
+    <!--android:layout_width="32dp"-->
+    <!--android:layout_height="32dp"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:src="@drawable/back" />-->
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_title"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:gravity="center"-->
+    <!--android:text="活动详情"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="@dimen/titlefonts" />-->
+    <!--</RelativeLayout>-->
+
+
+    <include layout="@layout/common_srrounding_headtop" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="12dp">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="4dp"
+                    android:text=""
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingExtra="4dp"
+                    android:text=""
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/white_rounded_rectangle_bg"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:id="@+id/three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <xj.property.widget.TopRoundRectShadowImageView
+                        android:id="@+id/img"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/nearby_default_picture" />
+
+                    <RelativeLayout
+                        android:layout_width="71dp"
+                        android:layout_height="71dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/aty_panic_buying_browse_number_circle">
+
+                        <TextView
+                            android:id="@+id/review_num_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="15dp"
+                            android:text="浏览次数"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/viewed_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/review_num_tv"
+                            android:layout_centerInParent="true"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="23sp" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:layout_alignBottom="@id/img"
+                        android:background="#48D382"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="24dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="每人限抢 "
+                                android:textColor="#fff"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/limit_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text=""
+                                android:textColor="#fff"
+                                android:textSize="23sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text=" 份"
+                                android:textColor="#fff"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:paddingRight="24dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="当前剩余 "
+                                android:textColor="#fff"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/rest_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text=""
+                                android:textColor="#FE9A20"
+                                android:textSize="23sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text=" 份"
+                                android:textColor="#fff"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/two"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_below="@id/three"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="限时抢购剩余时间："
+                        android:textColor="#323232"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/rest_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12天"
+                        android:textColor="#ff6634"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/four"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/two"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center_vertical">
+
+                        <LinearLayout
+                            android:layout_width="139dp"
+                            android:layout_height="38dp"
+
+                            android:background="@drawable/orangeboxline"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/deliver"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:gravity="center"
+                                android:src="@drawable/aty_panic_buying_orange_reduction" />
+
+                            <ImageView
+                                android:layout_width="0.7dp"
+                                android:layout_height="match_parent"
+                                android:background="#48D382" />
+
+                            <TextView
+                                android:id="@+id/num"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/orangeboxline"
+                                android:gravity="center"
+                                android:text="1" />
+
+                            <ImageView
+                                android:layout_width="0.7dp"
+                                android:layout_height="match_parent"
+                                android:background="#48D382" />
+
+                            <ImageButton
+                                android:id="@+id/add"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@null"
+                                android:gravity="center"
+                                android:src="@drawable/aty_panic_buying_orange_plus" />
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/panic_buying"
+                            android:layout_width="124dp"
+                            android:layout_height="38dp"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/panic_buying_or_bt"
+                            android:paddingBottom="3dp"
+                            android:text="抢购"
+                            android:textColor="#fff"
+                            android:textSize="17sp" />
+
+
+                    </RelativeLayout>
+
+                    <ImageView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:background="@drawable/white_rounded_background" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:id="@+id/panic_has_purchase_llay"
+                    android:layout_width="match_parent"
+                    android:layout_height="88dp"
+                    android:visibility="visible"
+                    android:orientation="vertical">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"
+                        android:background="#d9d9d9" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:text="已抢购用户"
+
+                        android:textColor="#666666"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/welfare_purchase_hasgoturs_lv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_weight="1"
+                            android:gravity="left|center_vertical"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#d9d9d9"
+                    android:visibility="visible" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/ongoing_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/buying_details_clock"
+                        android:drawablePadding="18dp"
+                        android:text=""
+                        android:textColor="#595959"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#d9d9d9"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/ll_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="18dp"
+                        android:src="@drawable/buying_details_tele" />
+
+                    <TextView
+                        android:id="@+id/phone"
+                        android:layout_width="0dp"
+
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:src="@drawable/go_to" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:background="#d9d9d9" />
+
+                <LinearLayout
+                    android:id="@+id/ll_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="18dp"
+                        android:src="@drawable/buying_details_position" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:paddingBottom="2dp"
+                            android:text="  " />
+
+                        <TextView
+                            android:id="@+id/tv_distance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="top"
+                            android:paddingTop="2dp"
+                            android:text="  "
+                            android:textColor="#9b9999"
+                            android:textSize="12sp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:src="@drawable/go_to" />
+                </LinearLayout>
+
+                <com.baidu.mapapi.map.MapView
+                    android:id="@+id/bmapsView"
+                    android:layout_width="match_parent"
+                    android:layout_height="306dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="13dp"
+                android:layout_below="@id/four"
+                android:background="#f8f8f8">
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

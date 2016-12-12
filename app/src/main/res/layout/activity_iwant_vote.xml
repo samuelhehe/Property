@@ -1,0 +1,241 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/headtop_title"
+        layout="@layout/headtop" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/iwant_provider_submit_llay"
+        android:layout_below="@+id/headtop_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/iwant_provider_notice_tv"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_vertical|left"
+                android:lineSpacingExtra="5dp"
+                android:singleLine="false"
+                android:text="发起投票填写一下投票内容"
+                android:textColor="#4B4C50"
+                android:visibility="gone"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:visibility="gone"
+                android:background="@color/bg_color" />
+
+            <EditText
+                android:id="@+id/iwant_vote_content_et"
+                android:layout_width="match_parent"
+                android:layout_height="149dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="21dp"
+                android:background="@android:color/transparent"
+                android:gravity="top|left"
+                android:hint="在此填写投票内容..."
+                android:lineSpacingExtra="5dp"
+                android:maxLength="140"
+                android:singleLine="false"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="@color/bg_color" />
+
+            <LinearLayout
+                android:id="@+id/iwant_vote_citem_llay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/common_vote_content_item" />
+
+                <include layout="@layout/common_vote_content_item" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/iwant_vote_add_citem"
+                android:layout_width="135dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="23dp"
+                android:background="@drawable/vote_details_rounded_rectangle"
+                android:drawableLeft="@drawable/iwant_vote_plus"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:text="增加一个新选项"
+                android:textColor="@color/sys_darker_c6_theme_text_color"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/iwant_provider_submit_llay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/background_light"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/iwant_provider_submit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/help_btn_bg"
+            android:text="发布"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:id="@+id/bar_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_color"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_color"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="7dp">
+
+
+                <CheckBox
+                    android:id="@+id/send_img_checkbox"
+                    android:layout_width="24dip"
+                    android:layout_height="24dip"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_marginLeft="10dp"
+                    android:button="@drawable/bottom_input_showimg_selector"
+                    android:checked="false"
+                    android:scaleType="fitCenter"
+                    android:visibility="visible" />
+
+                <!--<View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="#"/>-->
+                <RelativeLayout
+                    android:id="@+id/edittext_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/chat_input_bg"
+                    android:gravity="bottom"
+                    android:visibility="invisible">
+
+                    <xj.property.widget.PasteEditText
+                        android:id="@+id/et_sendmessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:background="@null"
+                        android:maxLines="3"
+                        android:minHeight="40dp"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="1dp"
+                        android:paddingTop="3dp"
+                        android:textColor="#191919"
+                        android:textColorHint="#e2e3e3"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btn_send"
+                    android:layout_width="40dip"
+                    android:layout_height="32dip"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/green_selector_bg"
+                    android:padding="3dp"
+                    android:text="@string/button_send"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/btn_charter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dip"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/pink_selector_bg"
+                    android:drawableLeft="@drawable/reply_heart"
+                    android:padding="3dp"
+                    android:text="赞人品"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_face_container"
+                android:layout_width="match_parent"
+                android:layout_height="186dp"
+                android:background="@android:color/background_light"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="173dp" />
+
+                <xj.property.widget.com.viewpagerindicator.CirclePageIndicator
+                    android:id="@+id/vpager_indicator"
+                    style="@style/CustomCirclePageIndicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="3dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <include
+        layout="@layout/net_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headtop_title" />
+
+</RelativeLayout>

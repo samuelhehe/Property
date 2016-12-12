@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333">
+<!--    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#373737"
+        android:visibility="visible"></android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/point_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+    </FrameLayout>-->
+    <ru.truba.touchgallery.GalleryWidget.GalleryViewPager
+        android:id="@+id/viewer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="1/3"/>
+
+
+</RelativeLayout>

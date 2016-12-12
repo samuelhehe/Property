@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <xj.property.widget.RoundRectShadowImageView
+        android:id="@+id/iv_history_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_avatar"/>
+
+    <LinearLayout
+        android:layout_width="268dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/to_welfare_black_bg"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_history_status_image"
+            android:src="@drawable/grab_the_light_words"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="10dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginRight="26dp"
+            android:layout_marginLeft="26dp"
+            android:background="@drawable/welfare_history_itme_line_bg"/>
+
+        <TextView
+            android:id="@+id/tv_welfare_goods_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:singleLine="true"
+            android:text="有机大米"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_marginLeft="37dp"
+            android:layout_marginRight="37dp"
+            />
+        <TextView
+            android:id="@+id/tv_welfare_goods_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:singleLine="true"
+            android:textSize="22dp"
+            android:text="时间"/>
+
+        </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,833 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    <!--android:background="#80000000">-->
+
+    <RelativeLayout
+        android:id="@+id/heaptop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tophigh"
+        android:layout_alignParentTop="true"
+        android:background="#fffffd"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/common_new_iv_back" />
+        <!--android:src="@drawable/campaign_for_bangzhu_after_back" />-->
+
+        <TextView
+            android:id="@+id/tv_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="活动/话题"
+            android:textColor="@color/sys_green_theme_text_color"
+            android:textSize="@dimen/titlefonts" />
+
+        <TextView
+            android:id="@+id/tv_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:text="说明"
+            android:textColor="@color/sys_green_theme_text_color"
+            android:textSize="@dimen/titlefonts" />
+
+        <ImageView
+            android:id="@+id/iv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/tv_right_text"
+            android:src="@drawable/life_circle_search_icon"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lv_activities"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heaptop"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/home_item_top_bg_pic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="92dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="0.7dp"
+                    android:layout_height="30dp"
+                    android:background="#e8e6e3" />
+
+                <xj.property.widget.CircleImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@color/activities_cricle_small_color1" />
+
+                <ImageView
+                    android:layout_width="0.7dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#e8e6e3" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp">
+
+                <TextView
+                    android:id="@+id/tv_join_num1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="26dp"
+                    android:text="31"
+                    android:textColor="#1d1d26"
+                    android:textSize="19sp" />
+
+                <ImageView
+                    android:id="@+id/iv_xie_line1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@id/tv_join_num1"
+                    android:background="@drawable/black_xie_line" />
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="34dp"
+                    android:layout_toRightOf="@id/iv_xie_line1"
+                    android:text="人"
+                    android:textColor="#939396"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="东区网球健身"
+                    android:textColor="#4e4d52"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:id="@+id/tv_status_activity"
+                        android:layout_width="62dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="top|right"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/activity_check"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/activity_clock"
+                        android:drawablePadding="7dp"
+                        android:text="11-14 周日"
+                        android:textColor="#a1a1a1"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:drawableLeft="@drawable/activity_position"
+                            android:drawablePadding="7dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="小区东门集合"
+                            android:textColor="#a1a1a1"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="left"
+                        android:singleLine="true"
+                        android:text="活动地址活动地址活动"
+                        android:textColor="#666666"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="67dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/activity_new_icon" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/lifecircle_super_zambia_red"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="92dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="0.7dp"
+                    android:layout_height="30dp"
+                    android:background="#e8e6e3" />
+
+                <xj.property.widget.CircleImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@color/activities_cricle_small_color1" />
+
+                <ImageView
+                    android:layout_width="0.7dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#e8e6e3" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp">
+
+                <TextView
+                    android:id="@+id/tv_join_num5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="26dp"
+                    android:text="64"
+                    android:textColor="#1d1d26"
+                    android:textSize="19sp" />
+
+                <ImageView
+                    android:id="@+id/iv_xie_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@id/tv_join_num5"
+                    android:background="@drawable/black_xie_line" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="34dp"
+                    android:layout_toRightOf="@id/iv_xie_line"
+                    android:text="人"
+                    android:textColor="#939396"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="狮子城夜跑一起来"
+                    android:textColor="#4e4d52"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="62dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="top|right"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/activity_check"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/activity_clock"
+                        android:drawablePadding="7dp"
+                        android:text="11-14 周日"
+                        android:textColor="#a1a1a1"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:drawableLeft="@drawable/activity_position"
+                            android:drawablePadding="7dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="小区东门集合"
+                            android:textColor="#a1a1a1"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="left"
+                        android:singleLine="true"
+                        android:text="活动地址活动地址活动"
+                        android:textColor="#666666"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="67dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/activity_new_icon" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/lifecircle_super_zambia_red"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="92dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="0.7dp"
+                    android:layout_height="30dp"
+                    android:background="#e8e6e3" />
+
+                <xj.property.widget.CircleImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@color/activities_cricle_small_color1" />
+
+                <ImageView
+                    android:layout_width="0.7dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#e8e6e3" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp">
+
+                <TextView
+                    android:id="@+id/tv_join_num2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="26dp"
+                    android:text="56"
+                    android:textColor="#1d1d26"
+                    android:textSize="19sp" />
+
+                <ImageView
+                    android:id="@+id/iv_xie_line2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@id/tv_join_num2"
+                    android:background="@drawable/black_xie_line" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="34dp"
+                    android:layout_toRightOf="@id/iv_xie_line2"
+                    android:text="人"
+                    android:textColor="#939396"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="爱生活爱帮帮主题日"
+                    android:textColor="#4e4d52"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="62dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="top|right"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/activity_check"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/activity_clock"
+                        android:drawablePadding="7dp"
+                        android:text="11-13 周六"
+                        android:textColor="#a1a1a1"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:drawableLeft="@drawable/activity_position"
+                            android:drawablePadding="7dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="小区东门集合"
+                            android:textColor="#a1a1a1"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="left"
+                        android:singleLine="true"
+                        android:text="活动地址活动地址活动"
+                        android:textColor="#666666"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="67dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/activity_new_icon" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/life_circle_zambia_red"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="92dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="0.7dp"
+                    android:layout_height="30dp"
+                    android:background="#e8e6e3" />
+
+                <xj.property.widget.CircleImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@color/activities_cricle_small_color1" />
+
+                <ImageView
+                    android:layout_width="0.7dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#e8e6e3" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp">
+
+                <TextView
+                    android:id="@+id/tv_join_num3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="26dp"
+                    android:text="1006"
+                    android:textColor="#1d1d26"
+                    android:textSize="19sp" />
+
+                <ImageView
+                    android:id="@+id/iv_xie_line3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@id/tv_join_num3"
+                    android:background="@drawable/black_xie_line" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="34dp"
+                    android:layout_toRightOf="@id/iv_xie_line3"
+                    android:text="人"
+                    android:textColor="#939396"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="帮帮年度最佳邻居颁奖盛典"
+                    android:textColor="#4e4d52"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_width="62dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="top|right"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@drawable/activity_check"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/activity_clock"
+                        android:drawablePadding="7dp"
+                        android:text="活动时间"
+                        android:textColor="#a1a1a1"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:drawableLeft="@drawable/activity_position"
+                            android:drawablePadding="7dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="#a1a1a1"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="left"
+                        android:singleLine="true"
+                        android:text="活动地址活动地址活动"
+                        android:textColor="#666666"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="67dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/activity_new_icon" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/lifecircle_super_zambia_red"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/activity_green_bg"
+        android:clickable="true"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:src="@drawable/activity_edit" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="发起  活动/话题"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/act_opt_notice_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/activities_optnotices_bg"
+        android:paddingTop="80dp"
+        android:src="@drawable/act_opt_notices_txtimg"
+        android:visibility="visible" />
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:orientation="vertical"
+              android:background="#fffffd"
+              tools:context="xj.property.activity.runfor.RunForActivity">
+
+    <include
+        android:id="@+id/bangzhu_runfor_title"
+        layout="@layout/common_bangzhu_headtop" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="11dp"
+        android:background="#F3F3F3"/>
+    
+    <com.repo.xw.library.views.PullToRefreshLayout
+        android:id="@+id/pullToRefreshLayout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.repo.xw.library.views.PullListView
+            android:id="@+id/pullListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:overScrollMode="never"
+            android:scrollingCache="false">
+
+        </com.repo.xw.library.views.PullListView>
+    </com.repo.xw.library.views.PullToRefreshLayout>
+
+</LinearLayout>

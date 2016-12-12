@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_name_submenu_takeout"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="担担面"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RatingBar
+            android:id="@+id/rt_submenu_takeout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style = "?android:attr/ratingBarStyleSmall"
+            android:visibility="gone"
+            />
+        <TextView
+            android:id="@+id/tv_billcount_submenu_takeout"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="月售100份"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_price_submenu_takeout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="50元/份"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_minus_submenu_takeout"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="-"/>
+
+            <TextView
+                android:id="@+id/tv_count_submenu_takeout"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:gravity="center_horizontal"/>
+
+            <Button
+                android:id="@+id/btn_plus_submenu_takeout"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="+"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

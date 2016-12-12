@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/headicon_llay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <include layout="@layout/headtop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="28dp"
+            android:gravity="center_horizontal"
+            android:text="为了更好的使用帮帮，请上传个人头像"
+            android:textColor="#464646"
+            android:textSize="17sp" />
+
+
+        <LinearLayout
+            android:id="@+id/upload_header_icon_llay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="57dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/updoad_face_common_shade"
+                android:gravity="center"
+                android:padding="4dp"
+                android:orientation="vertical">
+
+                <xj.property.widget.CircleImageView
+                    android:id="@+id/upload_header_icon_civ"
+                    android:layout_width="103dp"
+                    android:layout_height="103dp"
+                    android:src="@drawable/upload_face_none" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/user_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="27dp"
+                android:text=""
+                android:textColor="@color/sys_darker_theme_text_color"
+                android:textSize="19sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="67dp"
+            android:background="@drawable/green_btn_disable"
+            android:text="注册"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

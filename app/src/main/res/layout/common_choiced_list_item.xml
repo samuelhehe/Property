@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/choiced_list_item">
+
+    <TextView
+        android:id="@+id/choiced_list_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7.5dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="9dp"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:singleLine="true"
+        android:textSize="16sp"
+        android:textColor="@color/sys_darker_6c_theme_text_color"
+        android:visibility="visible" />
+
+
+</RelativeLayout>

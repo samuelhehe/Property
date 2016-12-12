@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <xj.property.widget.CircleImageView
+            android:id="@+id/avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/head_portrait_personage" />
+
+        <LinearLayout
+            android:id="@+id/ll_genius_list"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_nickname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="25dp"
+                android:textSize="18dp"
+                android:textColor="#666666"
+                android:text="李开复" />
+
+            <TextView
+                android:id="@+id/tv_intro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="#777777"
+                android:layout_marginRight="13dp"
+                android:lineSpacingExtra="10dp"
+                android:lines="3"
+                android:text="创新工场董事长。\n曾任Google,微软全球副总裁\n青年导师." />
+
+            <TextView
+                android:id="@+id/tv_more"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="#B1B1B1"
+                android:layout_marginTop="17dp"
+                android:text="更多"
+                android:drawableRight="@drawable/trilateral" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="#DDDDDD" />
+</LinearLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="248dp"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_all_fastshop"
+        android:layout_width="fill_parent"
+        android:layout_height="220dp"
+        android:background="#FFFFFF"
+        android:padding="9dp">
+
+        <LinearLayout
+            android:id="@+id/ll_middle_fastshop"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/rl_middle_fastshop"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_shop_image"
+                    android:layout_width="fill_parent"
+                    android:layout_height="128dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_good_name"
+                android:layout_width="fill_parent"
+                android:layout_height="34dp"
+                android:background="#ffffff"
+                android:gravity="center_vertical|left"
+                android:text="欣欣便利店"
+                android:textColor="#3c4144"
+                android:textSize="@dimen/text2fonts"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/rl_top_fastshop"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:gravity="center_vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="29dp"
+                android:background="@drawable/shop_commodity_name_bg">
+
+                <TextView
+                    android:id="@+id/tv_shopname"
+                    android:layout_width="120dp"
+                    android:layout_height="25dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="8dp"
+                    android:singleLine="true"
+                    android:text="汉堡包"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text2fonts"/>
+                <ImageView
+                    android:paddingTop="2dp"
+                    android:layout_marginRight="9dp"
+                    android:id="@+id/iv_star"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/snacks_star_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:layout_toLeftOf="@id/iv_star"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tv_eva"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:textColor="#f9d65f"/>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="#ffffff">
+
+            <TextView
+                android:id="@+id/tv_good_originPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="￥18"
+                android:textColor="#9b9b9b"
+                android:textSize="@dimen/text2fonts"/>
+
+            <TextView
+                android:id="@+id/tv_good_price"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="￥18"
+                android:textColor="#32363a"
+                android:textSize="18sp"/>
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_shop_count_add"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/snacks_add"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

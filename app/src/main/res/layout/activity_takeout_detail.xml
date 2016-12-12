@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="xj.property.source.activity.takeout.TakeoutDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        >
+        <ListView
+            android:id="@+id/lv_takeout_menu"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            >
+
+        </ListView>
+        <ListView
+            android:id="@+id/lv_takeout_submenu"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+        </ListView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom_submenu_takeout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#eee"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_shoppingCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/tv_count_submenu_takeout"
+            android:layout_toRightOf="@+id/iv_shoppingCart"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"/>
+        <TextView
+            android:id="@+id/tv_ammout_submenu_takeout"
+            android:layout_toRightOf="@+id/tv_count_submenu_takeout"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$0"/>
+        <Button
+            android:id="@+id/btn_settlement_takeout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="选择完成"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

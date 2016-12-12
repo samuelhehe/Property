@@ -1,0 +1,278 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/headtop_title"
+        layout="@layout/common_cooperation_headtop" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/iwant_provider_submit_llay"
+        android:layout_below="@+id/headtop_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/iwant_provider_notice_tv"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_vertical|left"
+                android:lineSpacingExtra="5dp"
+                android:singleLine="false"
+                android:text="你能为社区或者大家提供什么：技能、职业、帮助等"
+                android:textColor="#2FCC71"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/bg_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="23dp"
+                    android:text="输入你能为大家提供什么"
+                    android:textColor="#494c53"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="23dp"
+                    android:text="(限10个字)"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/iwant_provider_title_et"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/help_input_bg"
+                android:hint="例:宠物代养"
+                android:maxLength="10"
+                android:paddingLeft="12dp"
+                android:textColorHint="#c1c1bf"
+                android:textSize="11sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="23dp"
+                    android:text="简介说明"
+                    android:textColor="#494c53"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="23dp"
+                    android:text="(限140个字)"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/iwant_provider_content_et"
+                android:layout_width="match_parent"
+                android:layout_height="116.5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/help_input_bg"
+                android:gravity="left|top"
+                android:hint="我可以帮社区的朋友们平时养养狗,我家里也有好几只狗,我是一个特别有爱心的人,非常喜欢朋友们能来找我,希望我们可以成为朋友。"
+                android:lineSpacingExtra="5dp"
+                android:maxLength="140"
+                android:paddingLeft="12dp"
+                android:paddingTop="12dp"
+                android:textColorHint="#c1c1bf"
+                android:textSize="11sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/iwant_provider_submit_llay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/background_light"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/iwant_provider_submit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/help_btn_bg"
+            android:text="发布"
+            android:visibility="gone"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+
+        <LinearLayout
+            android:id="@+id/bar_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_color"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_color"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="7dp">
+
+
+                <CheckBox
+                    android:id="@+id/send_img_checkbox"
+                    android:layout_width="24dip"
+                    android:layout_height="24dip"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_marginLeft="10dp"
+                    android:button="@drawable/bottom_input_showimg_selector"
+                    android:checked="false"
+                    android:scaleType="fitCenter"
+                    android:visibility="visible" />
+
+                <!--<View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="#"/>-->
+                <RelativeLayout
+                    android:id="@+id/edittext_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/chat_input_bg"
+                    android:gravity="bottom"
+                    android:visibility="invisible">
+
+                    <xj.property.widget.PasteEditText
+                        android:id="@+id/et_sendmessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:background="@null"
+                        android:maxLines="3"
+                        android:minHeight="40dp"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="1dp"
+                        android:paddingTop="3dp"
+                        android:textColor="#191919"
+                        android:textColorHint="#e2e3e3"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btn_send"
+                    android:layout_width="40dip"
+                    android:layout_height="32dip"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/green_selector_bg"
+                    android:padding="3dp"
+                    android:text="@string/button_send"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/btn_charter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dip"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/pink_selector_bg"
+                    android:drawableLeft="@drawable/reply_heart"
+                    android:padding="3dp"
+                    android:text="赞人品"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_face_container"
+                android:layout_width="match_parent"
+                android:layout_height="186dp"
+                android:background="@android:color/background_light"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="173dp" />
+
+                <xj.property.widget.com.viewpagerindicator.CirclePageIndicator
+                    android:id="@+id/vpager_indicator"
+                    style="@style/CustomCirclePageIndicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="3dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <include
+        layout="@layout/net_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headtop_title" />
+
+</RelativeLayout>

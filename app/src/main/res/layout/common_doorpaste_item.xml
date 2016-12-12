@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="156dp"
+    android:layout_height="224dp">
+
+    <RelativeLayout
+        android:id="@+id/doorpaste_index_item_rlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp"
+        android:background="@drawable/doorpaste_index_item_bg">
+
+        <TextView
+            android:id="@+id/doorpaste_index_home_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="1号楼4单元505"
+            android:textColor="@android:color/background_light"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/doorpaste_index_example_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/doorpaste_index_item_example_icon" />
+
+        <TextView
+            android:id="@+id/doorpaste_index_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/doorpaste_index_item_count"
+            android:drawablePadding="3dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="被贴50次"
+            android:textColor="@color/sys_darker_69_theme_text_color"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/doorpaste_index_add_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@drawable/doorpaste_index_item_add"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical"
+            android:text="加贴"
+            android:textColor="@color/sys_darker_69_theme_text_color"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/doorpaste_index_create_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/doorpaste_index_item_create"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

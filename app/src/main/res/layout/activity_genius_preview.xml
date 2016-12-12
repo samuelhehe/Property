@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#fffffd">
+
+    <include layout="@layout/common_bangzhu_headtop"></include>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <ScrollView
+            android:id="@+id/sv_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="45dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <xj.property.widget.CircleImageView
+                        android:id="@+id/iv_choose_image"
+                        android:layout_width="91dp"
+                        android:layout_height="91dp"
+                        android:src="@drawable/head_portrait" />
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="24dp"
+                        android:textColor="#666666"
+                        android:layout_marginLeft="20dp"
+                        android:text="戴安娜" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="234dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="234dp"
+                        android:layout_height="1dp"
+
+                        android:layout_marginTop="27dp"
+                        android:background="#D3D3D2"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/symbol"
+                        android:layout_marginTop="22dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_message"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginRight="17dp"
+                        android:layout_marginTop="23dp"
+                        android:textColor="#666666"
+                        android:layout_marginBottom="60dp"
+                        android:lineSpacingExtra="20dp"
+                        android:text="天使医疗企业常务副总裁；\n天使投资人；\n 2014年大众山地滑雪公开赛男子大回转项目季军；" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_submit_genius"
+                android:layout_width="fill_parent"
+                android:layout_marginBottom="7dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="7dp"
+                android:text="确定发布"
+                android:textSize="17dp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:background="#30cc71" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

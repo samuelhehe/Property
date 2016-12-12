@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/headtop"/>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapsView"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            />
+
+
+        <!--//// 坐标信息,店家信息以及店铺运营时间- 2015/11/17-->
+        <RelativeLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/character_bg"
+            android:layout_width="fill_parent"
+            android:visibility="gone"
+            android:layout_height="120dp">
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="fill_parent">
+                    <LinearLayout
+                        android:id="@+id/ll1"
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:layout_marginLeft="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/nearby_place"
+                            android:gravity="center_vertical"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"/>
+                        <TextView
+                            android:layout_marginLeft="5dp"
+                            android:textSize="17sp"
+                            android:textColor="#7b7c80"
+                            android:gravity="center_vertical"
+                            android:text="天坛东门"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:id="@+id/tv_faci_address"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/cus_view"
+                        android:layout_below="@id/ll1"
+                        android:background="#e0e0e0"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll2"
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:layout_marginLeft="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/nearby_clock"
+                            android:gravity="center_vertical"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"/>
+                        <TextView
+                            android:layout_marginLeft="5dp"
+                            android:textSize="17sp"
+                            android:textColor="#7b7c80"
+                            android:gravity="center_vertical"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@id/cus_view"
+                            android:text="07:00-21:00"
+                            android:layout_width="fill_parent"
+                            android:id="@+id/tv_faci_time"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

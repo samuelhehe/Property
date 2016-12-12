@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="5dp" >
+
+    <TextView
+        android:id="@+id/timestamp"
+        style="@style/chat_text_date_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:text="周一14:30"
+        android:layout_gravity="center" />
+       <LinearLayout
+           android:layout_gravity="center"
+           android:layout_width="234dp"
+           android:layout_height="wrap_content"
+           android:background="@color/white"
+           android:orientation="vertical">
+           <TextView
+               android:id="@+id/tv_title"
+               android:layout_marginRight="13dp"
+               android:layout_marginLeft="13dp"
+               android:layout_marginTop="13dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="您已抢购‘阿拉兰牛肉面套餐价原价29，现价9.9，限量30份，限时30天’成功，抢购码：123456789000"
+               android:textColor="#464646"
+               android:textSize="16sp"/>
+           <TextView
+               android:id="@+id/tv_detail"
+               android:text="查看详情"
+               android:textSize="17sp"
+               android:textColor="@color/white"
+               android:gravity="center"
+               android:layout_width="match_parent"
+               android:layout_height="43dp"
+               android:background="@drawable/bomb_box_bt"/>
+
+           </LinearLayout>
+</LinearLayout>

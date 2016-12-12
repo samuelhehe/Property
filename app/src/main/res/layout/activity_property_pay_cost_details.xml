@@ -1,0 +1,329 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffffd"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/bangzhu_runfor_title"
+        layout="@layout/common_bangzhu_headtop" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="24dp"
+                android:text="物业费缴费账单详单"
+                android:textColor="#525252"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="4dp"
+                android:background="#A9A9A9" />
+
+            <TextView
+                android:id="@+id/tv_community_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="48dp"
+                android:text=""
+                android:textColor="#6D6D6D"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/tv_init_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="28dp"
+                android:text="物业费单价（每月）：1.00/平方米"
+                android:textColor="#6D6D6D"
+                android:textSize="15dp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp">
+
+                <TextView
+                    android:id="@+id/tv_house_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="0号楼0单元0室"
+                    android:textColor="#6D6D6D"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tv_house_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:text="房屋面积：0平方米"
+                    android:textColor="#6D6D6D"
+                    android:textSize="14dp" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_gray"
+                    android:gravity="center"
+                    android:text="款项名称"
+                    android:textColor="#6D6D6D"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_gray"
+                    android:gravity="center"
+                    android:text="数量"
+                    android:textColor="#6D6D6D"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_gray"
+                    android:gravity="center"
+                    android:text="单价"
+                    android:textColor="#6D6D6D"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_gray"
+                    android:gravity="center"
+                    android:text="总额"
+                    android:textColor="#6D6D6D"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_gray"
+                    android:gravity="center"
+                    android:text="物业费"
+                    android:textColor="#6D6D6D"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tv_property_pay_time_long"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_gray"
+                    android:gravity="center"
+                    android:text="0个月"
+                    android:textColor="#6D6D6D"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tv_property_pay_umit_price"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_gray"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#6D6D6D"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tv_property_all_money"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_gray"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#6D6D6D"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_gray"
+                    android:gravity="center"
+                    android:text="物业费(欠费)"
+                    android:textColor="#6D6D6D"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tv_rubbish_pay_time_long"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_gray"
+                    android:gravity="center"
+                    android:text="0个月"
+                    android:textColor="#6D6D6D"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tv_rubbish_pay_umit_price"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_gray"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#6D6D6D"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tv_rubbish_all_money"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_gray"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#6D6D6D"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="29dp"
+                android:gravity="center"
+                android:text="如有任何疑问可拨打以下电话"
+                android:textColor="#B7B7B7"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tv_community_property_phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:text="物业客服电话 010 - 8448842"
+                android:textColor="#B7B7B7"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tv_all_money"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="41dp"
+                android:gravity="right"
+                android:text="共计0元"
+                android:textColor="#6D6D6D"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/tv_pay_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="44dp"
+                android:gravity="right"
+                android:text="交费时间：2015年11月11日"
+                android:textColor="#6D6D6D"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text="缴费清单以及账单明细可在物业处领取"
+                android:textColor="#B7B7B7"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:background="#B7B7B7" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:gravity="center"
+                android:text="已支付"
+                android:textColor="#A8A8A8"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/tv_success"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="14dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="22dp"
+                android:background="#2FCC71"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="#ffffff"
+                android:textSize="18dp" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

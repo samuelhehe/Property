@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/heaptop"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/tophigh"
+    android:background="#01BE84">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:src="@drawable/go_back" />
+    <!--android:src="@drawable/campaign_for_bangzhu_after_back" />-->
+
+    <!--android:src="@drawable/campaign_for_bangzhu_after_back" -->
+    <TextView
+        android:id="@+id/tv_left_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/wheelview_slid"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:background="@android:color/transparent"
+        android:text=""
+        android:maxLength="16"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@color/wheelview_slid"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tv_right_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:text="全部已读"
+        android:background="@android:color/transparent"
+        android:textColor="@color/wheelview_slid"
+        android:textSize="15sp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/iv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:visibility="invisible" />
+
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.7dp"
+        android:layout_alignParentBottom="true"
+        android:background="#d7d7d7" />
+
+</RelativeLayout>

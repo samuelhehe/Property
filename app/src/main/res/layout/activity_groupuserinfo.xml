@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed"
+    android:orientation="vertical">
+
+    <include layout="@layout/life_circle_top_bar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:id="@+id/sl_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/top_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/mebottom"
+                    android:paddingTop="8dp">
+
+
+                    <RelativeLayout
+                        android:id="@+id/ll1"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <xj.property.widget.CircleImageView
+                            android:id="@+id/iv_avatar"
+                            android:layout_width="93dp"
+                            android:layout_height="93dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/head_portrait_personage" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_zan"
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="bottom"
+                            android:layout_marginRight="@dimen/zanrp_marginright"
+                            android:background="@drawable/praise_the_personality"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="8dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/praise_the_personality_likeicon" />
+
+                            <TextView
+                                android:id="@+id/tv_zb"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:text="赞人品"
+                                android:textColor="@color/white"
+                                android:textSize="14dp" />
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/tv_name_user"
+                        style="@style/MyTextView"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ll1"
+                        android:layout_gravity="center_horizontal"
+                        android:text="姓名"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textfonts" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/groupuserinfo_rpz_rlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="74dp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_rp_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="14dp"
+                                android:text="人品值："
+                                android:textColor="#4cbe50"
+                                android:textSize="17sp" />
+
+                            <ImageView
+
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
+                                android:layout_marginRight="3dp"
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/lifecircle_bigger_likeicon" />
+
+                            <TextView
+                                android:id="@+id/tv_person_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#fa5344"
+                                android:textSize="17sp" />
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv_percent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="14dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_horizontal|left"
+                            android:paddingRight="20dp"
+                            android:paddingTop="0dp"
+                            android:textColor="#4cbe50"
+                            android:textSize="17sp" />
+
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="14dp"
+                        android:src="@drawable/sendwater_arrow"
+                        android:visibility="visible" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/bg_color" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="#f1f5f7" />
+
+                <LinearLayout
+                    android:id="@+id/ll_mine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"></LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_other_lifecircle"
+                    android:layout_width="match_parent"
+                    android:layout_height="59dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp">
+
+                    <TextView
+                        android:id="@+id/tv_lifecircle_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/showmore"
+                        android:textColor="#aaaaaa"
+                        android:textSize="15sp"
+                        android:typeface="serif" />
+
+
+                    <ImageView
+                        android:id="@+id/showmore"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="2dp"
+                        android:src="@drawable/sendwater_arrow"
+                        android:visibility="visible" />
+
+
+                    <TextView
+                        android:id="@+id/tv_his"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="他的生活圈"
+                        android:textColor="#333333"
+                        android:textSize="16sp"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:id="@+id/tv_her"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="她的生活圈"
+                        android:textColor="#333333"
+                        android:textSize="16sp"
+                        android:typeface="serif"
+                        android:visibility="gone" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/bg_color" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_switch_block_lifecircle"
+                    android:layout_width="match_parent"
+                    android:layout_height="59dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp">
+
+                    <ImageView
+                        android:id="@+id/iv_switch_block_lifecircle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/open_icon"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/iv_switch_unblock_lifecircle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/close_icon"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/lifecircle_his"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="不看他的生活圈"
+                        android:textColor="#333333"
+                        android:textSize="16sp"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:id="@+id/lifecircle_her"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="不看她的生活圈"
+                        android:textColor="#333333"
+                        android:textSize="16sp"
+                        android:typeface="serif"
+                        android:visibility="gone" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/bg_color" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_switch_block_notify"
+                    android:layout_width="match_parent"
+                    android:layout_height="59dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp">
+
+                    <ImageView
+                        android:id="@+id/iv_switch_block_notify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/open_icon"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/iv_switch_unblock_notify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/close_icon"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/notify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="加入黑名单"
+                        android:textColor="#333333"
+                        android:textSize="16sp"
+                        android:typeface="serif" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/bg_color" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_sendmessage"
+                    style="@style/MyTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/darkgreen_btn_disable"
+                    android:gravity="center"
+                    android:text="发送消息"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textfonts" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/ll_anim"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/ll_add"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal|bottom"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:text="+1"
+                    android:textColor="#fa5344"
+                    android:textSize="36sp" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/lifecircle_bigger_likeicon"
+                    android:clickable="false"
+                    android:focusable="false" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

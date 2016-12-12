@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp">
+    <RelativeLayout
+        android:id="@+id/contacts_info"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:descendantFocusability="blocksDescendants">
+
+        <TextView
+            android:id="@+id/name_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text=""
+            android:textColor="#414141"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/time_number_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_text_view"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:text=""
+            android:layout_marginTop="8dp"
+            android:textColor="#858585"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/bangbi_custom_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:gravity="right"
+            android:text="-500"
+            android:textColor="#414141"
+            android:textSize="23sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.7dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:background="#d7d7d7" />
+
+
+</RelativeLayout>

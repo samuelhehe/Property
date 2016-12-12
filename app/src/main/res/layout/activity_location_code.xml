@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#10c573"
+    tools:context="xj.property.activity.user.LocationCodeActivity">
+    <ImageButton
+        android:id="@+id/ib_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/splash_back"
+        android:background="@null"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:paddingLeft="45dp"
+        android:paddingRight="45dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:text="定位失败可通过定位码进入帮帮，定位码由帮帮提供。"/>
+
+        <EditText
+            android:id="@+id/et_location_code"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@drawable/input_bg"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:hint="定位码"
+            android:textColorHint="#c0c0c0"
+            android:singleLine="true"
+            android:textColor="#333"
+            android:inputType="number"
+            android:layout_marginTop="28dp"/>
+
+        <Button
+            android:id="@+id/go_in_bangbang"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@drawable/splash_btn_bg"
+            android:layout_marginTop="28dp"
+            android:text="进入帮帮"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            />
+        </LinearLayout>
+
+</RelativeLayout>

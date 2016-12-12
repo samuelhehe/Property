@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="69dp"
+              android:background="@drawable/sendwater_bg"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="80dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:paddingRight="16dp"
+                android:id="@+id/water_station_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="12dp"
+                android:gravity="left|center_vertical"
+                android:paddingBottom="0dp"
+                android:singleLine="true"
+                android:text="乐百氏水站hfsdakhfdjksfhjkasdfjk"
+                android:textColor="#555555"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:maxLength="12"
+                android:id="@+id/water_station_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="4dp"
+                android:gravity="left|center_vertical"
+                android:text="18767895649"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="#ff7100"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/water_station_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:drawableLeft="@drawable/sendwater_time"
+                android:drawablePadding="3dp"
+                android:singleLine="true"
+                android:text="8:00-23:00"
+                android:textColor="#807f7f"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/sendwater_arrow"
+        android:scaleType="matrix"/>
+
+</LinearLayout>

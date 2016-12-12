@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sys_darker_3fa_theme_text_color"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/im_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/home_index_title"
+            layout="@layout/common_searchbar_index"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <RelativeLayout
+            android:id="@+id/home_index_nofity_bar_rlay"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_below="@+id/home_index_title">
+
+            <ImageView
+                android:id="@+id/home_index_notice_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/home_index_icon_notice" />
+
+            <ImageView
+                android:id="@+id/home_index_notice_iv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/home_index_icon_notice"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:id="@+id/translation_llay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/home_index_notice_iv2"
+                android:layout_toRightOf="@+id/home_index_notice_iv"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/translation_inner_llay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_notify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="和邻居们在一起"
+                        android:textColor="#242b28"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/tv_newnotify_count"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/popupdrawable"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/home_index_nofity_bar_rlay">
+
+            <include layout="@layout/notifylayout" />
+
+            <xj.property.widget.MyScrollView_20151111
+                android:id="@+id/sv_root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fadingEdge="none"
+                android:fillViewport="false"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:overScrollMode="never"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/sys_darker_3fa_theme_text_color" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/sys_darker_3fa_theme_text_color" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/line"
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:background="@drawable/home_notice_bottom_line"
+                        android:visibility="visible" />
+                    <!--android:background="@drawable/home_notice_bottom_line"-->
+
+                    <xj.property.widget.MyGridView
+                        android:id="@+id/gv_main"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#fff"
+                        android:fadingEdge="none"
+                        android:horizontalSpacing="@dimen/horizontalSpacing_index"
+                        android:listSelector="@drawable/item_background_selector"
+                        android:numColumns="3"
+                        android:scrollbars="none"
+                        android:verticalSpacing="@dimen/verticalSpacing_index" />
+                </LinearLayout>
+            </xj.property.widget.MyScrollView_20151111>
+
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

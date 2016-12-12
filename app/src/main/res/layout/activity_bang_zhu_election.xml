@@ -1,0 +1,586 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/bangzhu_election_title"
+        layout="@layout/common_bangzhu_headtop" />
+
+
+    <ScrollView
+        android:id="@+id/srcoll_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bangzhu_election_inivite_llay"
+        android:layout_below="@+id/bangzhu_election_title"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/background_light">
+
+
+            <LinearLayout
+                android:id="@+id/bangzhu_election_graph_llay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:id="@+id/bangzhu_election_fubangzhu_rlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <include
+                        android:id="@+id/bangzhu_election_fubangzhu1"
+                        layout="@layout/common_bangzhu_election_fubangzhu_headiconlay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="25dp" />
+
+                    <include
+                        android:id="@+id/bangzhu_election_bangzhu"
+                        layout="@layout/common_bangzhu_election_bangzhu_headiconlay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true" />
+
+                    <include
+                        android:id="@+id/bangzhu_election_fubangzhu2"
+                        layout="@layout/common_bangzhu_election_fubangzhu_headiconlay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="25dp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#f0f0ea" />
+
+                <LinearLayout
+                    android:id="@+id/bangzhu_election_zhanglao_llay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/bangzhu_election_zlao_1"
+                        layout="@layout/common_bangzhu_election_zhanglao_headiconlay"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1" />
+
+                    <include
+                        android:id="@+id/bangzhu_election_zlao_2"
+                        layout="@layout/common_bangzhu_election_zhanglao_headiconlay"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1" />
+
+                    <include
+                        android:id="@+id/bangzhu_election_zlao_3"
+                        layout="@layout/common_bangzhu_election_zhanglao_headiconlay"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1" />
+
+                    <include
+                        android:id="@+id/bangzhu_election_zlao_4"
+                        layout="@layout/common_bangzhu_election_zhanglao_headiconlay"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1" />
+
+                    <include
+                        android:id="@+id/bangzhu_election_zlao_5"
+                        layout="@layout/common_bangzhu_election_zhanglao_headiconlay"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1" />
+
+                    <include
+                        android:id="@+id/bangzhu_election_zlao_6"
+                        layout="@layout/common_bangzhu_election_zhanglao_headiconlay"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/bangzhu_election_rightnow_btn"
+                    android:layout_width="88dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/msp_discount_interface_bt"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="去投票"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/bangzhu_election_rightnow_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="以上职务每月选举一次，详情请查看 特权/规则"
+                    android:textColor="#5C5C5D"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/bangzhu_line_1"
+                android:layout_width="wrap_content"
+                android:layout_height="8dp"
+                android:layout_below="@+id/bangzhu_election_graph_llay"
+                android:background="@color/bg_color" />
+
+            <LinearLayout
+                android:id="@+id/bangzhu_privilege_introduction_llay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bangzhu_line_1"
+                android:layout_marginTop="13dp"
+                android:background="@android:color/background_light"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="61dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@android:color/background_light"
+                    android:gravity="center_vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:drawableBottom="@drawable/green_line"
+                        android:drawablePadding="5dp"
+                        android:text="职位"
+                        android:textColor="#1d1d26"
+                        android:textSize="14sp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:drawableBottom="@drawable/bangzhu_orange_line"
+                        android:drawablePadding="5dp"
+                        android:text="标志"
+                        android:textColor="#1d1d26"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:drawableBottom="@drawable/violet_line"
+                        android:drawablePadding="5dp"
+                        android:text="特权"
+                        android:layout_marginRight="8dp"
+                        android:textColor="#1d1d26"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/bg_color" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@android:color/background_light">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_horizontal"
+                        android:text="帮主"
+                        android:textColor="#a8a8aa" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/bangzhu_medal"
+                        android:gravity="center_horizontal"
+                        android:textColor="#a8a8aa" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="8dp"
+                        android:drawableTop="@drawable/super_zambia_red"
+                        android:gravity="center_horizontal"
+                        android:text="超赞"
+                        android:textColor="#a8a8aa" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/bg_color" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@android:color/background_light">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_horizontal"
+                        android:text="副帮主"
+                        android:textColor="#a8a8aa" />
+
+                    <ImageView
+                        android:id="@+id/fubangzhu_medal_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/fubangzhu_medal" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/fubangzhu_medal_tv"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:drawablePadding="8dp"
+                        android:drawableTop="@drawable/zambia_red"
+                        android:gravity="center_horizontal"
+                        android:text="赞"
+                        android:textColor="#a8a8aa" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/bg_color" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@android:color/background_light"
+                    android:gravity="center_vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/zhanglao_medal"
+                        android:textColor="#a8a8aa" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="8dp"
+                        android:drawableTop="@drawable/bangzhu_zanrp_icon"
+                        android:gravity="center_horizontal"
+                        android:text="双人品赞"
+                        android:layout_alignParentRight="true"
+                        android:textColor="#a8a8aa" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center_horizontal"
+                        android:text="达人"
+                        android:textColor="#a8a8aa" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/bg_color" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/bangzhu_line_2"
+                android:layout_width="wrap_content"
+                android:layout_height="8dp"
+                android:layout_below="@+id/bangzhu_privilege_introduction_llay"
+                android:background="@color/bg_color" />
+
+            <LinearLayout
+                android:id="@+id/bangzhu_election_tjneedinvite_llay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bangzhu_line_2"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/bangzhu_election_status_rlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/green_transparent_bg">
+
+                    <TextView
+                        android:id="@+id/bangzhu_election_ihave_complete_llay"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="#fff"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                    <RelativeLayout
+                        android:id="@+id/bangzhu_election_headicon_rlay"
+                        android:layout_width="match_parent"
+                        android:layout_height="96dp"
+                        android:layout_below="@+id/bangzhu_election_ihave_complete_llay"
+                        android:background="@android:color/background_light">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:background="@drawable/green_transparent_bg"
+                            android:orientation="vertical" />
+
+                        <xj.property.widget.CircleImageView
+                            android:id="@+id/my_iv_avatar"
+                            android:layout_width="96dp"
+                            android:layout_height="96dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/me_face_nologin" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/bangzhu_election_ihave_invite_llay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/bangzhu_election_headicon_rlay"
+                        android:background="@android:color/background_light"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/bangzhu_election_myname_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="17dp"
+                            android:text=""
+                            android:textColor="#1d1d26"
+                            android:textSize="23sp" />
+
+                        <TextView
+                            android:id="@+id/bangzhu_election_ihave_invite_success_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="15dp"
+                            android:text="已经推荐成功注册邻居0名"
+                            android:textColor="#4d4c50"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/bangzhu_election_myrpz_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="23dp"
+                            android:text="人品值0"
+                            android:textColor="#4d4c50"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="5dp"
+                        android:layout_below="@+id/bangzhu_election_ihave_invite_llay"
+                        android:background="@color/bg_color" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/bangzhu_election_privilege_llay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="12dp"
+                        android:text="帮主、副帮主、长老, 竞选每月一次,每月2号为竞选日"
+                        android:textColor="#4b4c50" />
+
+
+                    <TextView
+                        android:id="@+id/bangzhu_election_seeprivilege_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginTop="9dp"
+                        android:text="查看帮主特权"
+                        android:textColor="#66d99f" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="3dp"
+                    android:background="@color/bg_color" />
+
+                <LinearLayout
+                    android:id="@+id/bangzhu_election_notice_llay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg_color"
+                    android:orientation="vertical">
+
+                    <include
+                        layout="@layout/common_bangzhu_election_needinvite_bzlay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp" />
+
+                    <include
+                        layout="@layout/common_bangzhu_election_needinvite_bzlay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp" />
+
+                    <include
+                        layout="@layout/common_bangzhu_election_needinvite_bzlay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="5dp"
+                    android:background="@color/bg_color" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <include
+        layout="@layout/net_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/bangzhu_election_inivite_llay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/background_light"
+        android:gravity="center_vertical">
+
+        <View
+            android:id="@+id/invite_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:background="@color/bg_color" />
+
+        <Button
+            android:id="@+id/bangzhu_election_inviate_btn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/invite_line"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="6.4dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="6.4dp"
+            android:background="@drawable/recommend_green_bt"
+            android:text="马上拉票竞选"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

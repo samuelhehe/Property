@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_eva"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <TextView
+            android:textSize="@dimen/titlefonts"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/tophigh"
+            android:id="@+id/iv_star0"
+            android:textColor="#666666"
+            style="@style/MyTextView"
+            android:text="服务质量"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bt_star_pressed"
+            android:id="@+id/iv_star1"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/bt_star_pressed"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_star2"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/bt_star_pressed"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_star3"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/bt_star_pressed"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_star4"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/bt_star_pressed"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_star5"/>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/vote_result_percent_left_llay"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.75"
+                android:orientation="horizontal"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vote_result_percent_right_llay"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.25"
+                android:background="@android:color/transparent"
+                android:gravity="left|center_vertical">
+
+                <TextView
+                    android:id="@+id/vote_right_percent_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:gravity="right|center_vertical"
+                    android:text="70%"
+                    android:textColor="@android:color/darker_gray" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/vote_result_percent_chosed_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/vote_item_checked"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/vote_result_pername_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/vote_result_percent_chosed_iv"
+            android:text="麻辣烫"
+            android:textColor="@color/sys_darker_font_vote_theme_text_color" />
+    </RelativeLayout>
+
+</LinearLayout>

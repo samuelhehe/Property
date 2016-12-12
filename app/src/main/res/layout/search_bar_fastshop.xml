@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="#eceeeb"
+    android:orientation="horizontal"
+    android:layout_marginTop="3dp"
+    android:paddingBottom="8dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="7dp">
+
+    <LinearLayout
+        android:layout_gravity="left|center"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:background="@drawable/search_bar_bg"
+        android:orientation="horizontal"
+       >
+    <ImageView
+        android:layout_marginLeft="8dp"
+        android:id="@+id/iv_search"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:background="@color/white"
+        android:src="@drawable/activity_search" />
+    <EditText
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:id="@+id/query"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_toLeftOf="@+id/iv_search"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:hint="搜索"
+        android:textColorHint="#c8c8c8"
+        android:textColor="#c8c8c8"
+        android:singleLine="true"
+
+        android:textSize="15sp" />
+
+    <ImageButton
+        android:id="@+id/search_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/iv_search"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/transparent"
+        android:padding="6dp"
+        android:src="@drawable/search_clear"
+        android:visibility="gone" />
+
+</LinearLayout>
+    </LinearLayout>

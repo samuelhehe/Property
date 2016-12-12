@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffffd"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/bangzhu_runfor_title"
+        layout="@layout/common_bangzhu_headtop" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_property_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="43dp"
+                android:text=""
+                android:textColor="#6D6D6D"
+                android:textSize="30dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="12dp"
+                android:background="#BABABA" />
+
+            <TextView
+                android:id="@+id/tv_property_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="47dp"
+                android:text=""
+                android:textColor="#666666"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tv_property_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="85dp"
+                android:text=""
+                android:textColor="#525252"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/tv_property_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="22dp"
+                android:layout_marginTop="86dp"
+                android:gravity="right"
+                android:text=""
+                android:textColor="#666666"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/tv_property"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="22dp"
+                android:layout_marginTop="5dp"
+                android:gravity="right"
+                android:text=""
+                android:textColor="#666666"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="28dp"
+                android:background="#BABABA"
+                android:text="" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="29dp"
+                android:gravity="center"
+                android:text="如有任何疑问可拨打以下电话"
+                android:textColor="#B7B7B7"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tv_community_property_phone_payed"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:textColor="#B7B7B7"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="132dp"
+                android:text="（如有其他物业相关费用或欠缴费用，请前往物业处查询）"
+                android:textColor="#B7B7B7"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,196 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffffd"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="xj.property.activity.runfor.MottoRunForActivity">
+
+    <include
+        android:id="@+id/bangzhu_runfor_title"
+        layout="@layout/common_bangzhu_headtop" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <xj.property.widget.CircleImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="74dp"
+                    android:layout_height="74dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginTop="14dp"
+                    android:src="@drawable/head_portrait_personage" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:gravity="center"
+                    android:text="莎莎"
+                    android:textColor="#525252"
+                    android:textSize="20dp" />
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:background="@drawable/white_button_selector_shape1"-->
+                <!--android:layout_height="200dp">-->
+
+                <!--</LinearLayout>-->
+                <RadioButton
+                    android:id="@+id/rb_0"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/radiobutton"
+                    android:drawablePadding="2dp"
+                    android:text="手动输入竞选宣言"
+                    android:textColor="#525252" />
+
+                <EditText
+                    android:id="@+id/et_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginRight="21dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/white_button_selector_shape1"
+                    android:gravity="start"
+                    android:hint="填写你的竞选宣言......"
+                    android:padding="5dp"
+                    android:textColorHint="#E6E6E6"
+                    android:textSize="16dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_radioGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:layout_marginBottom="60dp"
+                    android:paddingRight="10dp">
+
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginBottom="12dp"
+                        android:background="#eeeeee" />
+
+                    <RadioButton
+                        android:id="@+id/rb_1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/radiobutton"
+                        android:drawablePadding="2dp"
+                        android:text="邻里有爱，从我做起。我会努力打破钢筋水泥的阻隔，消除冷漠，让大家成为朋友！"
+                        android:textColor="#525252" />
+
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginTop="12dp"
+                        android:background="#eeeeee" />
+
+                    <RadioButton
+                        android:id="@+id/rb_2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/radiobutton"
+                        android:drawablePadding="2dp"
+                        android:text="小区的建设需要一位牵头人，只要能让小区生活更美好，我愿意为大家出这份力！"
+                        android:textColor="#4B4C50" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginTop="12dp"
+                        android:background="#eeeeee" />
+
+                    <RadioButton
+                        android:id="@+id/rb_3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/radiobutton"
+                        android:drawablePadding="2dp"
+                        android:text="群众的利益不可侵犯，如果你愿意相信我，那就投我一票，由我去为大家争取利益！"
+                        android:textColor="#4B4C50" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginTop="12dp"
+                        android:background="#eeeeee" />
+
+                    <RadioButton
+                        android:id="@+id/rb_4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/radiobutton"
+                        android:drawablePadding="2dp"
+                        android:text="我不会说大话，更不会许大愿，我只能帮到您一点点，但是我保证能做到这一点点！"
+                        android:textColor="#4B4C50" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginBottom="31dp"
+                        android:layout_marginTop="12dp"
+                        android:background="#eeeeee" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#ffffff">
+
+            <TextView
+                android:id="@+id/tv_share"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/common_bottom_green_bg"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="分享拉票"
+                android:textColor="#ffffff"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

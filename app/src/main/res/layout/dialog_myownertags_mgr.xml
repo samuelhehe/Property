@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tag_a2b_label_box_bg">
+
+    <xj.property.widget.FilterFlowLayout
+        android:id="@+id/mytags_mgr_fflay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="10dp"
+        app:horizontalGap="5dp"
+        app:maxWidthRatio="0.5"
+        app:verticalGap="5dp">
+        <View
+            android:layout_width="0.1dp"
+            android:layout_height="30dp"
+            android:background="@android:color/transparent" />
+    </xj.property.widget.FilterFlowLayout>
+
+    <View
+        android:id="@+id/mytags_mgr_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/mytags_mgr_fflay"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:background="@color/bg_color" />
+
+    <TextView
+        android:id="@+id/mytags_mgr_left_nums_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/mytags_mgr_line"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="4dp"
+        android:text="还可以添加0个标签"
+        android:textColor="#ff6600"
+        android:visibility="invisible" />
+
+    <xj.property.widget.FilterFlowLayout
+        android:id="@+id/mytags_mgr_system_defaulttags_fflay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mytags_mgr_left_nums_tv"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="6dp"
+        app:horizontalGap="10dp"
+        app:maxWidthRatio="0.5"
+        app:verticalGap="5dp">
+
+    </xj.property.widget.FilterFlowLayout>
+
+    <TextView
+        android:id="@+id/sysdefault_tags_loading_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mytags_mgr_left_nums_tv"
+        android:layout_centerHorizontal="true"
+        android:text="正在加载系统标签..."
+        android:textColor="#a8a8aa"
+        android:visibility="gone" />
+
+
+    <View
+        android:id="@+id/mytags_mgr_line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/mytags_mgr_system_defaulttags_fflay"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/bg_color" />
+
+    <LinearLayout
+        android:id="@+id/mytags_mgr_constum_tag_llay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mytags_mgr_line2"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/mytags_mgr_inputtags_et"
+            android:layout_width="0dp"
+            android:layout_height="28dp"
+            android:layout_marginRight="7dp"
+            android:layout_weight="1"
+            android:background="@drawable/tag_a2b_add_label_input"
+            android:hint="给ta添加新标签"
+            android:maxLength="6"
+            android:paddingLeft="10dp"
+            android:textColorHint="#a8a8aa"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/mytags_mgr_inputtags_btn"
+            android:layout_width="56dp"
+            android:layout_height="28dp"
+            android:background="@drawable/tag_a2b_add_label_btn"
+            android:text="添加"
+            android:textColor="#2FCC71"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/mytags_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/mytags_mgr_constum_tag_llay"
+        android:layout_marginTop="12dp"
+        android:background="@color/bg_color" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_below="@+id/mytags_line"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="取消"
+            android:textColor="#7EDFA7"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/bg_color" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="确定"
+            android:textColor="#7EDFA7"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

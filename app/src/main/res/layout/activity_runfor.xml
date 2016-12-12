@@ -1,0 +1,189 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:background="#fffffd"
+    tools:context="xj.property.activity.runfor.RunForActivity">
+
+    <include
+        android:id="@+id/bangzhu_runfor_title"
+        layout="@layout/common_bangzhu_headtop" />
+
+    <include
+        android:id="@+id/ll_runfor_header"
+        layout="@layout/item_bang_zhu_runfor_header" />
+
+    <LinearLayout
+        android:id="@+id/ll_banner"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FE8230"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:textColor="#ffffff"
+                    android:text="" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11dp"
+                    android:textColor="#ffffff"
+                    android:text="NO" />
+
+            </LinearLayout>
+
+            <xj.property.widget.CircleImageView
+                android:id="@+id/avatar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/head_portrait_personage" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:layout_marginLeft="12dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="#ffffff"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/tv_score"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="17dp"
+                        android:textColor="#ffffff"
+                        android:text="" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_direction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="9dp"
+                    android:src="@drawable/up_arrow" />
+
+                <ImageView
+                    android:id="@+id/iv_direction_down"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="9dp"
+                    android:src="@drawable/down_arrow" />
+
+                <TextView
+                    android:id="@+id/tv_playnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="给ta投票"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:textSize="16dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#4b4c50"
+                    android:background="@drawable/white_button_selector_shape" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#eeeeee" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_banner2"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="22dp">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#EEEEEE"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4B4C50"
+            android:textSize="18dp"
+            android:text="当前排名" />
+
+    </RelativeLayout>
+
+    <com.repo.xw.library.views.PullToRefreshLayout
+        android:id="@+id/pullToRefreshLayout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.repo.xw.library.views.PullListView
+            android:id="@+id/pullListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:overScrollMode="never"
+            android:scrollingCache="false">
+
+        </com.repo.xw.library.views.PullListView>
+    </com.repo.xw.library.views.PullToRefreshLayout>
+
+</LinearLayout>

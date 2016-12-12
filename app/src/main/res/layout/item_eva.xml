@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <xj.property.widget.CircleImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:id="@+id/iv_logo"
+            android:src="@drawable/default_picture" />
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="xixihaha"
+            android:layout_gravity="center_horizontal"
+            android:textSize="11sp"
+            android:textColor="#c9c9c9"
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_nick"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="32dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/iv_scoer"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:textColor="#d7d7d7"
+                android:textSize="11sp"
+                android:layout_width="wrap_content"
+                android:id="@+id/tv_time"
+                android:text="1231"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginBottom="39dp"
+            android:layout_marginTop="18dp"
+            android:text="1213"
+            android:textColor="#7e7e7e"
+            android:textSize="15sp"
+            android:lineSpacingExtra="4dp"
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

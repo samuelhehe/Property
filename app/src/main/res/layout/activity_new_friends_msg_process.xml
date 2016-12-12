@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical">
+
+    <include layout="@layout/headtop" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical|left"
+                android:orientation="horizontal">
+
+                <xj.property.widget.CircleImageView
+                    android:id="@+id/avatar_msg_civ"
+                    android:layout_width="49dp"
+                    android:layout_height="49dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp" />
+
+                <TextView
+                    android:id="@+id/msg_nickname_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_toRightOf="@+id/avatar_msg_civ"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/sys_darker_66_theme_text_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/msg_reason_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/msg_nickname_tv"
+                    android:layout_below="@+id/msg_nickname_tv"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:textColor="@color/sys_darker_69_theme_text_color"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/msg_reason_tv"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/sys_darker_6e_theme_text_color" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/msg_apply_llay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/msg_decline_reason_et"
+                    android:layout_width="332dp"
+                    android:layout_height="172dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/common_search_box_shape_bg"
+                    android:gravity="left|top"
+                    android:hint="如果拒绝，请填写拒绝理由..."
+                    android:maxLength="40"
+                    android:paddingLeft="9dp"
+                    android:paddingTop="13dp"
+                    android:textColor="@color/sys_darker_69_theme_text_color"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="332dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="22dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/msg_decline_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0.5dp"
+                        android:layout_weight="1"
+                        android:background="#45C34A"
+                        android:text="拒绝"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:id="@+id/msg_agree_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0.5dp"
+                        android:layout_weight="1"
+                        android:background="#45C34A"
+                        android:text="同意"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/msg_reapply_llay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/msg_reapply_reason_et"
+                    android:layout_width="332dp"
+                    android:layout_height="172dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/common_search_box_shape_bg"
+                    android:gravity="left|top"
+                    android:hint="填写加入理由..."
+                    android:maxLength="40"
+                    android:paddingLeft="9dp"
+                    android:paddingTop="13dp"
+                    android:textColor="@color/sys_darker_69_theme_text_color"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="332dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="22dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/msg_reapply_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="0.5dp"
+                        android:layout_weight="1"
+                        android:background="#45C34A"
+                        android:text="再次申请"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/msg_apply_result_llay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/msg_apply_result_iv"
+                    android:layout_width="87dp"
+                    android:layout_height="87dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="63dp" />
+
+                <LinearLayout
+                    android:layout_width="322dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="44dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/msg_apply_result_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:text="您已拒绝“张艳梅”的进群申请"
+                        android:textColor="@color/sys_darker_6c_theme_text_color"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/msg_apply_reason_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center_horizontal"
+                        android:text="拒绝理由：此群已满，谢谢加入满"
+                        android:textColor="@color/sys_darker_6c_theme_text_color"
+                        android:textSize="19sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

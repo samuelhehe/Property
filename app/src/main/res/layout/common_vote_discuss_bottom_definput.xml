@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bar_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/bg_color"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#"/>-->
+
+    <View
+        android:id="@+id/default_input_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent" />
+
+    <RelativeLayout
+        android:id="@+id/edittext_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@+id/defbtn_send"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/et_sendmessage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/help_detail_input"
+            android:hint="点击输入评价"
+            android:maxLines="3"
+            android:minHeight="40dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="3dp"
+            android:textColor="@color/sys_gray_theme_text_color"
+            android:textColorHint="@color/sys_gray_theme_text_color"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/defbtn_send"
+        android:layout_width="45dip"
+        android:layout_height="31dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/help_detail_input"
+        android:text="发布"
+        android:textColor="#A8A8AA"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btn_charter"
+        android:layout_width="wrap_content"
+        android:layout_height="32dip"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/pink_selector_bg"
+        android:drawableLeft="@drawable/reply_heart"
+        android:padding="3dp"
+        android:text="赞人品"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

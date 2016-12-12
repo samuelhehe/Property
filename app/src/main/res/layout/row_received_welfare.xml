@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/timestamp"
+        style="@style/chat_text_date_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:text="周一14:30"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="@dimen/chat_ext_margin"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_chat_activity">
+        <ImageView
+            android:id="@+id/iv_userhead"
+            android:layout_width="@dimen/size_avatar"
+            android:layout_height="@dimen/size_avatar"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="4dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/mini_avatar_shadow"
+            android:scaleType="fitXY"
+            android:visibility="visible"
+            />
+        <LinearLayout
+
+            android:layout_gravity="center"
+            android:layout_width="234dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:id="@+id/ll_detial_buying"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <xj.property.widget.MaskImage
+                        android:id="@+id/iv_welfare_photo"
+                        xmlns:maskimage = "http://schemas.android.com/apk/res/xj.property"
+                        android:layout_width="match_parent"
+                        android:layout_height="125dp"
+                        maskimage:mask="@drawable/black_paopao"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="您已成功抢到福利"
+                        android:padding="4dp"
+                        android:textColor="#fff"
+                        android:background="@drawable/contact_black_bg"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="15dp"/>
+                    </RelativeLayout>
+                <TextView
+                    android:id="@+id/tv_detail_title"
+                    android:paddingRight="13dp"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="阿拉兰牛肉面套餐价原价29，现价9.9，限量30份，限时30天"
+                    android:textColor="#464646"
+                    android:textSize="16sp"
+                    android:background="@drawable/chat_middle"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_code_end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/chat_bg_top">
+                <TextView
+                    android:id="@+id/tv_used_code_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="阿拉兰牛肉面套餐价原价29，现价9.9，限量30份，限时30天"
+                    android:textColor="#464646"
+                    android:textSize="16sp"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"/>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_detail"
+                android:text="查看详情"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:background="@drawable/chat_bg_bottom"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_userid"
+            style="@style/chat_text_name_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/margin_chat_activity"
+            android:layout_above="@id/iv_userhead"/>
+        <TextView
+            android:id="@+id/percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0%"
+            android:textColor="@android:color/white"
+            android:visibility="visible" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="80dp">
+    <RelativeLayout
+        android:paddingLeft="23dp"
+        android:paddingTop="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:id="@+id/ll_l1"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_bonus_name"
+                android:textSize="16sp"
+                android:text="通用券"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_bonus_price"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/item_fix_doing"
+                android:textSize="18sp"
+                android:text="$ 5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:id="@+id/ll_l2"
+            android:layout_below="@id/ll_l1"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#666666"
+                android:textSize="11sp"
+                android:text="使用范围"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_bonus_list"
+                android:layout_marginLeft="8dp"
+                android:textColor="#666666"
+                android:textSize="11sp"
+                android:text="蔬菜水果类"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:id="@+id/ll_l3"
+            android:layout_below="@id/ll_l2"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#666666"
+                android:textSize="11sp"
+                android:text="使用期限"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_bonus_time"
+                android:layout_marginLeft="8dp"
+                android:textColor="#666666"
+                android:textSize="11sp"
+                android:text="2014-11-11 至 2015-02-02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+
+
+    <CheckBox
+        android:id="@+id/ck_bonus"
+        style="@style/CustomCheckboxTheme_bonus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="23dp"
+        android:checked="false"
+        android:focusable="false"
+        android:clickable="false"
+        android:focusableInTouchMode="false"
+        />
+
+</RelativeLayout>

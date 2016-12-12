@@ -1,0 +1,400 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/headtop_title"
+        layout="@layout/common_membership_headtop" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@+id/headtop_title">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <include android:id="@+id/msp_pay_consume_total" layout="@layout/common_msp_pay_good_item" />
+            <include android:id="@+id/msp_pay_discount_subrmb" layout="@layout/common_msp_pay_good_item" />
+            <include android:id="@+id/msp_pay_discount_after" layout="@layout/common_msp_pay_good_item" />
+            <include android:id="@+id/msp_pay_goods_name" layout="@layout/common_msp_pay_good_item" />
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="34dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:gravity="center_vertical"
+                    android:text="总价："
+                    android:textColor="#989595"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_goods_sum_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center_vertical|right"
+                    android:text="￥ 0.0"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="34dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="帮帮币："
+                    android:textColor="#989595"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_bangbangbi_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center_vertical|right"
+                    android:text="-￥ 0"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14sp"/>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#dbdada"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="46dp "
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center|left"
+                android:paddingLeft="13dp"
+                android:text="在线支付"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rl_paybyarrivel"
+                android:layout_width="fill_parent"
+                android:layout_height="56dp"
+                android:layout_marginBottom="6dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="实收"
+                    android:textColor="#5a5959"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_goods_real_pay"
+                    android:layout_width="160dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center_vertical|right"
+                    android:text="￥ 0.0"
+                    android:textColor="#dd2726"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/ck_cashondelivery"
+                    style="@style/CustomCheckboxTheme_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:checked="false"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_paybyonline"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="在线支付"
+                    android:textColor="#101010"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/ck_cashonline"
+                    style="@style/CustomCheckboxTheme_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:checked="true"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.7dp"
+                android:background="#dbdada"/>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_paybyali"
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:drawableLeft="@drawable/pay_online_alipay"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="15dp"
+                    android:text="支付宝在线支付"
+                    android:textColor="#ff6634"
+                    android:textSize="16sp" />
+
+
+                <CheckBox
+                    android:id="@+id/rb_cashbyali"
+                    style="@style/CustomRadioButtonTheme_welfarepay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:checked="true"
+                    android:clickable="false" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.7dp"
+                android:background="#dbdada"/>
+            <RelativeLayout
+                android:id="@+id/pay_byweixin"
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:background="@color/white"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/weixin_pay"
+                    android:drawablePadding="15dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:text="微信在线支付"
+                    android:textColor="#ff6634"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:id="@+id/rb_cashbyweixin"
+                    style="@style/CustomRadioButtonTheme_welfarepay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:checked="false"
+                    android:clickable="false" />
+            </RelativeLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.7dp"
+                android:background="#dbdada"/>
+            <RelativeLayout
+                android:id="@+id/rl_bonus"
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/im_bangbangquan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:drawableLeft="@drawable/bangbang_currency"
+                    android:drawablePadding="15dp"
+                    android:gravity="center_vertical"
+                    android:text="帮帮币"
+                    android:textColor="#666666"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_bonus_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/im_bangbangquan"
+                    android:background="@drawable/welfare_payment_orange_bg"
+                    android:gravity="center_vertical"
+                    android:padding="3dp"
+                    android:text="0枚帮帮币可用"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="13sp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_bangbangquan_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="13dp"
+                    android:background="@drawable/me_arrow"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_use_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/iv_bangbangquan_more"
+                    android:gravity="center_vertical"
+                    android:text="未使用"
+                    android:textColor="#989595"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <CheckBox
+                    android:id="@+id/rb_cashbybangbang"
+                    style="@style/CustomRadioButtonTheme_welfarepay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:clickable="false"
+                    android:checked="false" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/shop_bottom_bg"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@android:color/background_light"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="实付"
+                android:textColor="@android:color/background_dark"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_sum_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:text="￥0.0"
+                android:textColor="#dd2726"
+                android:textSize="21sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_confirm_pay"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#fc4544">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="确认并支付"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <include
+        layout="@layout/net_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headtop_title" />
+
+</RelativeLayout>

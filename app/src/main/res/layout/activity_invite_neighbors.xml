@@ -1,0 +1,242 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+
+    <include
+        android:id="@+id/invite_neighbors_title"
+        layout="@layout/common_bangzhu_headtop" />
+
+    <TextView
+        android:id="@+id/invite_neighbors_msg_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/invite_neighbors_title"
+        android:background="@drawable/transparent_green_bg"
+        android:gravity="center"
+        android:lineSpacingExtra="7dp"
+        android:padding="15dp"
+        android:text=""
+        android:textColor="#fff"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/invite_neighbors_title">
+
+        <RelativeLayout
+            android:id="@+id/invite_neighbors_content_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/invite_num1_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/method_one" />
+
+            <LinearLayout
+                android:id="@+id/invite_by_socialtools_llay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/invite_num1_iv"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:lineSpacingExtra="5dp"
+                    android:singleLine="false"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="小区邻居越多商家将提供的优惠越多，赶快邀请邻居哦"
+                    android:textColor="@android:color/darker_gray" />
+
+                <Button
+                    android:id="@+id/invite_by_qq_btn"
+                    android:layout_width="236dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/recommend_green_bt"
+                    android:text="推荐到业主QQ"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:id="@+id/invite_by_weixin_btn"
+                    android:layout_width="236dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/recommend_green_bt"
+                    android:text="推荐到业主微信"
+                    android:textColor="#fff" />
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/diver_line"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_below="@+id/invite_by_socialtools_llay"
+                android:layout_marginTop="34dp"
+                android:background="@drawable/or_line" />
+
+            <ImageView
+                android:id="@+id/invite_num2_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/diver_line"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/method_two" />
+
+
+            <LinearLayout
+                android:id="@+id/invite_by_phone_num_llay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/invite_num2_iv"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="输入邻居手机号帮帮为您免费发送邀请信息"
+                    android:textColor="@android:color/darker_gray" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/invite_by_phone_num_et"
+                        android:layout_width="235dp"
+                        android:layout_height="42dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_toLeftOf="@+id/invite_by_phonelist_btn"
+                        android:layout_toStartOf="@+id/invite_by_phonelist_btn"
+                        android:background="@drawable/recommend_white_bg"
+                        android:hint="邻居的手机号"
+                        android:textColorHint="#b2b2b2"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:id="@+id/invite_by_phonelist_btn"
+                        android:layout_width="86dp"
+                        android:layout_height="42dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/recommend_green_bt"
+                        android:text="手机通讯录"
+                        android:textColor="#fff"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/confirm_invite_btn"
+                    android:layout_width="236dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15.5dp"
+                    android:background="@drawable/recommend_green_bt"
+                    android:text="确认推荐"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_horizontal"
+                    android:text="每推荐一位邻居成功注册为帮帮用户,您的人品值增加20"
+                    android:textColor="#d2caca"
+                    android:textSize="10sp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/invite_method2_diver_line"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_below="@+id/invite_by_phone_num_llay"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"
+                android:background="@color/bg_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:layout_below="@+id/invite_method2_diver_line"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="我推荐的邻居"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/has_invited_success_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="您已成功推荐0位邻居"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <ListView
+                    android:visibility="gone"
+                    android:id="@+id/has_invited_list_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:divider="@null">
+
+                </ListView>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

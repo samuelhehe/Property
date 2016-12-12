@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="45dp"
+              android:background="#4caf50"
+              android:paddingTop="5dp"
+              android:paddingBottom="5dp"
+              android:paddingLeft="@dimen/padding_search_bar"
+              android:paddingRight="@dimen/padding_search_bar"
+              android:orientation="horizontal"
+    >
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="9"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout_focus"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="0px"
+            android:layout_height="0px"/>
+        <EditText
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="8dp"
+            android:id="@+id/query"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/search_line_index"
+            android:hint="搜索好友/商家"
+            android:textColorHint="#e1efe2"
+            android:textSize="14sp"
+            android:textColor="#74cc78"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:singleLine="true"/>
+        <ImageButton
+            android:id="@+id/search_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="48dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/search_clear"
+            android:visibility="invisible"
+            />
+
+        <ImageButton
+            android:id="@+id/search_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/nav_bar_search"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

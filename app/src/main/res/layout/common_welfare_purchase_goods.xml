@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="@android:color/background_light">
+
+    <RelativeLayout android:id="@+id/welfare_poster_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="0dp"
+        android:background="@android:color/background_light">
+
+        <ImageView
+            android:id="@+id/welfare_purchase_goods_niv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:background="@drawable/welfare_loading_pic"
+            android:layout_centerInParent="true"
+            android:layout_margin="0dp" />
+
+
+        <ImageView
+            android:id="@+id/welfare_have_been_robbed_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/have_been_robbed"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            />
+
+        <RelativeLayout android:id="@+id/purchase_right_icon_rlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible"
+            android:background="@drawable/pinck_circle">
+
+            <TextView
+                android:id="@+id/left_nums_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="剩余名额"
+                android:visibility="visible"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/left_nums_content_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/left_nums_title_tv"
+                android:layout_centerHorizontal="true"
+                android:text="33位"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_success_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="抢福利成功，福利码已发送到您的\n福利消息中，请您注意查收。"
+        android:background="@drawable/to_welfare_black_bg"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:padding="10dp"
+        android:lineSpacingExtra="5dp"
+        android:visibility="gone"
+        />
+
+
+</RelativeLayout>

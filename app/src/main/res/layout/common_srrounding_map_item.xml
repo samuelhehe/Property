@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <xj.property.widget.CircleImageView
+        android:id="@+id/srrounding_icon_item_civ"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/srrounding_item_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/srrounding_icon_item_civ"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="美食"
+        android:textColor="@android:color/background_dark"
+        android:layout_marginBottom="11dp"
+        android:textSize="11sp" />
+
+
+</RelativeLayout>

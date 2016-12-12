@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/btn_gray_normal"
+        android:text="-" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/top_bar_green_bg"
+        android:id="@+id/ll_btns"
+        android:gravity="center"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:paddingTop="2dip"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/ca_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="取消"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/ok_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="确定"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/btn_gray_normal"
+        android:text="-" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <xj.property.widget.wheelview.WheelView
+            android:id="@+id/provice"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_marginTop="8dp"/>
+
+        <xj.property.widget.wheelview.WheelView
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+        android:layout_height="135dp"
+            android:layout_marginTop="8dp"/>
+
+        <xj.property.widget.wheelview.WheelView
+            android:id="@+id/area"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+</LinearLayout>

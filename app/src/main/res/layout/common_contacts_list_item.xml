@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@android:color/background_light"
+    android:focusable="false">
+
+    <TextView
+        android:id="@+id/alphabet_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f4f4f4"
+        android:gravity="left"
+        android:textSize="14sp"
+        android:paddingLeft="15dp"
+        android:textColor="@android:color/darker_gray"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/contacs_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_below="@id/alphabet_text_view">
+
+        <ImageView
+            android:id="@+id/contacts_multiple_phone_operation_prompt_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:visibility="gone" />
+
+        <!--<CheckBox-->
+            <!--android:id="@+id/select_contacts_check_box"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_toRightOf="@id/contacts_multiple_phone_operation_prompt_image_view" />-->
+
+        <xj.property.widget.CircleImageView
+            android:id="@+id/select_contacts_iv"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/head_portrait_personage"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/contacts_multiple_phone_operation_prompt_image_view" />
+
+        <RelativeLayout
+            android:id="@+id/contacts_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:descendantFocusability="blocksDescendants"
+            android:layout_toRightOf="@id/select_contacts_iv">
+
+            <TextView
+                android:id="@+id/name_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#2c2d2e"
+                android:text="李小壯"
+                android:textSize="15sp"
+                android:gravity="left" />
+
+            <TextView
+                android:id="@+id/phone_number_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="13939939366"
+                android:ellipsize="end"
+                android:layout_below="@id/name_text_view"
+                android:gravity="left" />
+
+            <TextView
+                android:id="@+id/operation_view_image_view"
+                android:layout_width="85dp"
+                android:layout_height="29dp"
+                android:contentDescription="@string/app_name"
+                android:text="邀请"
+                android:focusable="false"
+                android:clickable="true"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:background="@drawable/green_line_bt"
+                android:layout_marginRight="20dp"
+                android:textColor="#66d99f"
+                android:layout_marginEnd="30dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <!--<ImageView-->
+                <!--android:id="@+id/operation_view_image_view"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/arrow_down"-->
+                <!--android:contentDescription="@string/app_name"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_marginRight="16dp"-->
+                <!--android:layout_marginEnd="16dp" />-->
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/division_line_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:layout_marginLeft="85dp"
+        android:layout_below="@id/contacs_info_layout"
+        android:background="@color/bg_color" />
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/operation_view_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/division_line_text_view">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/call_image_view"-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:background="@drawable/ic_launcher"-->
+            <!--android:contentDescription="@string/app_name" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/sms_image_view"-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:background="@drawable/ic_launcher"-->
+            <!--android:contentDescription="@string/app_name" />-->
+    <!--</RelativeLayout>-->
+
+</RelativeLayout>

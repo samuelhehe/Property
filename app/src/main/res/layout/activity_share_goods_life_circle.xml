@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f5f7"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/headtop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:paddingBottom="92dp">
+
+        <EditText
+            android:id="@+id/tv_share_content"
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="22dp"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="商品怎么样？"
+            android:textColor="#6f6f6f"
+            android:textColorHint="#b0afaf"
+            android:textSize="16sp" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_marginLeft="22dp"
+            android:background="#e2e2e2" />
+
+        <GridView
+            android:id="@+id/gv_goods_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="44dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="18dp"
+            android:horizontalSpacing="7dp"
+            android:numColumns="4"
+            android:verticalSpacing="7dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

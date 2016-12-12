@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="215dp"
+    android:background="@android:color/background_light">
+
+
+    <View
+        android:layout_width="0.7dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="115dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/bg_color" />
+
+
+    <LinearLayout
+        android:layout_width="124dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/srrounding_item_icon_iv"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_picture" />
+
+        <TextView
+            android:id="@+id/srrouding_item_desc_tv"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#FA7120"
+            android:ellipsize="end"
+            android:paddingBottom="16dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="16dp"
+            android:singleLine="false"
+            android:text=""
+            android:textColor="#fff"
+            android:textSize="11sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/srrounding_item_shopname_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text=""
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/srrounding_item_shopdistance_tv"
+                android:textColor="#585858"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/srrounding_item_shopdistance_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text=""
+                android:textSize="10sp" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

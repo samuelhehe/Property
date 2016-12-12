@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@android:color/background_light">
+
+    <include
+        android:id="@+id/headtop_title"
+        layout="@layout/common_membership_headtop" />
+
+    <TextView
+        android:id="@+id/msp_list_notice_tv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/headtop_title"
+        android:background="@drawable/transparent_black"
+        android:gravity="center"
+        android:text="使用帮帮会员卡,线上支付买单,所有消费立享折扣"
+        android:textColor="@android:color/background_light"
+        android:visibility="gone" />
+
+    <com.repo.xw.library.views.PullToRefreshLayout
+        android:id="@+id/pull_to_refreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/msp_list_notice_tv">
+
+        <com.repo.xw.library.views.PullListView
+            android:id="@+id/msp_pull_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#F4F4F4"
+            android:dividerHeight="7dp"
+            android:listSelector="@android:color/transparent"
+            android:overScrollMode="never"
+            android:scrollbars="vertical"
+            android:scrollingCache="false">
+
+        </com.repo.xw.library.views.PullListView>
+    </com.repo.xw.library.views.PullToRefreshLayout>
+
+    <include
+        layout="@layout/net_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headtop_title" />
+
+
+</RelativeLayout>

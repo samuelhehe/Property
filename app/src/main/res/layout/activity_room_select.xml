@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed"
+    android:orientation="vertical">
+
+    <include layout="@layout/headtop" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_select_room_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="30dp"
+                android:drawableLeft="@drawable/regist_select_tip"
+                android:drawablePadding="5dp"
+                android:lineSpacingExtra="6dp"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp"
+                android:text="此地址仅用于我们为您提供准确的服务,其他业主不可见"
+                android:textColor="#ffa54b"
+                android:textSize="15sp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="38dp"
+                android:layout_marginRight="38dp"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <!--String item_floors,String item_unit, String item_data_rooms-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="请输入您的真实住址:"
+                    android:textColor="@color/sys_darker_theme_text_color"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/select_floor_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="42dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:hint="XXX号楼"
+                    android:maxLength="20"
+                    android:textColorHint="@color/sys_def_hint_theme_text_color"
+                    android:textSize="17sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#e5e5e5" />
+
+
+                <EditText
+                    android:id="@+id/select_unit_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:hint="XXX单元"
+                    android:maxLength="20"
+                    android:textColorHint="@color/sys_def_hint_theme_text_color"
+                    android:textSize="17sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#e5e5e5" />
+
+                <EditText
+                    android:id="@+id/select_room_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:hint="XXX房间"
+                    android:maxLength="20"
+                    android:textColorHint="@color/sys_def_hint_theme_text_color"
+                    android:textSize="17sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#e5e5e5" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_room_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/darkgreen_btn_disable"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:visibility="visible" />
+
+</LinearLayout>

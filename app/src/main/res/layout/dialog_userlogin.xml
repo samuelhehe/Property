@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="5dip"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dip"
+        android:id="@+id/dialog_title"
+        android:text="您尚未登录,请先登录"
+        android:textColor="@color/btn_green_noraml"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/dialog_cancel_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dip"
+            android:background="@color/bg_color"
+            android:text="注册"
+            android:textColor="@color/btn_blue_normal"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/dialog_submit_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dip"
+            android:background="@color/bg_color"
+            android:text="登录"
+            android:textColor="@color/chat_btn_green"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>

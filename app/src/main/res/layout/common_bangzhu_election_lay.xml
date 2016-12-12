@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/darker_gray"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp">
+
+
+    <xj.property.widget.CircleImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:background="@drawable/me_face_nologin" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="73dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/iv_avatar"
+        android:layout_toRightOf="@+id/iv_avatar"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bangzhu_election_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="帮主:乔峰" />
+
+        <TextView
+            android:id="@+id/bangzhu_election_rpz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人品值:1000" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

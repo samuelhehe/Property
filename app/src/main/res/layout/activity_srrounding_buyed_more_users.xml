@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <include layout="@layout/common_srrounding_headtop" />
+
+  <xj.property.widget.pullrefreshview.library.PullToRefreshListView
+        android:id="@+id/buyed_usrs_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:scrollbars="none"/>
+
+    <include layout="@layout/net_error" />
+</LinearLayout>

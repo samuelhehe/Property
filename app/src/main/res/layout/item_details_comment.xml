@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="135dp"
+    android:orientation="horizontal">
+
+    <xj.property.widget.CircleImageView
+        android:id="@+id/iv_title"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="13dp"
+        android:src="@drawable/arrow_down" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="135dp"
+        android:layout_marginLeft="7dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:textSize="15dp"
+            android:textColor="#4B4C50"
+            android:text="张颖" />
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_marginTop="13dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#848484"
+            android:textSize="14dp"
+            android:layout_marginRight="30dp"
+            android:text="设计师很好，对客户的态度非常棒，工长人很 好，因本人长期出差在外，家里面装修全靠他 们了。" />
+
+    </LinearLayout>
+</LinearLayout>
+
+

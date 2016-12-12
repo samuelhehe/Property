@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="360dp"
+    android:layout_height="641dp"
+    android:background="@android:color/holo_green_light">
+    <!--android:background="@drawable/myc_category_rounded_rectangle_diabg">-->
+
+    <ImageView
+        android:id="@+id/myc_category_close_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="13dp"
+        android:src="@drawable/circle_delete" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myc_category_close_iv"
+        android:layout_marginBottom="18dp"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/myc_cname_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:drawableLeft="@drawable/myc_category_house"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="天华小区"
+                android:textColor="#4D4D4D"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:text="(您所在的小区)"
+                android:textColor="#4D4D4D"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/bg_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="18dp"
+            android:drawableBottom="@drawable/myc_blue_line"
+            android:text="您的邻居里有:"
+            android:textColor="#4D4D4D"
+            android:textSize="16sp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/myc_category_top_llay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mycc_top_left_tv"
+                    android:layout_width="121dp"
+                    android:layout_height="43dp"
+                    android:layout_marginRight="14dp"
+                    android:background="@drawable/myc_category_rectangle"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="2位  医生"
+                    android:textColor="#30343A"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/mycc_top_right_tv"
+                    android:layout_width="121dp"
+                    android:layout_height="43dp"
+                    android:background="@drawable/myc_category_rectangle"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="2位  医生"
+                    android:textColor="#30343A"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/myc_category_moddle_llay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/myc_category_top_llay"
+                android:layout_marginTop="11dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mycc_moddle_left_tv"
+                    android:layout_width="121dp"
+                    android:layout_height="43dp"
+                    android:layout_marginRight="14dp"
+                    android:background="@drawable/myc_category_rectangle"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="2位  医生"
+                    android:textColor="#30343A"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/mycc_moddle_right_tv"
+                    android:layout_width="121dp"
+                    android:layout_height="43dp"
+                    android:background="@drawable/myc_category_rectangle"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="2位  医生"
+                    android:textColor="#30343A"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/myc_category_bottom_llay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/myc_category_moddle_llay"
+                android:layout_marginTop="11dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mycc_bottom_left_tv"
+                    android:layout_width="121dp"
+                    android:layout_height="43dp"
+                    android:layout_marginRight="14dp"
+                    android:background="@drawable/myc_category_rectangle"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="2位  医生"
+                    android:textColor="#30343A"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/mycc_bottom_right_tv"
+                    android:layout_width="121dp"
+                    android:layout_height="43dp"
+                    android:background="@drawable/myc_category_rectangle"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="2位  医生医生"
+                    android:textColor="#30343A"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:src="@drawable/three_dot"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="认识小区牛人,扩展生活圈层"
+            android:textColor="#989CA4"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="你的“麻烦”也许只是邻居的“举手之劳”"
+            android:textColor="#989CA4"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

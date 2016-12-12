@@ -1,0 +1,219 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/headtop_title"
+        layout="@layout/common_doorpaste_headtop" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/iwant_provider_submit_llay"
+        android:layout_below="@+id/headtop_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/iwant_provider_title_et"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/doorpaste_input_bg"
+                android:hint="输入小区楼号单元号房号"
+                android:maxLength="10"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:textColor="@color/sys_darker_63_theme_text_color"
+                android:textColorHint="#c1c1bf"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/iwant_provider_notice_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginTop="7dp"
+                android:text="请使用阿拉伯数字 （如：1号楼4单元505）"
+                android:textColor="#BEBEBE"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/iwant_provider_content_et"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/doorpaste_input_bg"
+                android:gravity="left|top"
+                android:hint="输入建议邻居改善的，或已经影响您生活的事情。"
+                android:lineSpacingExtra="5dp"
+                android:maxLength="200"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="20dp"
+                android:textColor="@color/sys_darker_63_theme_text_color"
+                android:textColorHint="#c1c1bf"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/iwant_provider_submit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/doorpaste_submit_btn_bg"
+                android:gravity="center"
+                android:text="匿名贴他家门上"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:visibility="visible" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/iwant_provider_submit_llay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/background_light"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/bar_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_color"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_color"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="7dp">
+
+                <CheckBox
+                    android:id="@+id/send_img_checkbox"
+                    android:layout_width="24dip"
+                    android:layout_height="24dip"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_marginLeft="10dp"
+                    android:button="@drawable/bottom_input_showimg_selector"
+                    android:checked="false"
+                    android:scaleType="fitCenter"
+                    android:visibility="visible" />
+
+                <!--<View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="#"/>-->
+                <RelativeLayout
+                    android:id="@+id/edittext_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/chat_input_bg"
+                    android:gravity="bottom"
+                    android:visibility="invisible">
+
+                    <xj.property.widget.PasteEditText
+                        android:id="@+id/et_sendmessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:background="@null"
+                        android:maxLines="3"
+                        android:minHeight="40dp"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="1dp"
+                        android:paddingTop="3dp"
+                        android:textColor="#191919"
+                        android:textColorHint="#e2e3e3"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btn_send"
+                    android:layout_width="40dip"
+                    android:layout_height="32dip"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/green_selector_bg"
+                    android:padding="3dp"
+                    android:text="@string/button_send"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/btn_charter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dip"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/pink_selector_bg"
+                    android:drawableLeft="@drawable/reply_heart"
+                    android:padding="3dp"
+                    android:text="赞人品"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_face_container"
+                android:layout_width="match_parent"
+                android:layout_height="186dp"
+                android:background="@android:color/background_light"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="173dp" />
+
+                <xj.property.widget.com.viewpagerindicator.CirclePageIndicator
+                    android:id="@+id/vpager_indicator"
+                    style="@style/CustomCirclePageIndicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="3dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <include
+        layout="@layout/net_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headtop_title" />
+
+</RelativeLayout>

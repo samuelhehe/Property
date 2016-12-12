@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="198dp">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    <TextView
+        android:textColor="#333333"
+        android:id="@+id/tv_user"
+        android:layout_alignParentTop="true"
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:text="尊敬的用户："
+        android:layout_marginLeft="12dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:lineSpacingExtra="5dp"
+        android:textColor="#333333"
+        android:id="@+id/tv_content"
+        android:layout_below="@id/tv_user"
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:text="        在您不方便接收快递时，帮帮免费提供代收服务并在第一时间通知您，在收货人地址填写为："
+        android:layout_marginLeft="12dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+        <ImageView
+            android:background="@drawable/clean_description_bg"
+            android:layout_alignParentBottom="true"
+            android:layout_width="fill_parent"
+            android:id="@+id/iv_pictuer"
+            android:layout_height="50dp"/>
+    <TextView
+        android:layout_marginTop="4dp"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textColor="#8bcb8e"
+        android:id="@+id/tv_address"
+        android:layout_above="@id/iv_pictuer"
+        android:textSize="23sp"
+        android:text="小区物业处"
+        android:layout_marginBottom="2dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
+</LinearLayout>

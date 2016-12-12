@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:background="#ebebeb"/>
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="37dp">
+        <xj.property.widget.CircleImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="6dp"
+            android:src="@drawable/me_face_nologin"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:textSize="11sp"
+            android:gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:textColor="#666666"
+            android:id="@+id/tv_content"
+            />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:drawableLeft="@drawable/lifecircle_likeicon"
+        android:text="1"
+        android:textSize="12sp"
+        android:textColor="#c5c5c5"
+        android:id="@+id/tv_zambia_count"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        />
+    </LinearLayout>
+</LinearLayout>

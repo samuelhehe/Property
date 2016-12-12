@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+
+                <!--<xj.property.widget.pullrefreshview.library.PullToRefreshGridView
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="9dp"
+                    android:id="@+id/gv_fastshop_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ededed"
+                    android:fadingEdge="none"
+                    android:gravity="center"
+                    android:horizontalSpacing="1dp"
+                    android:numColumns="2"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:scrollbars="vertical"
+                    android:verticalSpacing="1dp">
+                </xj.property.widget.pullrefreshview.library.PullToRefreshGridView>-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    >
+
+                    <xj.property.widget.GridViewWithHeaderAndFooter
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:id="@+id/gv_fastshop_detail"
+                        android:horizontalSpacing="6dp"
+                        android:numColumns="2"
+                        android:scrollbars="none"
+                        android:paddingLeft="4dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+
+                        android:verticalSpacing="6dp"
+                        android:layout_weight="1"></xj.property.widget.GridViewWithHeaderAndFooter>
+
+                </LinearLayout>
+                <xj.property.widget.CarJumpView
+                    android:id="@+id/ivcarjump"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <include layout="@layout/net_error"/>
+            </FrameLayout>
+
+        </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <xj.property.widget.CircleImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:visibility="gone"
+        android:background="@drawable/gray_see_more" />
+
+    <TextView
+        android:id="@+id/welfare_purchase_hasgoturs_name_tv"
+        android:layout_width="41dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="灰太狼"
+        android:singleLine="true"
+        android:layout_marginTop="6dp"
+        android:textColor="#959595"
+        android:gravity="center_horizontal"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+
+</LinearLayout>

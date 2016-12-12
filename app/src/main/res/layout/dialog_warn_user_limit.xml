@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="174dp"
+    android:layout_gravity="center"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:background="@drawable/white_rounded_rectangle_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_limit_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:gravity="center"
+        android:text="抢购活动，每人仅限抢N份"
+        android:textColor="#464b54"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="301dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="37dp"
+        android:background="@drawable/bomb_box_bt"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+</LinearLayout>

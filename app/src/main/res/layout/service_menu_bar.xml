@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="65dp">
+<TextView
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:id="@+id/tv_repair_app"
+    android:paddingTop="10dp"
+    android:gravity="center"
+    android:background="@color/top_bar_green_bg_old"
+    style="@style/menu_bar"
+    android:text="维修申请"
+    android:drawableTop="@drawable/repair_request"
+    />
+<TextView
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    style="@style/menu_bar"
+    android:background="@color/top_bar_green_bg_old"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:id="@+id/tv_repair_sheet"
+    android:text="报价表"
+    android:drawableTop="@drawable/repair_menu"/>
+<TextView
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    style="@style/menu_bar"
+    android:background="@color/top_bar_green_bg_old"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:text="拍照"
+    android:id="@+id/tv_repair_photo"
+    android:drawableTop="@drawable/repair_photo"/>
+<TextView
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    style="@style/menu_bar"
+    android:background="@color/top_bar_green_bg_old"
+    android:paddingTop="10dp"
+    android:gravity="center"
+    android:layout_weight="1"
+    android:text="投诉"
+    android:id="@+id/tv_Complaint"
+    android:drawableTop="@drawable/repair_complain"/>
+</LinearLayout>

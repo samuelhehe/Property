@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:background="#fffffd">
+
+
+    <TextView
+        android:id="@+id/tv_history_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#525252"
+        android:text="物业费缴费账单"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:textSize="18dp"
+        android:background="#D5D5D5"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="13dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_pay_time_long"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#6d6d6d"
+            android:text="已缴费3个月"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv_pay_num"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:textColor="#FD9550"
+            android:text="684"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:textColor="#6d6d6d"
+            android:text="元"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="28dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_pay_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#6d6d6d"
+            android:text="交费时间：2015年11月11日"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:textColor="#6d6d6d"
+            android:text="5号楼603室"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="11dp"
+        android:background="#F3F3F3"
+        android:layout_marginTop="12dp"/>
+
+</LinearLayout>

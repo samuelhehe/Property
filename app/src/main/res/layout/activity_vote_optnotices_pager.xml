@@ -1,0 +1,827 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    <!--android:background="#80000000">-->
+
+    <RelativeLayout
+        android:id="@+id/heaptop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tophigh"
+        android:layout_alignParentTop="true"
+        android:background="#fffffd"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/common_new_iv_back" />
+        <!--android:src="@drawable/campaign_for_bangzhu_after_back" />-->
+
+        <TextView
+            android:id="@+id/tv_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="投票"
+            android:textColor="@color/sys_green_theme_text_color"
+            android:textSize="@dimen/titlefonts" />
+
+        <TextView
+            android:id="@+id/tv_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:text="我发过的投票"
+            android:textColor="@color/sys_green_theme_text_color"
+            android:textSize="@dimen/titlefonts" />
+
+        <ImageView
+            android:id="@+id/iv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/tv_right_text"
+            android:src="@drawable/life_circle_search_icon"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lv_activities"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heaptop"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headtop_title">
+
+                <LinearLayout
+                    android:id="@+id/vote_bangzhu_go_llay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentTop="true"
+                                android:src="@drawable/vote_jiaobiao" />
+
+                            <TextView
+                                android:id="@+id/vote_index_bangzhu_title_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_marginTop="13dp"
+                                android:text="帮主竞选"
+                                android:textSize="30sp" />
+
+                            <TextView
+                                android:id="@+id/vote_index_bangzhu_cname_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/vote_index_bangzhu_title_tv"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:layout_marginTop="9dp"
+                                android:text="狮子城小区(下月)"
+                                android:textSize="19sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/vote_index_bangzhu_cname_tv"
+                                android:layout_marginTop="20dp"
+                                android:gravity="right|center_vertical"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:src="@drawable/vote_bangzhu" />
+
+
+                                    <ImageView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:src="@drawable/vote_fubangzhu" />
+
+
+                                    <ImageView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:src="@drawable/me_zhanglao_icon" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right|center_vertical"
+                                    android:background="@drawable/vote_label"
+                                    android:gravity="center"
+                                    android:paddingLeft="8dp"
+                                    android:text="现在投票"
+                                    android:textColor="#323232"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/panic_has_purchase_llay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.3dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@color/bg_color" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:drawablePadding="5dp"
+                            android:text="当前排名"
+                            android:textColor="#C0C0C1" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginBottom="6dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_weight="1"
+                            android:gravity="left|center_vertical"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/welfare_purchase_hasgoturs_lv"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_weight="1"
+                                android:gravity="left|center_vertical"
+                                android:orientation="horizontal">
+
+                                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <xj.property.widget.CircleImageView
+                                        android:id="@+id/iv_avatar"
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="9dp"
+                                        android:layout_marginRight="9dp"
+                                        android:src="@drawable/opt_notice_headicon_1"
+                                        android:visibility="visible" />
+
+                                    <TextView
+                                        android:id="@+id/welfare_purchase_hasgoturs_name_tv"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="6dp"
+                                        android:gravity="center_horizontal"
+                                        android:singleLine="true"
+                                        android:text="张大姐"
+                                        android:textColor="#a8a8aa"
+                                        android:textSize="8sp"
+                                        android:visibility="visible" />
+
+                                </LinearLayout>
+
+                                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <xj.property.widget.CircleImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="9dp"
+                                        android:layout_marginRight="9dp"
+                                        android:src="@drawable/opt_notice_headicon_3"
+                                        android:visibility="visible" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="6dp"
+                                        android:gravity="center_horizontal"
+                                        android:singleLine="true"
+                                        android:text="刘阿姨"
+                                        android:textColor="#a8a8aa"
+                                        android:textSize="8sp"
+                                        android:visibility="visible" />
+
+                                </LinearLayout>
+
+                                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <xj.property.widget.CircleImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="9dp"
+                                        android:layout_marginRight="9dp"
+                                        android:src="@drawable/opt_notice_headicon_4"
+                                        android:visibility="visible" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="6dp"
+                                        android:gravity="center_horizontal"
+                                        android:singleLine="true"
+                                        android:text="王老师"
+                                        android:textColor="#a8a8aa"
+                                        android:textSize="8sp"
+                                        android:visibility="visible" />
+
+                                </LinearLayout>
+
+                                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <xj.property.widget.CircleImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="9dp"
+                                        android:layout_marginRight="9dp"
+                                        android:src="@drawable/opt_notice_headicon_5"
+                                        android:visibility="visible" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="6dp"
+                                        android:gravity="center_horizontal"
+                                        android:singleLine="true"
+                                        android:text="张先生"
+                                        android:textColor="#a8a8aa"
+                                        android:textSize="8sp"
+                                        android:visibility="visible" />
+
+                                </LinearLayout>
+
+                                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="vertical">
+
+                                    <xj.property.widget.CircleImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="30dp"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="9dp"
+                                        android:layout_marginRight="9dp"
+                                        android:src="@drawable/opt_notice_headicon_6"
+                                        android:visibility="visible" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="6dp"
+                                        android:gravity="center_horizontal"
+                                        android:singleLine="true"
+                                        android:text="刘大姐"
+                                        android:textColor="#a8a8aa"
+                                        android:textSize="8sp"
+                                        android:visibility="visible" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="0.3dp"-->
+                        <!--android:layout_marginBottom="10dp"-->
+                        <!--android:background="@color/bg_color" />-->
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#f1f5f7"
+                        android:orientation="vertical">
+
+                        <xj.property.widget.MyListView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="61dp"
+                            android:layout_marginRight="61dp"
+                            android:divider="@null"
+                            android:dividerHeight="0dp"></xj.property.widget.MyListView>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="投票发起人"
+                    android:textColor="@color/sys_gray_theme_text_color"
+                    android:textSize="13sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text="张大姐"
+                    android:textColor="@color/sys_gray_theme_text_color"
+                    android:textSize="13sp" />
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:paddingBottom="7dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/provider_details_info_llay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/r1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <xj.property.widget.CircleImageView
+                                android:id="@+id/provider_details_iv_avtar3"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5dp"
+                                android:src="@drawable/opt_notice_headicon_1" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/provider_details_iv_avtar3"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="-5dp"
+                                android:src="@drawable/life_circle_bangzhu_icon"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="7dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="张大姐"
+                            android:textColor="#494c53"
+                            android:textSize="12sp" />
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:gravity="right|center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:background="@drawable/vote_label"
+                                android:gravity="right|center_vertical"
+                                android:paddingRight="6dp"
+                                android:text="96人已投票"
+                                android:textColor="@color/sys_darker_font_vote_theme_text_color"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="13dp"
+                    android:text="周边哪种美食好吃?"
+                    android:textColor="@color/sys_darker_font_vote_theme_text_color"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="11dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="0.75"
+                                    android:background="#54C7C0"
+                                    android:orientation="horizontal"></LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="0.25"
+                                    android:background="@android:color/transparent"
+                                    android:gravity="left|center_vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="15dp"
+                                        android:gravity="right|center_vertical"
+                                        android:text="45%"
+                                        android:textColor="@android:color/darker_gray" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                            <ImageView
+                                android:id="@+id/vote_result_percent_chosed_iv5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+                                android:background="@drawable/vote_item_checked"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="16dp"
+                                android:layout_toRightOf="@+id/vote_result_percent_chosed_iv5"
+                                android:text="黄焖鸡"
+                                android:textColor="@color/sys_darker_font_vote_theme_text_color" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.8dp"
+                        android:background="@color/bg_color" />
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="0.25"
+                                    android:background="#EEB355"
+                                    android:orientation="horizontal"></LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="0.25"
+                                    android:background="@android:color/transparent"
+                                    android:gravity="left|center_vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="15dp"
+                                        android:gravity="right|center_vertical"
+                                        android:text="20%"
+                                        android:textColor="@android:color/darker_gray" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                            <ImageView
+                                android:id="@+id/vote_result_percent_chosed_iv6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+                                android:background="@drawable/vote_item_checked"
+                                android:visibility="invisible" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="16dp"
+                                android:layout_toRightOf="@+id/vote_result_percent_chosed_iv6"
+                                android:text="吉野家"
+                                android:textColor="@color/sys_darker_font_vote_theme_text_color" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.8dp"
+                        android:background="@color/bg_color" />
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="0.55"
+                                    android:background="#FEADFF"
+                                    android:orientation="horizontal"></LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="0.25"
+                                    android:background="@android:color/transparent"
+                                    android:gravity="left|center_vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="15dp"
+                                        android:gravity="right|center_vertical"
+                                        android:text="35%"
+                                        android:textColor="@android:color/darker_gray" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                            <ImageView
+                                android:id="@+id/vote_result_percent_chosed_iv4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+                                android:background="@drawable/vote_item_checked"
+                                android:visibility="invisible" />
+
+                            <TextView
+                                android:id="@+id/vote_result_pername_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="16dp"
+                                android:layout_toRightOf="@+id/vote_result_percent_chosed_iv4"
+                                android:text="庆丰包子"
+                                android:textColor="@color/sys_darker_font_vote_theme_text_color" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="11dp"
+                    android:layout_height="9dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/vote_drop_down_arrow"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_new_activity"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/activity_green_bg"
+        android:clickable="true"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:src="@drawable/activity_edit"
+                android:visibility="invisible" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="发起邻居帮"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/act_opt_notice_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/activities_optnotices_bg"
+        android:paddingTop="80dp"
+        android:src="@drawable/vote_opt_notice_txtimg"
+        android:visibility="visible" />
+
+</RelativeLayout>

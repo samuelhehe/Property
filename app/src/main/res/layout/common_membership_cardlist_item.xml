@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/background_light"
+    >
+
+    <RelativeLayout
+        android:id="@+id/msp_card_item"
+        android:layout_width="match_parent"
+        android:layout_margin="15dp"
+        android:layout_height="160dp">
+
+        <ImageView
+            android:id="@+id/msp_card_bg_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:visibility="invisible"
+            />
+
+        <!--android:src="@drawable/msp_card_item_default_shape"-->
+
+        <xj.property.widget.RoTateTextView2
+            android:layout_width="wrap_content"
+            android:text="VIP"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:visibility="gone"
+            android:textColor="#E3D423"
+            android:layout_height="50dp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/msp_shop_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:text="杨记牛肉拉面"
+                android:visibility="invisible"
+                android:textColor="@android:color/background_light"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:id="@+id/stars_llay"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/msp_card_total_tv"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/msp_card_total_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/msp_shop_name_tv"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="14dp"
+                android:text="消费145单"
+                android:visibility="invisible"
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/msp_discount_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text="8.8折"
+            android:visibility="invisible"
+            android:textColor="@android:color/background_light"
+            android:textSize="44sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:layout_height="36dp">
+
+
+            <TextView
+                android:id="@+id/msp_card_distance_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="14dp"
+                android:textSize="12sp"
+                android:visibility="invisible"
+                android:textColor="@android:color/background_light"
+                android:text="200m" />
+
+
+            <RatingBar
+                android:id="@+id/msp_card_ratingbar"
+                style="@style/mspsmallRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="12dp"
+                android:layout_marginLeft="5dp"
+                android:layout_alignTop="@+id/msp_card_ftxt_logo_tv"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/msp_card_ftxt_logo_tv"
+                android:numStars="5"
+                android:layout_centerVertical="true"
+                android:rating="5"
+                android:layout_marginTop="3dp"
+                android:visibility="invisible"
+                android:stepSize="0.5" />
+
+            <TextView
+                android:id="@+id/msp_card_rating_star_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/msp_card_ftxt_logo_tv"
+                android:layout_toRightOf="@+id/msp_card_ratingbar"
+                android:text="5分"
+                android:visibility="invisible"
+                android:textColor="#F0C900" />
+
+
+            <TextView
+                android:id="@+id/msp_card_ftxt_logo_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="14dp"
+                android:gravity="center_horizontal"
+                android:visibility="invisible"
+                android:textColor="@android:color/background_light"
+                android:text="帮帮专属会员卡" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ededed"
+    tools:context="xj.property.activity.user.VerificationActivity">
+    <include layout="@layout/headtop"/>
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:id="@+id/tv_prompt"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="15sp"
+                android:textColor="#8f8f8f"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我们已经发送了"
+               />
+            <TextView
+                android:textSize="15sp"
+                android:textColor="#ff8500"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="验证码"
+                />
+            <TextView
+                android:textSize="15sp"
+                android:textColor="#8f8f8f"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="到你的手机"
+                />
+
+            </LinearLayout>
+
+    <TextView
+        android:textColor="#ff8500"
+        android:id="@+id/tv_prompt_username"
+        android:layout_below="@+id/tv_prompt"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="27sp"
+        android:text="15810304090"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:background="@drawable/login_line"
+        android:textColor="#cacccc"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:id="@+id/et_verification_code"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/tv_prompt_username"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="输入验证码"/>
+
+    <Button
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        android:background="@drawable/green_btn_disable"
+        android:id="@+id/btn_verification_code"
+        android:layout_below="@+id/et_verification_code"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下一步"/>
+
+    <Button
+        android:padding="5dp"
+        android:textSize="14sp"
+        android:textColor="#4caf50"
+        android:background="@drawable/verification_code_send_agin"
+        android:id="@+id/btn_resend_vefification_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="重新发送验证码"
+        android:visibility="gone"
+        android:layout_below="@id/btn_verification_code"
+        android:layout_alignRight="@id/btn_verification_code"
+        />
+    <TextView
+        android:padding="8dp"
+        android:background="@drawable/verification_code_send_agin"
+        android:textColor="#a9a9a9"
+        android:layout_below="@id/btn_verification_code"
+        android:layout_alignRight="@id/btn_verification_code"
+        android:visibility="visible"
+        android:id="@+id/tv_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="60"
+        android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

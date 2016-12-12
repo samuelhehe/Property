@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/timestamp"
+        style="@style/chat_text_date_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:text="周一14:30"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="@dimen/chat_ext_margin"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_chat_activity">
+        <ImageView
+            android:id="@+id/iv_userhead"
+            android:layout_width="@dimen/size_avatar"
+            android:layout_height="@dimen/size_avatar"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="4dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/mini_avatar_shadow"
+            android:scaleType="fitXY"
+            android:visibility="visible"
+            />
+        <LinearLayout
+
+            android:layout_gravity="center"
+            android:layout_width="234dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:id="@+id/ll_detial_buying"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/chat_bg_top">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#8ac349"
+                    android:textSize="16sp"
+                    android:text="您已成功抢到"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="16dp"/>
+                <TextView
+                    android:id="@+id/tv_detail_title"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="阿拉兰牛肉面套餐价原价29，现价9.9，限量30份，限时30天"
+                    android:textColor="#464646"
+                    android:textSize="16sp"
+                    />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:background="#e1e1e1"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="8dp"/>
+                <TextView
+                    android:id="@+id/tv_outlets_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:textColor="@color/message_code_color"
+                    android:text="抢购码：123456789"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center_vertical"
+                    />
+
+                </LinearLayout>
+            <TextView
+                android:id="@+id/tv_detail"
+                android:text="查看详情"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:background="@drawable/chat_received_btn_background"/>
+            <LinearLayout
+                android:id="@+id/ll_code_end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/chat_receiver_bg">
+                <TextView
+                    android:id="@+id/tv_used_code_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="阿拉兰牛肉面套餐价原价29，现价9.9，限量30份，限时30天"
+                    android:textColor="#464646"
+                    android:textSize="16sp"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="12dp"/>
+                <TextView
+                    android:id="@+id/tv_used_code_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="抢购码：123456789"
+                    android:textColor="#909090"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="16dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#8ac349"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    android:text="已成功使用"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginBottom="12dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_userid"
+            style="@style/chat_text_name_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/margin_chat_activity"
+            android:layout_above="@id/iv_userhead"/>
+        <TextView
+            android:id="@+id/percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0%"
+            android:textColor="@android:color/white"
+            android:visibility="visible" />
+        </LinearLayout>
+
+
+</LinearLayout>

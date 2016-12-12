@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_notify"
+    android:layout_width="match_parent"
+    android:layout_height="216dp"
+    android:background="@color/sys_darker_3fa_theme_text_color"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_notify_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="0dp"
+        android:ellipsize="end"
+        android:lineSpacingExtra="7dp"
+        android:lines="4"
+        android:text="停电通知：提供电局通知，明天（11月19日 8：00--15:00 停电维修）\n停电通知：提供电局通知，明天（11月19日 8：00--15:00 停电维修）\n"
+        android:textColor="@color/sys_darker_66_theme_text_color"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_notify_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:gravity="left|center_vertical"
+            android:text="2015-04-01"
+            android:textColor="@color/sys_darker_69_theme_text_color"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/tv_notify_pay"
+            android:layout_width="66dp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toLeftOf="@+id/tv_notify_more"
+            android:background="@drawable/home_more_bg"
+            android:text="立即缴费"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/tv_notify_more"
+            android:layout_width="66dp"
+            android:layout_height="23dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/home_more_bg"
+            android:text="更多通知"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

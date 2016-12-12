@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical">
+
+    <include layout="@layout/headtop" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.repo.xw.library.views.PullToRefreshLayout
+            android:id="@+id/pull_to_refreshlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.repo.xw.library.views.PullListView
+                android:id="@+id/pull_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/bg_color_forvote"
+                android:dividerHeight="10dp"
+                android:overScrollMode="never"
+                android:scrollbars="vertical"
+                android:scrollingCache="false">
+
+            </com.repo.xw.library.views.PullListView>
+
+        </com.repo.xw.library.views.PullToRefreshLayout>
+
+        <include layout="@layout/net_error" />
+
+        <LinearLayout
+            android:id="@+id/ll_index_empty_outer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/ll_index_empty_outer_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/vote_index_none" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/ilaunch_vote_go_btn"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/common_bottom_green_bg"
+        android:text="发起投票"
+        android:textColor="@android:color/background_light"
+        android:textSize="17sp" />
+
+</LinearLayout>

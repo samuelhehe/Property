@@ -1,0 +1,243 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/headtop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/bg_color">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <xj.property.widget.MyGridView
+                    android:id="@+id/gv_image_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21dp"
+                    android:background="@color/white"
+                    android:horizontalSpacing="3dp"
+                    android:listSelector="@color/white"
+                    android:minHeight="64dp"
+                    android:numColumns="4"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:scrollbars="none"
+                    android:verticalSpacing="5dp"></xj.property.widget.MyGridView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="30dp"
+                    android:background="#f1f5f7" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@color/white">
+
+                    <EditText
+                        android:id="@+id/et_record_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:gravity="left"
+                        android:hint="请写下你要问邻居或和邻居分享的事。"
+                        android:minHeight="124dp"
+                        android:minLines="11"
+                        android:maxLength="1500"
+                        android:textColor="#525252"
+                        android:textColorHint="#d4d4d4"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="11dp"
+                    android:background="@color/bg_color" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_switch_block_notify"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:background="@color/white"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/iv_switch_block_notify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/open_icon"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/iv_switch_unblock_notify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/close_icon"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/notify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="同时创建群聊"
+                        android:textColor="#898787"
+                        android:textSize="17sp"
+                        android:typeface="serif" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/bar_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_color"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_color"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="7dp">
+
+                <CheckBox
+                    android:id="@+id/send_img_checkbox"
+                    android:layout_width="24dip"
+                    android:layout_height="24dip"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_marginLeft="10dp"
+                    android:button="@drawable/bottom_input_showimg_selector"
+                    android:checked="false"
+                    android:scaleType="fitCenter"
+                    android:visibility="visible" />
+
+                <!--<View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="#"/>-->
+                <RelativeLayout
+                    android:id="@+id/edittext_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/chat_input_bg"
+                    android:gravity="bottom"
+                    android:visibility="invisible">
+
+                    <xj.property.widget.PasteEditText
+                        android:id="@+id/et_sendmessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:background="@null"
+                        android:maxLines="3"
+                        android:minHeight="40dp"
+                        android:paddingBottom="3dp"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="1dp"
+                        android:paddingTop="3dp"
+                        android:textColor="#191919"
+                        android:textColorHint="#e2e3e3"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btn_send"
+                    android:layout_width="40dip"
+                    android:layout_height="32dip"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/green_selector_bg"
+                    android:padding="3dp"
+                    android:text="@string/button_send"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/btn_charter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dip"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/pink_selector_bg"
+                    android:drawableLeft="@drawable/reply_heart"
+                    android:padding="3dp"
+                    android:text="赞人品"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_face_container"
+                android:layout_width="match_parent"
+                android:layout_height="186dp"
+                android:background="@android:color/background_light"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="173dp" />
+
+                <xj.property.widget.com.viewpagerindicator.CirclePageIndicator
+                    android:id="@+id/vpager_indicator"
+                    style="@style/CustomCirclePageIndicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="3dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

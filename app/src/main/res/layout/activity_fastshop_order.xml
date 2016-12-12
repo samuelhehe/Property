@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/headtop"/>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+        <xj.property.widget.pullrefreshview.library.PullToRefreshListView
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/lv_order_history"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ededed"
+            android:fadingEdge="none"
+            android:listSelector="@android:color/transparent"
+            android:divider="@color/bg_color"
+            android:dividerHeight="5dp"
+            android:scrollbars="none"/>
+
+        <xj.property.widget.CarJumpView
+            android:id="@+id/ivcarjump"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <include layout="@layout/net_error"/>
+
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/shop_bottom_bg"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shop_bottom_bg"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:id="@+id/iv_shop_bottom_car_empty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="18dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/shop_bottom_car_empty"/>
+
+                <TextView
+                    android:id="@+id/tv_sum_goods_num"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="-12dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_toRightOf="@+id/iv_shop_bottom_car_empty"
+                    android:background="@drawable/shop_car_top"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text2fonts"/>
+
+                <TextView
+                    android:id="@+id/tv_sum_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_toRightOf="@+id/iv_shop_bottom_car_empty"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="总价"
+                    android:textColor="@color/item_fix_doing"
+                    android:textSize="@dimen/text2fonts"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_sum_price_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_sum_price"
+                    android:gravity="center_vertical|left"
+                    android:singleLine="true"
+                    android:text="￥0"
+                    android:textColor="@color/item_fix_doing"
+                    android:textSize="17sp"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bt_confirm"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#ff6634"
+          >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="去购物车"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

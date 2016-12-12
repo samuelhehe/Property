@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_color"
+              android:orientation="vertical">
+
+    <include layout="@layout/headtop"/>
+
+    <FrameLayout
+        android:id="@+id/fl_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <xj.property.widget.pullrefreshview.library.PullToRefreshListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:background="#ededed"
+            android:divider="@color/bg_color"
+            android:dividerHeight="4dp"
+            android:fadingEdge="none"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none"/>
+
+        <include layout="@layout/net_error"/>
+    </FrameLayout>
+
+
+</LinearLayout>

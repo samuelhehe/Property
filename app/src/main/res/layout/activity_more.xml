@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed"
+    android:orientation="vertical"
+    tools:context="xj.property.source.activity.more.MoreActivity"
+   >
+    <include layout="@layout/headtop"/>
+    <GridView
+        android:listSelector="@drawable/item_background_selector"
+        android:id="@+id/gv_more"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:verticalSpacing="10dp" />
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#fffffd">
+
+    <include
+        layout="@layout/common_bangzhu_headtop">
+        </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <WebView
+                android:id="@+id/bangzhu_privilege_introduction_wv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+            </WebView>
+            <include
+                layout="@layout/net_error"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="点击以下商家索要超级预划案"
+                android:textColor="#4B4C50"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="29dp"
+                android:layout_marginBottom="17dp"
+                android:textSize="17dp"
+                />
+
+            <ImageView
+                android:layout_marginTop="16dp"
+                android:id="@+id/iv_company"
+                android:layout_width="351dp"
+                android:layout_height="91dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/arrow_down"/>
+
+            <ImageView
+                android:layout_marginTop="16dp"
+                android:id="@+id/iv_company1"
+                android:layout_width="351dp"
+                android:layout_height="91dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/arrow_down"/>
+
+            <ImageView
+                android:layout_marginTop="16dp"
+                android:id="@+id/iv_company2"
+                android:layout_width="351dp"
+                android:layout_height="91dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/arrow_down"/>
+
+            <ImageView
+                android:layout_marginTop="16dp"
+                android:id="@+id/iv_company3"
+                android:layout_width="351dp"
+                android:layout_height="91dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/arrow_down"/>
+
+            <ImageView
+                android:layout_marginTop="16dp"
+                android:id="@+id/iv_company4"
+                android:layout_width="351dp"
+                android:layout_height="91dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/arrow_down"/>
+
+            <ImageView
+                android:layout_marginTop="16dp"
+                android:id="@+id/iv_company5"
+                android:layout_width="351dp"
+                android:layout_height="91dp"
+                android:src="@drawable/arrow_down"/>
+
+            <ImageView
+                android:layout_marginTop="16dp"
+                android:id="@+id/iv_company6"
+                android:layout_width="351dp"
+                android:layout_height="91dp"
+                android:src="@drawable/arrow_down"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

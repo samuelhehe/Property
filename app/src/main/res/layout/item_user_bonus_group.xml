@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+
+    <TextView
+        android:background="@color/white"
+        android:gravity="center|left"
+        android:paddingLeft="20dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/tv_status_str"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="可用优惠券"
+        android:textSize="16dp"
+        android:textColor="@color/text_item_menu"
+        />
+
+
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/doorpaste_item_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/doorpaste_details_content_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_marginTop="23dp"
+            android:lineSpacingExtra="10dp"
+
+            android:text="晚上回来太晚并且声音太大晚上回来太晚并且声音太大晚上回来太晚并且声音太大晚上回来太晚并且声音太大晚上回来太晚并且声音太大晚上回来太晚并且声音太大，影响休息。"
+            android:textColor="@color/sys_darker_63_theme_text_color"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_marginTop="33dp"
+            android:background="@android:color/background_light"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/doorpaste_details_time_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_weight="1"
+                android:text="3月2日 周三"
+                android:textColor="@color/sys_darker_69_theme_text_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/doorpaste_details_addnum_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:drawableLeft="@drawable/doorpaste_item_add"
+                android:drawablePadding="3dp"
+                android:text="20"
+                android:textColor="@color/sys_darker_69_theme_text_color"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

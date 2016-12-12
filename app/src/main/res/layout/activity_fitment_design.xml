@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#fffffd">
+
+    <include layout="@layout/common_bangzhu_headtop"></include>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_height="0dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/phone" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:text="咨询电话：010-5854857" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_play_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:textSize="17dp"
+            android:text="直接打给他"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:background="#30cc71" />
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:gravity="center_vertical"
+            android:layout_height="0dp"
+            android:textSize="15dp"
+            android:text="帮帮已将您的需求意向通知给东易日盛装饰设计有限公司，负责人将在1小时内与18613665488，请您保持电话畅通." />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:text="更换联系手机号码" />
+        
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:hint="输入新手机号码"
+            android:textSize="15dp"
+            android:background="@drawable/white_button_selector_shape1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_edit_phone"
+            android:layout_marginBottom="20dp"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="40dp"
+            android:text="重新发送装修意向"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:background="#30cc71" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app1="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/fastshop_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/top_bar_green_bg_old"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/back" />
+
+            <RelativeLayout
+                android:id="@+id/tv_title"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/commodity_list_search_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/commodity_list_searchicon"
+                    android:gravity="center_vertical"
+                    android:hint="  搜索想买的商品"
+                    android:textColor="@color/white"
+                    android:textColorHint="#ff4cb050"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_right_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|right"
+                android:gravity="center"
+                android:paddingLeft="6dp"
+                android:paddingRight="10dp"
+                android:text="订单"
+                android:textColor="@color/white"
+                android:textSize="@dimen/titlefonts" />
+
+        </LinearLayout>
+
+
+        <xj.property.widget.PagerSlidingTabStrip xmlns:app="http://schemas.android.com/apk/res/xj.property"
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:background="@android:color/white"
+            app1:pstsIndicatorColor="@color/chat_waiteva_text"
+            app1:pstsScrollOffset="1dp"
+            app1:pstsTabPaddingLeftRight="14dp"
+            app1:selectedTabTextColor="#000000"
+            app:pstsDividerColor="@android:color/transparent"
+            app:pstsIndicatorHeight="1dp"
+            app:pstsTabBackground="@drawable/background_tab"
+            app:pstsUnderlineHeight="1dp" />
+
+        <TextView
+            android:id="@+id/tv_search_contact_contact"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/item_tophigh"
+            android:layout_marginBottom="2dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/fast_shop_top"
+            android:textColor="#9b9b9b"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/shop_bottom_bg"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shop_bottom_bg"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:id="@+id/iv_shop_bottom_car_empty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="18dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/shop_bottom_car_empty" />
+
+                <TextView
+                    android:id="@+id/tv_sum_goods_num"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="-12dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_toRightOf="@+id/iv_shop_bottom_car_empty"
+                    android:background="@drawable/shop_car_top"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text2fonts" />
+
+                <TextView
+                    android:id="@+id/tv_sum_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_toRightOf="@+id/iv_shop_bottom_car_empty"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="总价"
+                    android:textColor="@color/item_fix_doing"
+                    android:textSize="@dimen/text2fonts"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_sum_price_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_sum_price"
+                    android:gravity="center_vertical|left"
+                    android:singleLine="true"
+                    android:text="￥0"
+                    android:textColor="@color/shop_car_txt"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bt_confirm"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#ff6634"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="去购物车"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_goodspic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#b0000000"
+        android:visibility="gone" />
+
+</FrameLayout>

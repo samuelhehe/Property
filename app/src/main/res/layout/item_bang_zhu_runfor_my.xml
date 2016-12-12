@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <xj.property.widget.CircleImageView
+            android:id="@+id/avatar"
+            android:layout_marginLeft="21dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/head_portrait_personage" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_marginLeft="11dp"
+            android:layout_height="wrap_content"
+            android:textColor="#949494"
+            android:text="梦杰"/>
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#949494"
+            android:text="投票得分"/>
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="24dp"
+            android:textColor="#606060"
+            android:text="20"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="21dp"
+        android:background="#EEEEEE"/>
+
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_color"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/headtop_old"/>
+
+    <include layout="@layout/search_bar_fastshop"/>
+
+    <FrameLayout
+        android:id="@+id/fl_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_marginTop="-4dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_search_contact_contact"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/item_tophigh"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/fast_shop_top"
+                android:textColor="#666666"
+                android:textSize="13sp"/>
+
+            <xj.property.widget.MyScrollView
+                android:id="@+id/sv_root"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <xj.property.widget.MyListView
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/lv_contact_phones"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ededed"
+                        android:divider="@color/bg_color"
+                        android:dividerHeight="0dp"
+                        android:scrollbars="none"/>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/item_tophigh"
+                        android:layout_marginBottom="2dp"
+                        android:background="#ededed"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:singleLine="true"
+                        android:text="已买到的商品"
+                        android:textColor="#666666"
+                        android:textSize="13sp"/>
+
+                    <xj.property.widget.MyListView
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/lv_order_history"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#ededed"
+                        android:divider="@color/bg_color"
+                        android:dividerHeight="5dp"
+                        android:scrollbars="none"/>
+                </LinearLayout>
+            </xj.property.widget.MyScrollView>
+        </LinearLayout>
+
+        <include layout="@layout/net_error"/>
+    </FrameLayout>
+
+
+</LinearLayout>

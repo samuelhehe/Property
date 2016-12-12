@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_main"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00fafafa" >
+    <ListView
+        android:padding="3px"
+        android:id="@+id/lv_itemgood"
+        android:background="@drawable/commidty_style_bg"
+        android:scrollbars="none"
+        android:layout_margin="14dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_height"
+        />
+    <ImageView
+        android:id="@+id/pop_no"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginBottom="-32dp"
+        android:src="@drawable/commodity_list_styleclose"
+        android:layout_above="@+id/lv_itemgood"
+        android:layout_alignParentRight="true"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#ededed"
+        android:visibility="gone"
+        android:layout_above="@+id/lv_itemgood"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:textSize="17sp"
+            android:textColor="@color/chat_waiteva_text"
+            android:text="选择分类"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

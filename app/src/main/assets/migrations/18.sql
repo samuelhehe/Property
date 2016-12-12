@@ -1,0 +1,1 @@
+ALTER TABLE fastshopcar ADD COLUMN shopItemSkuId INTEGER;

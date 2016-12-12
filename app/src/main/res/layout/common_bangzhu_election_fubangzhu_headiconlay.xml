@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/bangzhu_graph_headinfo_rlay"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal">
+
+        <FrameLayout
+            android:id="@+id/bangzhu_graph_fubangzhu_flay"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/campaign_orange_circle">
+
+            <xj.property.widget.CircleImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_gravity="center"
+                android:src="@drawable/campaign_default_photos" />
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bangzhu_graph_fubangzhu_flay"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/campaign_fubangzhu_icon" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/bangzhu_election_graph_myname_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bangzhu_graph_headinfo_rlay"
+        android:layout_centerHorizontal="true"
+        android:text="乐天派"
+        android:visibility="gone"
+        android:textSize="13sp" />
+
+
+    <LinearLayout
+        android:id="@+id/bangzhu_election_graph_rpz_llay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bangzhu_election_graph_myname_tv"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bangzhu_graph_headinfo_rlay"
+            android:text="人品值: "
+            android:textSize="10sp" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/lifecircle_likeicon" />
+
+        <TextView
+            android:id="@+id/bangzhu_election_graph_myrpz_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bangzhu_graph_headinfo_rlay"
+            android:text="100"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

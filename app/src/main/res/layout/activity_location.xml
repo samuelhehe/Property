@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/scroll_root"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_location_code"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/title_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="55dp"
+                android:background="@drawable/lv_search_community_title" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="67dp"
+                android:text="一切对你有价值的信息"
+                android:textSize="15dp"
+                android:textColor="#444444"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:text="都是基于你真实生活的小区"
+                android:textSize="15dp"
+                android:textColor="#444444"/>
+
+            <!--<TextView-->
+                <!--android:id="@+id/community_notice_tv"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginLeft="36dp"-->
+                <!--android:layout_marginRight="36dp"-->
+                <!--android:layout_marginTop="67dp"-->
+                <!--android:text="\t\t\t邻居帮帮是一款封闭式的小区软件。一切对你有价值的信息都是基于你真实生活的小区。请真实填写你所居住的小区。一旦填写，一个月之内不能更改。"-->
+                <!--android:textColor="#464646"-->
+                <!--android:textSize="16sp" />-->
+
+            <EditText
+                android:id="@+id/group_search_key_et"
+                android:layout_width="303dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="51dp"
+                android:background="@drawable/common_search_box_shape_bg"
+                android:drawablePadding="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="输入小区名称  例：天华公馆"
+                android:imeOptions="actionSearch"
+                android:inputType="none"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:textColor="#8a8a8f"
+                android:textColorHint="#d6d6d6"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/location_2"
+                    android:drawablePadding="3dp"
+                    android:text="请真实填写您所居住的小区，填写后一个月之内不可更改。"
+                    android:textSize="11dp"
+                    android:gravity="center_vertical"
+                    android:textColor="#999999"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/go_verfication_btn"
+                android:layout_width="305dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="21dp"
+                android:background="@color/sys_green_theme_text_color"
+                android:text="验证小区"
+                android:textColor="@android:color/background_light"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

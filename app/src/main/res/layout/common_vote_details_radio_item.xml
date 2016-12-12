@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vote_detail_vote_rbtn_id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:button="@drawable/vote_chat_details_check_btn_selector"
+    android:checked="true"
+    android:drawableBottom="@drawable/sys_gray_divider_line"
+    android:lineSpacingExtra="2dp"
+    android:minHeight="40dp"
+    android:gravity="left|center_vertical"
+    android:paddingLeft="20dp"
+    android:singleLine="false"
+    android:text="你认为认为认为认为认为认为认为认为认为认为认为认为认为认为认为" />
+
+    <!--android:background="@drawable/vote_list_item_line"-->
+
+    <!--android:button="@drawable/vote_radio_btn_selector"-->
+
+
+
+    <!--android:drawableTop="@drawable/sys_gray_divider_line"-->

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp" >
+
+    <ImageView
+        android:id="@+id/iv_repairment_class"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_title_repairment_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:singleLine="true"
+                android:text="弱电"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/tv_detail_repairment_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="维修洗衣机"
+                android:textColor="#fd7067"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_empty"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+
+    <LinearLayout
+        android:id="@+id/ll_nomessage"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="117dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/no_messages"/>
+
+        <TextView
+            android:id="@+id/tv_nomessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:gravity="left"
+            android:text="现在还没有抢购活动，再等等吧！"
+            android:textColor="#ababab"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

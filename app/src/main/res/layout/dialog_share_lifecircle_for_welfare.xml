@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+    <ImageView
+        android:id="@+id/iv_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bagbangred_picture"
+        android:layout_centerHorizontal="true"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ll_middle"
+        android:gravity="center"
+        android:layout_below="@+id/iv_top">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="晒一晒，得帮帮币！"
+            android:textSize="19sp"
+            android:layout_marginTop="28dp"
+            android:textColor="#373737"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="将此福利转发到生活圈，"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:textColor="#b6b6b6"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="将获得10帮帮币。"
+            android:textSize="15sp"
+            android:layout_marginTop="4dp"
+            android:textColor="#b6b6b6"/>
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="28dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ll_middle"
+        android:layout_alignRight="@+id/iv_top"
+        android:layout_alignLeft="@+id/iv_top">
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="分享"
+            android:textColor="#fff"
+            android:background="#FF6766"/>
+        <ImageView
+            android:layout_width="0.7dp"
+            android:layout_height="match_parent"
+            android:background="#c42f2e"/>
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#FF6766"
+            android:text="取消"
+            android:textColor="#fff"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

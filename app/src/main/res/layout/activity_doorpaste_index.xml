@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_doorpaste_headtop" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/community_doorpaste_status_tv"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="小区有5个房被贴，共计32个门贴"
+            android:textColor="@color/sys_darker_69_theme_text_color"
+            android:textSize="12sp" />
+
+        <xj.property.widget.GridViewWithHeaderAndFooter
+            android:id="@+id/common_doorpaste_gv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:horizontalSpacing="5dp"
+            android:numColumns="2"
+            android:scrollbars="none"
+            android:verticalSpacing="7dp" />
+
+        <include layout="@layout/net_error" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

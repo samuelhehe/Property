@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_explan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ff8f45"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="375dp"
+            android:layout_height="110dp"
+            android:background="@drawable/bangzhu_runfor_banner1"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="13dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textColor="#1d1d26"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#666666"
+                android:textSize="11dp"
+                android:text="NO" />
+
+        </LinearLayout>
+
+        <xj.property.widget.CircleImageView
+            android:id="@+id/avatar1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/head_portrait_personage" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_nickname"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="#949494"
+                android:textSize="16dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tv_score1"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:text="" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_arraw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="9dp"
+                android:background="@drawable/up_arrow" />
+
+            <ImageView
+                android:id="@+id/iv_arraw_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginRight="9dp"
+                android:background="@drawable/down_arrow" />
+
+            <TextView
+                android:id="@+id/tv_go_campaign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="去拉票"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/green_button_selector_shape"
+                android:layout_marginRight="10dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="#eeeeee" />
+
+
+</LinearLayout>

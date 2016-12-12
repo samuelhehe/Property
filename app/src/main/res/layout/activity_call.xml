@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/headtop" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/tophigh"
+    android:background="@color/btn_green_noraml"
+    android:id="@+id/ll_express"
+    android:visibility="gone"
+    android:orientation="horizontal">
+    <TextView
+        style="@style/MyTextView"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:text="帮帮帮你收快递"
+        android:drawableLeft="@drawable/ic_launcher"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/text_item_content"
+        android:textSize="@dimen/text2fonts" />
+    <ImageView
+        android:id="@+id/iv_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:background="@drawable/me_arrow"
+        android:paddingRight="5dp"
+        android:scaleType="matrix" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lv_call"
+        android:layout_width="match_parent"
+        android:dividerHeight="5dp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="262dp"
+    android:background="@drawable/commodity_list_bg"
+    android:orientation="vertical"
+    android:paddingBottom="2dp"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp"
+    android:paddingTop="1dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_all_fastshop"
+        android:layout_width="wrap_content"
+        android:layout_height="260dp"
+        android:background="#FFFFFF"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_middle_fastshop"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/rl_middle_fastshop"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_shop_image"
+                    android:layout_width="fill_parent"
+                    android:layout_height="165dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="right"
+                    android:id="@+id/short_value"
+                    android:layout_margin="9dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/commodity_label"/>
+</FrameLayout>
+            <TextView
+                android:id="@+id/tv_good_name"
+                android:layout_width="fill_parent"
+                android:layout_height="42dp"
+                android:lines="2"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#ffffff"
+                android:gravity="center_vertical|left"
+                android:lineSpacingExtra="3dp"
+                android:paddingTop="3dp"
+                android:text="欣欣便利店欣欣便利店欣欣便利店欣"
+                android:textColor="#717171"
+                android:textSize="@dimen/text2fonts"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:id="@+id/line"
+            android:background="#cfcfcf"
+
+            android:layout_below="@+id/ll_middle_fastshop"
+            />
+
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+           android:layout_marginLeft="12dp"
+            android:layout_below="@+id/line"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:background="#ffffff">
+            <TextView
+                android:id="@+id/tv_good_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="￥18"
+                android:textColor="#32363a"
+                android:textSize="19sp"/>
+            <TextView
+                android:id="@+id/tv_good_originPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/tv_good_price"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:layout_marginLeft="2dp"
+                android:singleLine="true"
+                android:text="￥18"
+                android:textColor="#9b9b9b"
+                android:textSize="@dimen/textmenubar"/>
+
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_shop_count_add"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_below="@+id/line"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="7dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/snacks_add"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="312dp"
+    android:id="@+id/dialog_root_ll"
+    android:layout_height="wrap_content"
+    android:background="@drawable/contact_blacktankuang_bg"
+    android:orientation="vertical">
+
+    <!--h= 125dp-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="76dp"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView android:id="@+id/toast_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="本次购买是否全部使用帮帮币支付"
+            android:textColor="@android:color/background_light"
+            android:textSize="16sp" />
+
+        <TextView android:id="@+id/toast_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="您确定退出吗？"
+            android:visibility="gone"
+            android:textColor="@android:color/background_light"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout android:id="@+id/dialog_opt_okcancel_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#bababa" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/submit"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="#bababa" />
+
+            <TextView
+                android:id="@+id/cancel"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

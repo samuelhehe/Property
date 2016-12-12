@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@android:color/white">
+    <!-- <LinearLayout
+         android:paddingTop="14dp"
+        android:gravity="center_horizontal"
+         android:id="@+id/ll_iv_isread"
+         android:layout_width="32dp"
+         android:layout_height="fill_parent">
+         <xj.property.widget.CircleImageView
+             android:layout_width="20dp"
+             android:layout_height="20dp"
+             android:src="@color/notify_red"
+             android:id="@+id/iv_isread"
+             android:layout_marginTop="14dp"
+             android:layout_gravity="center_horizontal"
+             />
+         </LinearLayout>-->
+
+    <ImageView
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:id="@+id/iv_isread"
+        android:background="@drawable/notice_new_icon"
+        android:layout_alignParentRight="true"/>
+
+    <ImageView
+        android:id="@+id/iv_more"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="12dp"
+        android:src="@drawable/notice_arrow" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_toLeftOf="@id/iv_more"
+        android:layout_toRightOf="@id/ll_iv_isread"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_mine_title"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/tv_time"
+                android:text="停电通知"
+                android:singleLine="true"
+                android:layout_centerVertical="true"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:text="2015-01-01 8:00"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_mine_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="21dp"
+            android:layout_marginTop="11dp"
+            android:ellipsize="end"
+
+            android:lineSpacingExtra="4dp"
+            android:maxLines="2"
+            android:text="本文版权归作者和博客园共有，欢迎转载，但未经作者同意必须保留此段声明，且在文章页面明显位置给出原文连接，否则保留追究法律责任的权利。"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line_view"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:background="#e3e4e5"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

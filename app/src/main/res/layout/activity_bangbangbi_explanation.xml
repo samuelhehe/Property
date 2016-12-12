@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_bangbangbi_headtop" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/bangbangbi_left_nums_tv"
+                        android:layout_width="149dp"
+                        android:layout_height="149dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="45dp"
+                        android:background="@drawable/bangbangbi_orange_circle"
+                        android:gravity="center"
+                        android:text="帮帮币"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/bangbangbi_exchange_llay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_below="@+id/bangbangbi_left_nums_tv"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="23dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_bangbi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="100"
+                            android:textColor="#858585"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="帮帮币可抵 "
+                            android:textColor="#858585"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tv_yuan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="100"
+                            android:textColor="#858585"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 元人品币"
+                            android:textColor="#858585"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+
+
+                    <TextView
+                        android:id="@+id/bangbangbi_explanation_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/bangbangbi_exchange_llay"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="28dp"
+                        android:text="使用说明"
+                        android:textColor="#ffa200"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="0.7dp"
+                        android:layout_below="@+id/bangbangbi_explanation_tv"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="8dp"
+                        android:background="#d7d7d7" />
+
+                </RelativeLayout>
+
+                <WebView
+                    android:id="@+id/wv_bangbi_explanntion"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"></WebView>
+            </LinearLayout>
+        </ScrollView>
+
+        <include layout="@layout/net_error" />
+    </FrameLayout>
+
+</LinearLayout>

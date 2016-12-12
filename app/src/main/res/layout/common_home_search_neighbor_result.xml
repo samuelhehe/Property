@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_neighbor_result_llay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1.5dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="13dp"
+        android:text="邻居"
+        android:textColor="@color/sys_darker_69_theme_text_color"
+        android:textSize="13sp" />
+
+
+    <xj.property.widget.MyListView
+        android:id="@+id/search_neighbor_result_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </xj.property.widget.MyListView>
+
+
+    <LinearLayout
+        android:id="@+id/search_neighbor_bottom_llay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="17dp">
+
+        <RelativeLayout
+            android:id="@+id/search_neighbor_refreshing_rlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/neighbor_progress_bar"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="65dp"
+                android:indeterminate="false"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/neighbor_hint_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="正在刷新..."
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/search_neighbor_more_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:drawablePadding="6dp"
+            android:drawableRight="@drawable/home_search_more"
+            android:gravity="center"
+            android:text="更多邻居"
+            android:textColor="@color/sys_green_theme_text_color"
+            android:textSize="13sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

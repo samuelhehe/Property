@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_courier_height"
+                android:background="#ffffff"
+                android:paddingTop="12dp">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="@dimen/iv_logo"
+        android:layout_height="@dimen/iv_logo"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/default_pic_courier"/>
+
+    <LinearLayout
+        android:id="@+id/ll_right"
+        android:layout_width="@dimen/courier_phone_call"
+        android:layout_height="54dp"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        >
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="#c0c0c0"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_call_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/express_phone"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_toLeftOf="@id/ll_right"
+        android:layout_toRightOf="@id/iv_logo"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:maxLength="11"
+        android:id="@+id/tv_courier_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+
+        android:paddingLeft="@dimen/tv_courier_paddingLeft"
+        android:singleLine="true"
+        android:text="圆通快递"
+        android:textColor="#555555"
+        android:textSize="@dimen/tv_courier_name_fontsize"
+        />
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_courier_name"
+        android:layout_toRightOf="@id/iv_logo"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/tv_courier_paddingLeft">
+
+        <TextView
+            android:maxLength="11"
+            android:id="@+id/courier_phone_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1863755508"
+            android:textColor="#ff7100"
+            android:textSize="@dimen/courier_phone_num_fontsize"/>
+
+    <!--    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/courier_phone_iv_left"
+            android:background="@drawable/express_time"/>
+
+        <TextView
+            android:id="@+id/courier_time"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="3dp"
+            android:singleLine="true"
+            android:text="8:00-23:00"
+            android:textColor="#807f7f"
+            android:textSize="@dimen/courier_phone_num_fontsize"/>-->
+
+        <TextView
+            android:layout_marginRight="@dimen/courier_time_margin_right"
+            android:layout_alignParentRight="true"
+            android:id="@+id/courier_time"
+            android:layout_width="@dimen/courier_time_width"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/express_time"
+            android:drawablePadding="@dimen/courier_time_margin_left"
+            android:singleLine="true"
+            android:text="8:00-23:00"
+            android:textColor="#807f7f"
+            android:textSize="@dimen/courier_phone_num_fontsize"/>
+    </RelativeLayout>
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#c0c0c0"/>
+
+</RelativeLayout>

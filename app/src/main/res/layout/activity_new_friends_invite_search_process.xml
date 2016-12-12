@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical">
+
+    <include layout="@layout/headtop" />
+
+
+    <EditText
+        android:id="@+id/group_search_key_et"
+        android:layout_width="332dp"
+        android:layout_height="39dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/common_search_box_shape_bg"
+        android:drawableLeft="@drawable/searchbar_nav_bar_search"
+        android:drawablePadding="5dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="搜索"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:textColor="#8a8a8f"
+        android:textSize="13sp">
+
+    </EditText>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <include layout="@layout/net_error" />
+
+        <com.repo.xw.library.views.PullToRefreshLayout
+            android:id="@+id/pull_to_refreshlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="21dp">
+
+            <com.repo.xw.library.views.PullListView
+                android:id="@+id/pull_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@android:color/transparent"
+                android:overScrollMode="never"
+                android:scrollbars="vertical"
+                android:scrollingCache="false">
+
+            </com.repo.xw.library.views.PullListView>
+        </com.repo.xw.library.views.PullToRefreshLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

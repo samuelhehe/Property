@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed"
+    android:orientation="vertical"
+    tools:context="xj.property.activity.user.UsernameActivity">
+
+    <include layout="@layout/headtop" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/verification_result_tv"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:background="#FFF3EA"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:text="昵称含有敏感词,请重新输入"
+            android:textColor="#F29763" />
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/verification_result_tv"
+            android:layout_margin="10dp"
+            android:background="@drawable/login_line"
+            android:gravity="center"
+            android:hint="输入您的昵称"
+            android:textColor="#cacccc"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/btn_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_username"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/green_btn_disable"
+            android:text="下一步"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

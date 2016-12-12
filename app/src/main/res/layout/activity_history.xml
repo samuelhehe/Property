@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed"
+    android:orientation="vertical">
+
+    <include layout="@layout/headtop" />
+
+    <FrameLayout
+        android:id="@+id/fl_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.repo.xw.library.views.PullToRefreshLayout
+            android:id="@+id/pull_to_refreshlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1">
+
+            <com.repo.xw.library.views.PullListView
+                android:id="@+id/lv_order_history"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#ededed"
+                android:dividerHeight="12dp"
+                android:fadingEdge="none"
+                android:listSelector="@android:color/transparent"
+                android:padding="1dp"
+                android:scrollbars="none">
+
+            </com.repo.xw.library.views.PullListView>
+        </com.repo.xw.library.views.PullToRefreshLayout>
+
+
+        <include layout="@layout/net_error" />
+    </FrameLayout>
+</LinearLayout>
